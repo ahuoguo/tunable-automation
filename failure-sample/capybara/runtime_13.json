@@ -1,0 +1,57 @@
+{
+  "verification-results": {
+    "encountered-error": true,
+    "encountered-vir-error": false,
+    "success": false,
+    "verified": 0,
+    "errors": 0,
+    "is-verifying-entire-crate": true
+  },
+  "times-ms": {
+    "verus-build": {
+      "profile": "release",
+      "version": "0.2025.07.15.28bd431.dirty"
+    },
+    "num-threads": 1,
+    "total": 4595,
+    "estimated-cpu-time": 4595,
+    "rust": {
+      "total": 2965,
+      "init-and-types": 2965,
+      "lifetime": 0,
+      "compile": 0
+    },
+    "verification": {
+      "total": 115,
+      "vir": {
+        "total": 115,
+        "hir": 0,
+        "import": 115,
+        "rust-to-vir": 0
+      }
+    },
+    "total-verify": 0,
+    "total-verify-module-times": [],
+    "air": {
+      "total": 0,
+      "module-times": []
+    },
+    "smt": {
+      "total": 0,
+      "smt-init": 0,
+      "smt-init-module-times": [],
+      "smt-run": 0,
+      "smt-run-module-times": []
+    }
+  },
+  "verus": {
+    "profile": "release",
+    "version": "0.2025.07.15.28bd431.dirty",
+    "platform": {
+      "os": "linux",
+      "arch": "x86_64"
+    },
+    "toolchain": "1.88.0-x86_64-unknown-linux-gnu",
+    "commit": "28bd431888c80fc820fb8083b8a6d4884773b007"
+  }
+}

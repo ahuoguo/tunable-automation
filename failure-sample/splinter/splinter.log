@@ -1,0 +1,45 @@
+verus succeeded with time: 31504ms
+sampled 20 asserts out of 1130
+commenting out line Lines { lines: 408..=409 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed with 28125
+commenting out line Lines { lines: 2302..=2302 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/LinkedBetree_v.rs"
+verus failed with 28248
+commenting out line Lines { lines: 785..=788 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/FilteredBetreeRefinement_v.rs"
+verus failed with 28119
+commenting out line Lines { lines: 346..=346 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/PivotBetreeRefinement_v.rs"
+verus failed with 28193
+commenting out line Lines { lines: 193..=196 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/spec/FloatingSeq_t.rs"
+verus failed with 28658
+commenting out line Lines { lines: 1544..=1544 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/allocation_layer/AllocationBranchBetree_v.rs"
+verus failed with 28615
+commenting out line Lines { lines: 444..=444 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/journal/LinkedJournalRefinement_v.rs"
+verus failed with 28037
+commenting out line Lines { lines: 1890..=1890 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/allocation_layer/LikesBetree_v.rs"
+verus failed with 27666
+commenting out line Lines { lines: 147..=147 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/PagedBetreeRefinement_v.rs"
+verus failed with 28607
+commenting out line Lines { lines: 364..=364 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/PagedBetreeRefinement_v.rs"
+verus failed with 28632
+commenting out line Lines { lines: 140..=140 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/allocation_layer/AllocationBranchBetreeRefinement_v.rs"
+verus failed with 28294
+commenting out line Lines { lines: 273..=286 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/allocation_layer/LikesJournal_v.rs"
+verus failed with 28579
+commenting out line Lines { lines: 485..=523 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed with 27731
+commenting out line Lines { lines: 625..=630 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/journal/LinkedJournalRefinement_v.rs"
+verus failed with 28284
+commenting out line Lines { lines: 349..=349 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/allocation_layer/AllocationBranchBetreeRefinement_v.rs"
+verus failed with 27799
+commenting out line Lines { lines: 726..=736 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/LinkedBetreeRefinement_v.rs"
+verus failed with 27717
+commenting out line Lines { lines: 1615..=1619 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/allocation_layer/LikesBetree_v.rs"
+verus failed with 28490
+commenting out line Lines { lines: 570..=570 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/PivotBranchRefinement_v.rs"
+verus failed with 28601
+commenting out line Lines { lines: 543..=543 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/betree/FilteredBetreeRefinement_v.rs"
+verus failed with 29894
+commenting out line Lines { lines: 1263..=1280 } in "../../../../../experiments/broadcast-from-main/verified-betrfs/Splinter/src/allocation_layer/AllocationBranchBetree_v.rs"
+verus failed with 28081
+max failure time: 29894 
+original verification time: 31504
+caused by 543-543 in betree/FilteredBetreeRefinement_v.rs

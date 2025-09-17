@@ -1,0 +1,45 @@
+verus succeeded with time: 37968ms
+sampled 20 asserts out of 415
+commenting out line Lines { lines: 387..=387 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/pmem/hamming_v.rs"
+verus failed with 34832
+commenting out line Lines { lines: 224..=224 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/crud_v.rs"
+verus failed with 4626
+commenting out line Lines { lines: 280..=284 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/keys/crud_v.rs"
+verus failed with 35037
+commenting out line Lines { lines: 167..=167 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/lists/slots_v.rs"
+verus failed with 35005
+commenting out line Lines { lines: 161..=161 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/start_v.rs"
+verus failed with 4586
+commenting out line Lines { lines: 190..=202 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/common/table_v.rs"
+verus failed with 35180
+commenting out line Lines { lines: 727..=731 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/keys/crud_v.rs"
+verus failed with 34727
+commenting out line Lines { lines: 165..=176 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/slots_v.rs"
+verus failed with 35291
+commenting out line Lines { lines: 271..=273 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/common/table_v.rs"
+verus failed with 34913
+commenting out line Lines { lines: 727..=728 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/elements_v.rs"
+verus failed with 34912
+commenting out line Lines { lines: 784..=784 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/pmem/pmemutil_v.rs"
+verus failed with 35439
+commenting out line Lines { lines: 527..=527 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/journal/entry_v.rs"
+verus failed with 35151
+commenting out line Lines { lines: 340..=341 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/journal/start_v.rs"
+verus failed with 34985
+commenting out line Lines { lines: 137..=137 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/start_v.rs"
+verus failed with 4595
+commenting out line Lines { lines: 590..=596 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/journal/entry_v.rs"
+verus failed with 35371
+commenting out line Lines { lines: 539..=540 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/journal/commit_v.rs"
+verus failed with 34924
+commenting out line Lines { lines: 65..=67 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/kv2/slots_v.rs"
+verus failed with 34746
+commenting out line Lines { lines: 97..=99 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/pmem/pmemutil_v.rs"
+verus failed with 35211
+commenting out line Lines { lines: 332..=332 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/pmem/pmem_async_equiv_v.rs"
+verus failed with 34426
+commenting out line Lines { lines: 50..=50 } in "../../../../../experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/pmem/pmemutil_v.rs"
+verus failed with 35792
+max failure time: 35792 
+original verification time: 37968
+caused by 50-50 in pmem/pmemutil_v.rs

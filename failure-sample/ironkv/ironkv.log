@@ -1,0 +1,45 @@
+verus succeeded with time: 9262ms
+sampled 20 asserts out of 245
+commenting out line Lines { lines: 746..=746 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/marshal_v.rs"
+verus failed with 8188
+commenting out line Lines { lines: 1300..=1300 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/delegation_map_v.rs"
+verus failed with 7025
+commenting out line Lines { lines: 266..=266 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/marshal_ironsht_specific_v.rs"
+verus failed with 8318
+commenting out line Lines { lines: 1825..=1825 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/host_impl_v.rs"
+verus failed with 8107
+commenting out line Lines { lines: 580..=580 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/marshal_v.rs"
+verus failed with 8193
+commenting out line Lines { lines: 1670..=1670 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/delegation_map_v.rs"
+verus failed with 8769
+commenting out line Lines { lines: 721..=752 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/delegation_map_v.rs"
+verus failed with 7044
+commenting out line Lines { lines: 252..=252 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/verus_extra/seq_lib_v.rs"
+verus failed with 8179
+commenting out line Lines { lines: 1556..=1556 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/delegation_map_v.rs"
+verus failed with 9658
+commenting out line Lines { lines: 491..=491 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/host_impl_v.rs"
+verus failed with 8200
+commenting out line Lines { lines: 1593..=1593 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/delegation_map_v.rs"
+verus failed with 9059
+commenting out line Lines { lines: 906..=906 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/marshal_v.rs"
+verus failed with 8030
+commenting out line Lines { lines: 625..=625 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/delegation_map_v.rs"
+verus failed with 7107
+commenting out line Lines { lines: 192..=192 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/single_delivery_state_v.rs"
+verus failed with 8134
+commenting out line Lines { lines: 663..=663 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/marshal_v.rs"
+verus failed with 8239
+commenting out line Lines { lines: 964..=968 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/marshal_v.rs"
+verus failed with 8268
+commenting out line Lines { lines: 166..=166 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/verus_extra/seq_lib_v.rs"
+verus failed with 8104
+commenting out line Lines { lines: 668..=682 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/marshal_v.rs"
+verus failed with 8314
+commenting out line Lines { lines: 1636..=1636 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/delegation_map_v.rs"
+verus failed with 9096
+commenting out line Lines { lines: 173..=176 } in "../../../../../experiments/broadcast-from-main/verified-ironkv/ironsht/src/marshal_v.rs"
+verus failed with 8116
+max failure time: 9658 
+original verification time: 9262
+caused by 1556-1556 in delegation_map_v.rs

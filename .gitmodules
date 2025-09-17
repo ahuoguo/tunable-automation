@@ -1,0 +1,84 @@
+[submodule "experiments/original/verified-ironkv"]
+	path = experiments/original/verified-ironkv
+	branch = main
+	url = https://github.com/ahuoguo/verified-ironkv.git
+[submodule "experiments/original/verified-storage"]
+	path = experiments/original/verified-storage
+	branch = main
+	url = https://github.com/ahuoguo/verified-storage.git
+[submodule "experiments/original/anvil"]
+	path = experiments/original/anvil
+	branch = main
+	url = https://github.com/ahuoguo/anvil.git
+[submodule "experiments/original/verified-betrfs"]
+	path = experiments/original/verified-betrfs
+	branch = main
+	url = https://github.com/ahuoguo/verified-betrfs.git
+[submodule "verus/minimizer"]
+	path = verus/minimizer
+	url = https://github.com/principled-systems/verus.git
+	branch = minimizer
+[submodule "verus/minimizer-capybara"]
+	path = verus/minimizer-capybara
+	url = https://github.com/principled-systems/verus.git
+	branch = minimizer-verified-storage
+[submodule "verus/minimizer-anvil"]
+	path = verus/minimizer-anvil
+	url = https://github.com/principled-systems/verus.git
+	branch = minimizer-anvil
+[submodule "experiments/minimized/verified-storage"]
+	path = experiments/minimized/verified-storage
+	url = https://github.com/ahuoguo/verified-storage.git
+	branch = min
+[submodule "experiments/minimized/verified-betrfs"]
+	path = experiments/minimized/verified-betrfs
+	url = https://github.com/ahuoguo/verified-betrfs.git
+	branch = min
+[submodule "experiments/minimized/verified-ironkv"]
+	path = experiments/minimized/verified-ironkv
+	url = https://github.com/ahuoguo/verified-ironkv.git
+	branch = min
+[submodule "experiments/broadcast-from-main/verified-ironkv"]
+	path = experiments/broadcast-from-main/verified-ironkv
+	url = https://github.com/ahuoguo/verified-ironkv.git
+	branch = brd-from-main
+[submodule "experiments/minimized/anvil"]
+	path = experiments/minimized/anvil
+	url = https://github.com/ahuoguo/anvil.git
+	branch = min-0709
+[submodule "experiments/broadcast-from-main/verified-storage"]
+	path = experiments/broadcast-from-main/verified-storage
+	url = https://github.com/ahuoguo/verified-storage.git
+	branch = brd-from-main
+[submodule "verus/verus"]
+	path = verus/verus
+	url = https://github.com/ahuoguo/verus.git
+	branch = tunable-automation
+[submodule "experiments/broadcast-from-main/verified-betrfs"]
+	path = experiments/broadcast-from-main/verified-betrfs
+	url = https://github.com/ahuoguo/verified-betrfs.git
+	branch = brd-from-main-0708
+[submodule "experiments/broadcast-from-main/anvil"]
+	path = experiments/broadcast-from-main/anvil
+	url = https://github.com/ahuoguo/anvil.git
+	branch = brd-from-main
+[submodule "verus/sample-failure"]
+	path = verus/sample-failure
+	url = https://github.com/principled-systems/verus.git
+	branch = sample-failure
+[submodule "verus/sample-failure-anvil"]
+	path = verus/sample-failure-anvil
+	url = https://github.com/principled-systems/verus.git
+	branch = sample-failure-anvil
+[submodule "verus/sample-failure-capybara"]
+	path = verus/sample-failure-capybara
+	url = https://github.com/principled-systems/verus.git
+	branch = sample-failure-capybara
+[submodule "experiments/all-triggers/verified-ironkv"]
+	path = experiments/all-triggers/verified-ironkv
+	url = https://github.com/ahuoguo/verified-ironkv.git
+	branch = all-triggers
+[submodule "experiments/all-triggers/verified-ironkv-min"]
+	path = experiments/all-triggers/verified-ironkv-min
+	url = https://github.com/ahuoguo/verified-ironkv.git
+	branch = min-all-triggers

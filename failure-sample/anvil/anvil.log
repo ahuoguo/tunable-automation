@@ -1,0 +1,46 @@
+verus succeeded with time: 89324ms
+sampled 20 asserts out of 336
+commenting out line Lines { lines: 392..=404 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/compositionality.rs"
+verus failed with 87746
+commenting out line Lines { lines: 176..=237 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/transition_validation.rs"
+verus failed with 86365
+commenting out line Lines { lines: 1867..=1878 } in "../../../../../experiments/broadcast-from-main/anvil/src/temporal_logic/rules.rs"
+verus failed with 87541
+commenting out line Lines { lines: 1392..=1398 } in "../../../../../experiments/broadcast-from-main/anvil/src/temporal_logic/rules.rs"
+verus failed with 86684
+commenting out line Lines { lines: 370..=377 } in "../../../../../experiments/broadcast-from-main/anvil/src/temporal_logic/rules.rs"
+verus failed with 86957
+commenting out line Lines { lines: 328..=328 } in "../../../../../experiments/broadcast-from-main/anvil/src/vstd_ext/seq_lib.rs"
+verus failed with 87719
+commenting out line Lines { lines: 908..=913 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with 88477
+commenting out line Lines { lines: 1614..=1654 } in "../../../../../experiments/broadcast-from-main/anvil/src/temporal_logic/rules.rs"
+verus failed with 87219
+commenting out line Lines { lines: 1415..=1415 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with 86665
+commenting out line Lines { lines: 1203..=1211 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with 86202
+commenting out line Lines { lines: 358..=370 } in "../../../../../experiments/broadcast-from-main/anvil/src/vstd_ext/seq_lib.rs"
+verus failed with 86890
+commenting out line Lines { lines: 140..=142 } in "../../../../../experiments/broadcast-from-main/anvil/src/temporal_logic/rules.rs"
+verus failed with 87074
+commenting out line Lines { lines: 323..=326 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 89024ms
+verus succeeded (this shouldn't happen!), reverting
+commenting out line Lines { lines: 1118..=1125 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with 88789
+commenting out line Lines { lines: 1726..=1734 } in "../../../../../experiments/broadcast-from-main/anvil/src/temporal_logic/rules.rs"
+verus failed with 88057
+commenting out line Lines { lines: 387..=387 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/network_liveness.rs"
+verus failed with 86516
+commenting out line Lines { lines: 226..=231 } in "../../../../../experiments/broadcast-from-main/anvil/src/vstd_ext/seq_lib.rs"
+verus failed with 86697
+commenting out line Lines { lines: 1613..=1655 } in "../../../../../experiments/broadcast-from-main/anvil/src/temporal_logic/rules.rs"
+verus failed with 87441
+commenting out line Lines { lines: 372..=385 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/compositionality.rs"
+verus failed with 87859
+commenting out line Lines { lines: 82..=131 } in "../../../../../experiments/broadcast-from-main/anvil/src/kubernetes_cluster/proof/objects_in_store.rs"
+verus failed with 64709
+max failure time: 88789 
+original verification time: 89324
+caused by 1118-1125 in kubernetes_cluster/proof/controller_runtime_liveness.rs

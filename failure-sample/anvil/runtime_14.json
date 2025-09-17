@@ -1,0 +1,4675 @@
+{
+  "verification-results": {
+    "encountered-error": true,
+    "encountered-vir-error": false,
+    "success": false,
+    "verified": 315,
+    "errors": 1,
+    "is-verifying-entire-crate": true
+  },
+  "times-ms": {
+    "verus-build": {
+      "profile": "release",
+      "version": "0.2025.07.14.228aed7"
+    },
+    "num-threads": 9,
+    "total": 88057,
+    "estimated-cpu-time": 266292,
+    "rust": {
+      "total": 2055,
+      "init-and-types": 1776,
+      "lifetime": 278,
+      "compile": 0
+    },
+    "verification": {
+      "total": 85694,
+      "vir": {
+        "total": 2216,
+        "hir": 673,
+        "import": 111,
+        "rust-to-vir": 665
+      }
+    },
+    "total-verify": 261475,
+    "total-verify-module-times": [
+      {
+        "module": "kubernetes_cluster::proof::objects_in_store",
+        "time": 81828
+      },
+      {
+        "module": "kubernetes_cluster::proof::controller_runtime_liveness",
+        "time": 58581
+      },
+      {
+        "module": "kubernetes_cluster::proof::network",
+        "time": 18483
+      },
+      {
+        "module": "kubernetes_cluster::proof::transition_validation",
+        "time": 17100
+      },
+      {
+        "module": "kubernetes_cluster::proof::controller_runtime_safety",
+        "time": 15352
+      },
+      {
+        "module": "kubernetes_cluster::proof::controller_runtime_safety",
+        "time": 15026
+      },
+      {
+        "module": "kubernetes_cluster::proof::controller_runtime_safety",
+        "time": 14125
+      },
+      {
+        "module": "kubernetes_cluster::proof::req_resp",
+        "time": 13490
+      },
+      {
+        "module": "kubernetes_cluster::proof::garbage_collector",
+        "time": 7537
+      },
+      {
+        "module": "kubernetes_cluster::proof::network_liveness",
+        "time": 4392
+      },
+      {
+        "module": "kubernetes_cluster::proof::objects_in_reconcile",
+        "time": 1759
+      },
+      {
+        "module": "temporal_logic::rules",
+        "time": 1181
+      },
+      {
+        "module": "kubernetes_cluster::proof::failures_liveness",
+        "time": 807
+      },
+      {
+        "module": "kubernetes_cluster::proof::cluster",
+        "time": 796
+      },
+      {
+        "module": "kubernetes_cluster::proof::wf1_helpers",
+        "time": 725
+      },
+      {
+        "module": "kubernetes_cluster::proof::compositionality",
+        "time": 686
+      },
+      {
+        "module": "kubernetes_cluster::proof::retentive_cluster",
+        "time": 671
+      },
+      {
+        "module": "kubernetes_cluster::proof::compositionality::example",
+        "time": 667
+      },
+      {
+        "module": "kubernetes_cluster::spec::cluster",
+        "time": 295
+      },
+      {
+        "module": "kubernetes_cluster::spec::retentive_cluster",
+        "time": 279
+      },
+      {
+        "module": "vstd_ext::seq_lib",
+        "time": 274
+      },
+      {
+        "module": "kubernetes_cluster::proof::stability",
+        "time": 256
+      },
+      {
+        "module": "kubernetes_api_objects::exec::api_method",
+        "time": 231
+      },
+      {
+        "module": "kubernetes_api_objects::spec::stateful_set",
+        "time": 221
+      },
+      {
+        "module": "vstd_ext::vec_lib",
+        "time": 215
+      },
+      {
+        "module": "kubernetes_cluster::spec::api_server::state_machine",
+        "time": 197
+      },
+      {
+        "module": "kubernetes_api_objects::exec::container",
+        "time": 195
+      },
+      {
+        "module": "kubernetes_api_objects::spec::pod",
+        "time": 190
+      },
+      {
+        "module": "kubernetes_api_objects::exec::volume",
+        "time": 181
+      },
+      {
+        "module": "kubernetes_api_objects::exec::object_meta",
+        "time": 180
+      },
+      {
+        "module": "reconciler::exec::io",
+        "time": 178
+      },
+      {
+        "module": "kubernetes_api_objects::exec::service",
+        "time": 178
+      },
+      {
+        "module": "kubernetes_api_objects::spec::service",
+        "time": 161
+      },
+      {
+        "module": "kubernetes_api_objects::spec::role",
+        "time": 153
+      },
+      {
+        "module": "kubernetes_api_objects::spec::daemon_set",
+        "time": 152
+      },
+      {
+        "module": "vstd_ext::set_lib",
+        "time": 151
+      },
+      {
+        "module": "kubernetes_api_objects::spec::role_binding",
+        "time": 134
+      },
+      {
+        "module": "kubernetes_api_objects::spec::persistent_volume_claim",
+        "time": 134
+      },
+      {
+        "module": "kubernetes_api_objects::spec::config_map",
+        "time": 129
+      },
+      {
+        "module": "kubernetes_api_objects::spec::service_account",
+        "time": 126
+      },
+      {
+        "module": "kubernetes_api_objects::spec::secret",
+        "time": 122
+      },
+      {
+        "module": "kubernetes_api_objects::exec::stateful_set",
+        "time": 122
+      },
+      {
+        "module": "kubernetes_api_objects::exec::persistent_volume_claim",
+        "time": 117
+      },
+      {
+        "module": "vstd_ext::string_map",
+        "time": 113
+      },
+      {
+        "module": "kubernetes_api_objects::exec::role",
+        "time": 111
+      },
+      {
+        "module": "kubernetes_api_objects::exec::pod",
+        "time": 108
+      },
+      {
+        "module": "state_machine::action",
+        "time": 102
+      },
+      {
+        "module": "reconciler::exec::reconciler",
+        "time": 99
+      },
+      {
+        "module": "vstd_ext::map_lib",
+        "time": 97
+      },
+      {
+        "module": "kubernetes_api_objects::exec::daemon_set",
+        "time": 94
+      },
+      {
+        "module": "kubernetes_cluster::spec::controller::state_machine",
+        "time": 94
+      },
+      {
+        "module": "kubernetes_cluster::spec::message",
+        "time": 94
+      },
+      {
+        "module": "vstd_ext::multiset_lib",
+        "time": 93
+      },
+      {
+        "module": "kubernetes_cluster::spec::pod_monkey::state_machine",
+        "time": 92
+      },
+      {
+        "module": "kubernetes_api_objects::exec::dynamic",
+        "time": 91
+      },
+      {
+        "module": "kubernetes_api_objects::exec::role_binding",
+        "time": 82
+      },
+      {
+        "module": "kubernetes_api_objects::spec::container",
+        "time": 81
+      },
+      {
+        "module": "kubernetes_api_objects::spec::resource",
+        "time": 79
+      },
+      {
+        "module": "kubernetes_api_objects::spec::pod_template_spec",
+        "time": 75
+      },
+      {
+        "module": "kubernetes_cluster::spec::external::state_machine",
+        "time": 74
+      },
+      {
+        "module": "kubernetes_cluster::spec::builtin_controllers::state_machine",
+        "time": 73
+      },
+      {
+        "module": "kubernetes_cluster::spec::install_helpers",
+        "time": 73
+      },
+      {
+        "module": "kubernetes_cluster::spec::builtin_controllers::garbage_collector",
+        "time": 73
+      },
+      {
+        "module": "kubernetes_api_objects::spec::volume",
+        "time": 71
+      },
+      {
+        "module": "reconciler::exec::resource_builder",
+        "time": 71
+      },
+      {
+        "module": "kubernetes_api_objects::exec::service_account",
+        "time": 71
+      },
+      {
+        "module": "kubernetes_cluster::spec::esr",
+        "time": 70
+      },
+      {
+        "module": "kubernetes_api_objects::exec::secret",
+        "time": 69
+      },
+      {
+        "module": "kubernetes_api_objects::exec::resource_requirements",
+        "time": 67
+      },
+      {
+        "module": "kubernetes_cluster::spec::controller::types",
+        "time": 66
+      },
+      {
+        "module": "kubernetes_api_objects::exec::config_map",
+        "time": 65
+      },
+      {
+        "module": "kubernetes_api_objects::spec::object_meta",
+        "time": 63
+      },
+      {
+        "module": "reconciler::spec::io",
+        "time": 62
+      },
+      {
+        "module": "kubernetes_api_objects::spec::volume_resource_requirements",
+        "time": 61
+      },
+      {
+        "module": "kubernetes_api_objects::exec::preconditions",
+        "time": 61
+      },
+      {
+        "module": "kubernetes_cluster::spec::network::state_machine",
+        "time": 61
+      },
+      {
+        "module": "kubernetes_cluster::spec::builtin_controllers::types",
+        "time": 60
+      },
+      {
+        "module": "kubernetes_api_objects::exec::pod_template_spec",
+        "time": 60
+      },
+      {
+        "module": "kubernetes_api_objects::spec::api_method",
+        "time": 59
+      },
+      {
+        "module": "kubernetes_api_objects::error",
+        "time": 55
+      },
+      {
+        "module": "reconciler::spec::reconciler",
+        "time": 50
+      },
+      {
+        "module": "kubernetes_api_objects::spec::dynamic",
+        "time": 50
+      },
+      {
+        "module": "reconciler::spec::resource_builder",
+        "time": 48
+      },
+      {
+        "module": "kubernetes_api_objects::exec::common",
+        "time": 47
+      },
+      {
+        "module": "kubernetes_api_objects::exec::volume_resource_requirements",
+        "time": 46
+      },
+      {
+        "module": "temporal_logic::defs",
+        "time": 44
+      },
+      {
+        "module": "kubernetes_api_objects::spec::label_selector",
+        "time": 44
+      },
+      {
+        "module": "vstd_ext::string_view",
+        "time": 43
+      },
+      {
+        "module": "state_machine::state_machine",
+        "time": 42
+      },
+      {
+        "module": "kubernetes_api_objects::spec::resource_requirements",
+        "time": 42
+      },
+      {
+        "module": "kubernetes_api_objects::spec::common",
+        "time": 41
+      },
+      {
+        "module": "vstd_ext::option_lib",
+        "time": 40
+      },
+      {
+        "module": "kubernetes_api_objects::spec::owner_reference",
+        "time": 39
+      },
+      {
+        "module": "kubernetes_api_objects::spec::preconditions",
+        "time": 36
+      },
+      {
+        "module": "kubernetes_api_objects::exec::label_selector",
+        "time": 35
+      },
+      {
+        "module": "kubernetes_api_objects::exec::toleration",
+        "time": 34
+      },
+      {
+        "module": "kubernetes_api_objects::exec::owner_reference",
+        "time": 32
+      },
+      {
+        "module": "kubernetes_api_objects::exec::api_resource",
+        "time": 22
+      },
+      {
+        "module": "kubernetes_api_objects::exec::affinity",
+        "time": 21
+      }
+    ],
+    "air": {
+      "total": 7059,
+      "module-times": [
+        {
+          "module": "kubernetes_cluster::proof::controller_runtime_liveness",
+          "time": 499
+        },
+        {
+          "module": "kubernetes_cluster::proof::controller_runtime_safety",
+          "time": 384
+        },
+        {
+          "module": "kubernetes_cluster::proof::network",
+          "time": 346
+        },
+        {
+          "module": "kubernetes_cluster::proof::objects_in_store",
+          "time": 317
+        },
+        {
+          "module": "kubernetes_cluster::proof::req_resp",
+          "time": 305
+        },
+        {
+          "module": "kubernetes_cluster::proof::compositionality::example",
+          "time": 283
+        },
+        {
+          "module": "kubernetes_cluster::proof::network_liveness",
+          "time": 277
+        },
+        {
+          "module": "kubernetes_cluster::proof::transition_validation",
+          "time": 265
+        },
+        {
+          "module": "kubernetes_cluster::proof::garbage_collector",
+          "time": 260
+        },
+        {
+          "module": "kubernetes_cluster::proof::compositionality",
+          "time": 255
+        },
+        {
+          "module": "kubernetes_cluster::proof::controller_runtime_safety",
+          "time": 252
+        },
+        {
+          "module": "kubernetes_cluster::proof::objects_in_reconcile",
+          "time": 250
+        },
+        {
+          "module": "kubernetes_cluster::proof::failures_liveness",
+          "time": 245
+        },
+        {
+          "module": "kubernetes_cluster::proof::cluster",
+          "time": 240
+        },
+        {
+          "module": "kubernetes_cluster::proof::retentive_cluster",
+          "time": 230
+        },
+        {
+          "module": "kubernetes_cluster::proof::controller_runtime_safety",
+          "time": 219
+        },
+        {
+          "module": "kubernetes_cluster::proof::wf1_helpers",
+          "time": 214
+        },
+        {
+          "module": "temporal_logic::rules",
+          "time": 167
+        },
+        {
+          "module": "kubernetes_cluster::proof::stability",
+          "time": 98
+        },
+        {
+          "module": "kubernetes_api_objects::exec::api_method",
+          "time": 92
+        },
+        {
+          "module": "kubernetes_api_objects::spec::stateful_set",
+          "time": 85
+        },
+        {
+          "module": "kubernetes_api_objects::exec::volume",
+          "time": 81
+        },
+        {
+          "module": "kubernetes_api_objects::spec::pod",
+          "time": 80
+        },
+        {
+          "module": "reconciler::exec::io",
+          "time": 74
+        },
+        {
+          "module": "kubernetes_api_objects::exec::container",
+          "time": 72
+        },
+        {
+          "module": "kubernetes_api_objects::exec::service",
+          "time": 68
+        },
+        {
+          "module": "kubernetes_cluster::spec::cluster",
+          "time": 67
+        },
+        {
+          "module": "kubernetes_cluster::spec::retentive_cluster",
+          "time": 66
+        },
+        {
+          "module": "kubernetes_api_objects::spec::daemon_set",
+          "time": 62
+        },
+        {
+          "module": "kubernetes_api_objects::exec::object_meta",
+          "time": 58
+        },
+        {
+          "module": "vstd_ext::vec_lib",
+          "time": 57
+        },
+        {
+          "module": "kubernetes_api_objects::spec::service",
+          "time": 55
+        },
+        {
+          "module": "vstd_ext::seq_lib",
+          "time": 48
+        },
+        {
+          "module": "kubernetes_api_objects::spec::role_binding",
+          "time": 45
+        },
+        {
+          "module": "kubernetes_api_objects::spec::role",
+          "time": 44
+        },
+        {
+          "module": "kubernetes_cluster::spec::api_server::state_machine",
+          "time": 41
+        },
+        {
+          "module": "kubernetes_api_objects::spec::persistent_volume_claim",
+          "time": 41
+        },
+        {
+          "module": "kubernetes_api_objects::spec::secret",
+          "time": 39
+        },
+        {
+          "module": "vstd_ext::string_map",
+          "time": 39
+        },
+        {
+          "module": "kubernetes_api_objects::spec::service_account",
+          "time": 38
+        },
+        {
+          "module": "kubernetes_api_objects::spec::config_map",
+          "time": 38
+        },
+        {
+          "module": "vstd_ext::set_lib",
+          "time": 35
+        },
+        {
+          "module": "state_machine::action",
+          "time": 33
+        },
+        {
+          "module": "vstd_ext::map_lib",
+          "time": 30
+        },
+        {
+          "module": "vstd_ext::multiset_lib",
+          "time": 27
+        },
+        {
+          "module": "kubernetes_api_objects::exec::stateful_set",
+          "time": 25
+        },
+        {
+          "module": "kubernetes_api_objects::exec::pod",
+          "time": 24
+        },
+        {
+          "module": "kubernetes_api_objects::error",
+          "time": 24
+        },
+        {
+          "module": "kubernetes_api_objects::exec::role",
+          "time": 20
+        },
+        {
+          "module": "kubernetes_api_objects::exec::daemon_set",
+          "time": 20
+        },
+        {
+          "module": "kubernetes_api_objects::exec::persistent_volume_claim",
+          "time": 20
+        },
+        {
+          "module": "reconciler::exec::reconciler",
+          "time": 18
+        },
+        {
+          "module": "kubernetes_cluster::spec::pod_monkey::state_machine",
+          "time": 18
+        },
+        {
+          "module": "kubernetes_cluster::spec::message",
+          "time": 18
+        },
+        {
+          "module": "kubernetes_cluster::spec::controller::state_machine",
+          "time": 16
+        },
+        {
+          "module": "kubernetes_api_objects::exec::role_binding",
+          "time": 15
+        },
+        {
+          "module": "kubernetes_api_objects::spec::container",
+          "time": 14
+        },
+        {
+          "module": "kubernetes_api_objects::spec::pod_template_spec",
+          "time": 14
+        },
+        {
+          "module": "kubernetes_api_objects::exec::dynamic",
+          "time": 13
+        },
+        {
+          "module": "reconciler::exec::resource_builder",
+          "time": 12
+        },
+        {
+          "module": "kubernetes_api_objects::exec::config_map",
+          "time": 12
+        },
+        {
+          "module": "kubernetes_cluster::spec::network::state_machine",
+          "time": 12
+        },
+        {
+          "module": "kubernetes_cluster::spec::install_helpers",
+          "time": 12
+        },
+        {
+          "module": "kubernetes_cluster::spec::esr",
+          "time": 11
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::state_machine",
+          "time": 11
+        },
+        {
+          "module": "kubernetes_api_objects::exec::secret",
+          "time": 11
+        },
+        {
+          "module": "kubernetes_api_objects::exec::pod_template_spec",
+          "time": 11
+        },
+        {
+          "module": "kubernetes_cluster::spec::external::state_machine",
+          "time": 11
+        },
+        {
+          "module": "kubernetes_cluster::spec::controller::types",
+          "time": 10
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::garbage_collector",
+          "time": 10
+        },
+        {
+          "module": "kubernetes_api_objects::exec::service_account",
+          "time": 9
+        },
+        {
+          "module": "kubernetes_api_objects::exec::preconditions",
+          "time": 9
+        },
+        {
+          "module": "reconciler::spec::io",
+          "time": 8
+        },
+        {
+          "module": "kubernetes_api_objects::spec::volume",
+          "time": 8
+        },
+        {
+          "module": "kubernetes_api_objects::spec::api_method",
+          "time": 8
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::types",
+          "time": 8
+        },
+        {
+          "module": "kubernetes_api_objects::spec::resource",
+          "time": 7
+        },
+        {
+          "module": "reconciler::spec::reconciler",
+          "time": 7
+        },
+        {
+          "module": "kubernetes_api_objects::spec::object_meta",
+          "time": 6
+        },
+        {
+          "module": "kubernetes_api_objects::exec::common",
+          "time": 5
+        },
+        {
+          "module": "reconciler::spec::resource_builder",
+          "time": 5
+        },
+        {
+          "module": "kubernetes_api_objects::spec::dynamic",
+          "time": 4
+        },
+        {
+          "module": "state_machine::state_machine",
+          "time": 3
+        },
+        {
+          "module": "vstd_ext::option_lib",
+          "time": 3
+        },
+        {
+          "module": "temporal_logic::defs",
+          "time": 3
+        },
+        {
+          "module": "kubernetes_api_objects::exec::resource_requirements",
+          "time": 3
+        },
+        {
+          "module": "vstd_ext::string_view",
+          "time": 3
+        },
+        {
+          "module": "kubernetes_api_objects::spec::preconditions",
+          "time": 2
+        },
+        {
+          "module": "kubernetes_api_objects::exec::volume_resource_requirements",
+          "time": 2
+        },
+        {
+          "module": "kubernetes_api_objects::exec::label_selector",
+          "time": 2
+        },
+        {
+          "module": "kubernetes_api_objects::spec::label_selector",
+          "time": 2
+        },
+        {
+          "module": "kubernetes_api_objects::spec::common",
+          "time": 1
+        },
+        {
+          "module": "kubernetes_api_objects::spec::volume_resource_requirements",
+          "time": 1
+        },
+        {
+          "module": "kubernetes_api_objects::spec::owner_reference",
+          "time": 1
+        },
+        {
+          "module": "kubernetes_api_objects::exec::owner_reference",
+          "time": 1
+        },
+        {
+          "module": "kubernetes_api_objects::exec::affinity",
+          "time": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::api_resource",
+          "time": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::resource_requirements",
+          "time": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::toleration",
+          "time": 0
+        }
+      ]
+    },
+    "smt": {
+      "total": 243227,
+      "smt-init": 1728,
+      "smt-init-module-times": [
+        {
+          "module": "kubernetes_cluster::proof::controller_runtime_safety",
+          "time": 260,
+          "time-micros": 260721,
+          "rlimit-count": 17889478
+        },
+        {
+          "module": "kubernetes_cluster::proof::controller_runtime_liveness",
+          "time": 119,
+          "time-micros": 119577,
+          "rlimit-count": 63955019
+        },
+        {
+          "module": "kubernetes_cluster::proof::req_resp",
+          "time": 81,
+          "time-micros": 81048,
+          "rlimit-count": 12442320
+        },
+        {
+          "module": "kubernetes_cluster::proof::network",
+          "time": 79,
+          "time-micros": 79606,
+          "rlimit-count": 23721287
+        },
+        {
+          "module": "kubernetes_cluster::proof::network_liveness",
+          "time": 78,
+          "time-micros": 78195,
+          "rlimit-count": 5206186
+        },
+        {
+          "module": "kubernetes_cluster::proof::transition_validation",
+          "time": 75,
+          "time-micros": 75937,
+          "rlimit-count": 16191321
+        },
+        {
+          "module": "temporal_logic::rules",
+          "time": 75,
+          "time-micros": 75027,
+          "rlimit-count": 2200103
+        },
+        {
+          "module": "kubernetes_cluster::proof::compositionality::example",
+          "time": 69,
+          "time-micros": 69770,
+          "rlimit-count": 47521
+        },
+        {
+          "module": "kubernetes_cluster::proof::garbage_collector",
+          "time": 69,
+          "time-micros": 69358,
+          "rlimit-count": 2599112
+        },
+        {
+          "module": "kubernetes_cluster::proof::objects_in_store",
+          "time": 67,
+          "time-micros": 67779,
+          "rlimit-count": 88612861
+        },
+        {
+          "module": "kubernetes_cluster::proof::compositionality",
+          "time": 65,
+          "time-micros": 65118,
+          "rlimit-count": 606461
+        },
+        {
+          "module": "kubernetes_cluster::proof::retentive_cluster",
+          "time": 64,
+          "time-micros": 64615,
+          "rlimit-count": 633688
+        },
+        {
+          "module": "kubernetes_cluster::proof::objects_in_reconcile",
+          "time": 62,
+          "time-micros": 62415,
+          "rlimit-count": 1088039
+        },
+        {
+          "module": "kubernetes_cluster::proof::failures_liveness",
+          "time": 61,
+          "time-micros": 61136,
+          "rlimit-count": 729556
+        },
+        {
+          "module": "kubernetes_cluster::proof::wf1_helpers",
+          "time": 60,
+          "time-micros": 60328,
+          "rlimit-count": 789903
+        },
+        {
+          "module": "kubernetes_cluster::proof::cluster",
+          "time": 58,
+          "time-micros": 58491,
+          "rlimit-count": 555898
+        },
+        {
+          "module": "kubernetes_api_objects::exec::container",
+          "time": 29,
+          "time-micros": 29608,
+          "rlimit-count": 140063
+        },
+        {
+          "module": "kubernetes_api_objects::exec::api_method",
+          "time": 27,
+          "time-micros": 27341,
+          "rlimit-count": 170789
+        },
+        {
+          "module": "kubernetes_api_objects::spec::pod",
+          "time": 26,
+          "time-micros": 26715,
+          "rlimit-count": 115646
+        },
+        {
+          "module": "kubernetes_cluster::proof::stability",
+          "time": 25,
+          "time-micros": 25792,
+          "rlimit-count": 237245
+        },
+        {
+          "module": "kubernetes_api_objects::exec::volume",
+          "time": 22,
+          "time-micros": 22903,
+          "rlimit-count": 9068
+        },
+        {
+          "module": "vstd_ext::vec_lib",
+          "time": 22,
+          "time-micros": 22587,
+          "rlimit-count": 248134
+        },
+        {
+          "module": "vstd_ext::seq_lib",
+          "time": 19,
+          "time-micros": 19111,
+          "rlimit-count": 390635
+        },
+        {
+          "module": "reconciler::exec::io",
+          "time": 18,
+          "time-micros": 18812,
+          "rlimit-count": 146328
+        },
+        {
+          "module": "kubernetes_api_objects::spec::stateful_set",
+          "time": 18,
+          "time-micros": 18142,
+          "rlimit-count": 147376
+        },
+        {
+          "module": "kubernetes_api_objects::exec::service",
+          "time": 15,
+          "time-micros": 15705,
+          "rlimit-count": 10783
+        },
+        {
+          "module": "kubernetes_api_objects::spec::service_account",
+          "time": 15,
+          "time-micros": 15342,
+          "rlimit-count": 68262
+        },
+        {
+          "module": "kubernetes_api_objects::exec::object_meta",
+          "time": 15,
+          "time-micros": 15330,
+          "rlimit-count": 8546
+        },
+        {
+          "module": "kubernetes_api_objects::spec::daemon_set",
+          "time": 14,
+          "time-micros": 14973,
+          "rlimit-count": 119441
+        },
+        {
+          "module": "kubernetes_api_objects::spec::service",
+          "time": 13,
+          "time-micros": 13782,
+          "rlimit-count": 73108
+        },
+        {
+          "module": "kubernetes_api_objects::spec::role_binding",
+          "time": 11,
+          "time-micros": 11822,
+          "rlimit-count": 88856
+        },
+        {
+          "module": "vstd_ext::string_map",
+          "time": 10,
+          "time-micros": 10800,
+          "rlimit-count": 6702
+        },
+        {
+          "module": "vstd_ext::set_lib",
+          "time": 9,
+          "time-micros": 9939,
+          "rlimit-count": 92796
+        },
+        {
+          "module": "kubernetes_api_objects::spec::role",
+          "time": 9,
+          "time-micros": 9785,
+          "rlimit-count": 70209
+        },
+        {
+          "module": "kubernetes_api_objects::spec::persistent_volume_claim",
+          "time": 9,
+          "time-micros": 9354,
+          "rlimit-count": 71764
+        },
+        {
+          "module": "kubernetes_api_objects::spec::config_map",
+          "time": 9,
+          "time-micros": 9113,
+          "rlimit-count": 68190
+        },
+        {
+          "module": "kubernetes_api_objects::spec::secret",
+          "time": 8,
+          "time-micros": 8882,
+          "rlimit-count": 68252
+        },
+        {
+          "module": "state_machine::action",
+          "time": 7,
+          "time-micros": 7023,
+          "rlimit-count": 4109
+        },
+        {
+          "module": "vstd_ext::map_lib",
+          "time": 7,
+          "time-micros": 7003,
+          "rlimit-count": 44237
+        },
+        {
+          "module": "vstd_ext::multiset_lib",
+          "time": 6,
+          "time-micros": 6637,
+          "rlimit-count": 34354
+        },
+        {
+          "module": "kubernetes_api_objects::error",
+          "time": 3,
+          "time-micros": 3190,
+          "rlimit-count": 1600
+        },
+        {
+          "module": "vstd_ext::string_view",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::api_method",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::message",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::common",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "reconciler::exec::reconciler",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::toleration",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::owner_reference",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::install_helpers",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::label_selector",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::secret",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "vstd_ext::option_lib",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::persistent_volume_claim",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::service_account",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::dynamic",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::config_map",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::volume_resource_requirements",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::resource_requirements",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::external::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::resource",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::controller::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::preconditions",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::object_meta",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::owner_reference",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::controller::types",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "reconciler::spec::reconciler",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::dynamic",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::pod_template_spec",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::retentive_cluster",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::role",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::pod",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::pod_monkey::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::volume",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::role_binding",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::api_server::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::label_selector",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::preconditions",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::pod_template_spec",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::daemon_set",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::common",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "temporal_logic::defs",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::stateful_set",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "reconciler::spec::io",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::affinity",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::network::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::types",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::volume_resource_requirements",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::esr",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "reconciler::spec::resource_builder",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::spec::container",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "reconciler::exec::resource_builder",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::cluster",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::resource_requirements",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::garbage_collector",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "kubernetes_api_objects::exec::api_resource",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        },
+        {
+          "module": "state_machine::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0
+        }
+      ],
+      "smt-run": 241499,
+      "smt-run-module-times": [
+        {
+          "module": "kubernetes_cluster::proof::objects_in_store",
+          "time": 81129,
+          "time-micros": 81129568,
+          "rlimit-count": 88612861,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_etcd_is_finite",
+              "mode:": "proof",
+              "time": 225,
+              "time-micros": 225172,
+              "rlimit-count": 1187180,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_builtin_object_in_etcd_is_well_formed",
+              "mode:": "proof",
+              "time": 44463,
+              "time-micros": 44463417,
+              "rlimit-count": 2636253,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_object_in_etcd_is_weakly_well_formed",
+              "mode:": "proof",
+              "time": 33267,
+              "time-micros": 33267915,
+              "rlimit-count": 46814,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_object_in_etcd_is_well_formed",
+              "mode:": "proof",
+              "time": 32,
+              "time-micros": 32346,
+              "rlimit-count": 41716540,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_custom_object_in_etcd_is_well_formed",
+              "mode:": "proof",
+              "time": 2171,
+              "time-micros": 2171842,
+              "rlimit-count": 42975484,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_object_in_etcd_has_at_most_one_controller_owner",
+              "mode:": "proof",
+              "time": 968,
+              "time-micros": 968874,
+              "rlimit-count": 50590,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::controller_runtime_liveness",
+          "time": 57387,
+          "time-micros": 57387199,
+          "rlimit-count": 63955019,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_from_in_flight_resp_matches_pending_req_at_some_state_to_next_state",
+              "mode:": "proof",
+              "time": 13771,
+              "time-micros": 13771128,
+              "rlimit-count": 1226699,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_always_no_reconcile_before_reconcile_id_is_ongoing",
+              "mode:": "proof",
+              "time": 241,
+              "time-micros": 241716,
+              "rlimit-count": 61661,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_from_pending_req_in_flight_at_some_state_to_next_state",
+              "mode:": "proof",
+              "time": 46,
+              "time-micros": 46435,
+              "rlimit-count": 29706068,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_some_reconcile_id_leads_to_always_every_ongoing_reconcile_satisfies_with_reconcile_id",
+              "mode:": "proof",
+              "time": 273,
+              "time-micros": 273595,
+              "rlimit-count": 385258,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_from_some_state_to_arbitrary_next_state_to_reconcile_idle",
+              "mode:": "proof",
+              "time": 27,
+              "time-micros": 27367,
+              "rlimit-count": 114355,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_always_every_ongoing_reconcile_satisfies",
+              "mode:": "proof",
+              "time": 26,
+              "time-micros": 26738,
+              "rlimit-count": 474742,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_eventually_no_reconcile_before_reconcile_id_is_ongoing",
+              "mode:": "proof",
+              "time": 28,
+              "time-micros": 28743,
+              "rlimit-count": 119419,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_from_pending_req_in_flight_at_some_state_to_in_flight_resp_matches_pending_req_at_some_state",
+              "mode:": "proof",
+              "time": 33610,
+              "time-micros": 33610256,
+              "rlimit-count": 18232171,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_reconcile_error_leads_to_reconcile_idle",
+              "mode:": "proof",
+              "time": 360,
+              "time-micros": 360878,
+              "rlimit-count": 1088279,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_always_the_object_in_reconcile_has_spec_and_uid_as",
+              "mode:": "proof",
+              "time": 3406,
+              "time-micros": 3406693,
+              "rlimit-count": 1754829,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_reconcile_done_leads_to_reconcile_idle",
+              "mode:": "proof",
+              "time": 356,
+              "time-micros": 356114,
+              "rlimit-count": 52487,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_from_some_state_to_arbitrary_next_state",
+              "mode:": "proof",
+              "time": 60,
+              "time-micros": 60776,
+              "rlimit-count": 62337,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_from_init_state_to_next_state_to_reconcile_idle",
+              "mode:": "proof",
+              "time": 2130,
+              "time-micros": 2130914,
+              "rlimit-count": 63583,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_always_the_object_in_schedule_has_spec_and_uid_as",
+              "mode:": "proof",
+              "time": 1173,
+              "time-micros": 1173973,
+              "rlimit-count": 3276580,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_reconcile_idle_and_scheduled_leads_to_reconcile_init",
+              "mode:": "proof",
+              "time": 801,
+              "time-micros": 801225,
+              "rlimit-count": 583225,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_ongoing_reconciles_num_decreases",
+              "mode:": "proof",
+              "time": 1005,
+              "time-micros": 1005397,
+              "rlimit-count": 5178590,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_ongoing_reconciles_num_is_n_leads_to_no_ongoing_reconciles",
+              "mode:": "proof",
+              "time": 65,
+              "time-micros": 65243,
+              "rlimit-count": 1574736,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::controller_runtime_safety",
+          "time": 42298,
+          "time-micros": 42298810,
+          "rlimit-count": 17889478,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_always_pending_req_in_flight_xor_resp_in_flight_if_has_pending_req_msg",
+              "mode:": "proof",
+              "time": 13443,
+              "time-micros": 13443138,
+              "rlimit-count": 47526,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_cr_objects_in_schedule_satisfy_state_validation",
+              "mode:": "proof",
+              "time": 367,
+              "time-micros": 367114,
+              "rlimit-count": 1204378,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_has_reconcile_id_counter_no_smaller_than",
+              "mode:": "proof",
+              "time": 155,
+              "time-micros": 155763,
+              "rlimit-count": 52264,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_ongoing_reconcile_has_unique_id",
+              "mode:": "proof",
+              "time": 196,
+              "time-micros": 196852,
+              "rlimit-count": 322814,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_triggering_cr_has_lower_uid_than_uid_counter",
+              "mode:": "proof",
+              "time": 1596,
+              "time-micros": 1596232,
+              "rlimit-count": 2695456,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_scheduled_cr_has_lower_uid_than_uid_counter",
+              "mode:": "proof",
+              "time": 2487,
+              "time-micros": 2487305,
+              "rlimit-count": 758239,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_always_every_msg_from_key_is_pending_req_msg_of",
+              "mode:": "proof",
+              "time": 737,
+              "time-micros": 737534,
+              "rlimit-count": 321872,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_cr_objects_in_reconcile_satisfy_state_validation",
+              "mode:": "proof",
+              "time": 641,
+              "time-micros": 641887,
+              "rlimit-count": 542494,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_pending_req_in_flight_or_resp_in_flight_at_reconcile_state",
+              "mode:": "proof",
+              "time": 6430,
+              "time-micros": 6430685,
+              "rlimit-count": 1495585,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_ongoing_reconciles_is_finite",
+              "mode:": "proof",
+              "time": 182,
+              "time-micros": 182827,
+              "rlimit-count": 259669,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_no_pending_req_msg_at_reconcile_state",
+              "mode:": "proof",
+              "time": 854,
+              "time-micros": 854353,
+              "rlimit-count": 8415768,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_cr_objects_in_schedule_have_correct_kind",
+              "mode:": "proof",
+              "time": 160,
+              "time-micros": 160884,
+              "rlimit-count": 273910,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_cr_states_are_unmarshallable",
+              "mode:": "proof",
+              "time": 176,
+              "time-micros": 176218,
+              "rlimit-count": 897216,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_cr_objects_in_reconcile_have_correct_kind",
+              "mode:": "proof",
+              "time": 170,
+              "time-micros": 170239,
+              "rlimit-count": 258800,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_ongoing_reconcile_has_lower_id_than_allocator",
+              "mode:": "proof",
+              "time": 203,
+              "time-micros": 203433,
+              "rlimit-count": 296688,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_cr_objects_in_etcd_satisfy_state_validation",
+              "mode:": "proof",
+              "time": 14494,
+              "time-micros": 14494340,
+              "rlimit-count": 46799,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::network",
+          "time": 17691,
+          "time-micros": 17691855,
+          "rlimit-count": 23721287,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_in_flight_req_msg_has_different_id_from_pending_req_msg_of_every_ongoing_reconcile",
+              "mode:": "proof",
+              "time": 27,
+              "time-micros": 27043,
+              "rlimit-count": 4105645,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_has_rpc_id_counter_no_smaller_than",
+              "mode:": "proof",
+              "time": 186,
+              "time-micros": 186941,
+              "rlimit-count": 47309,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_in_flight_req_msg_has_different_id_from_pending_req_msg_of",
+              "mode:": "proof",
+              "time": 3344,
+              "time-micros": 3344505,
+              "rlimit-count": 1728378,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_in_flight_msg_has_lower_id_than_allocator",
+              "mode:": "proof",
+              "time": 1522,
+              "time-micros": 1522549,
+              "rlimit-count": 738480,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_pending_req_msg_has_lower_id_than_allocator",
+              "mode:": "proof",
+              "time": 545,
+              "time-micros": 545194,
+              "rlimit-count": 1790484,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_pending_req_of_key_is_unique_with_unique_id",
+              "mode:": "proof",
+              "time": 1213,
+              "time-micros": 1213828,
+              "rlimit-count": 768896,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::newly_added_msg_have_different_id_from_existing_ones",
+              "mode:": "proof",
+              "time": 7616,
+              "time-micros": 7616504,
+              "rlimit-count": 1623968,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_in_flight_msg_has_unique_id",
+              "mode:": "proof",
+              "time": 16,
+              "time-micros": 16967,
+              "rlimit-count": 2527099,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_in_flight_req_msg_from_controller_has_valid_controller_id",
+              "mode:": "proof",
+              "time": 1375,
+              "time-micros": 1375498,
+              "rlimit-count": 47151,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_every_in_flight_msg_has_no_replicas_and_has_unique_id",
+              "mode:": "proof",
+              "time": 1842,
+              "time-micros": 1842820,
+              "rlimit-count": 10343877,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::transition_validation",
+          "time": 16433,
+          "time-micros": 16433314,
+          "rlimit-count": 16191321,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_transition_rule_applies_to_etcd_and_scheduled_and_triggering_cr",
+              "mode:": "proof",
+              "time": 20,
+              "time-micros": 20428,
+              "rlimit-count": 11132999,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_triggering_cr_is_in_correct_order",
+              "mode:": "proof",
+              "time": 11554,
+              "time-micros": 11554531,
+              "rlimit-count": 5009935,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_transition_rule_applies_to_etcd_and_scheduled_cr",
+              "mode:": "proof",
+              "time": 4858,
+              "time-micros": 4858353,
+              "rlimit-count": 48387,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::req_resp",
+          "time": 12760,
+          "time-micros": 12760772,
+          "rlimit-count": 12442320,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_object_in_ok_get_response_has_smaller_rv_than_etcd",
+              "mode:": "proof",
+              "time": 2514,
+              "time-micros": 2514852,
+              "rlimit-count": 48352,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_key_of_object_in_matched_ok_get_resp_message_is_same_as_key_of_pending_req",
+              "mode:": "proof",
+              "time": 1965,
+              "time-micros": 1965521,
+              "rlimit-count": 3614040,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_key_of_object_in_matched_ok_create_resp_message_is_same_as_key_of_pending_req",
+              "mode:": "proof",
+              "time": 1886,
+              "time-micros": 1886595,
+              "rlimit-count": 3155896,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_object_in_ok_get_resp_is_same_as_etcd_with_same_rv",
+              "mode:": "proof",
+              "time": 3781,
+              "time-micros": 3781163,
+              "rlimit-count": 3046608,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_key_of_object_in_matched_ok_update_resp_message_is_same_as_key_of_pending_req",
+              "mode:": "proof",
+              "time": 2612,
+              "time-micros": 2612639,
+              "rlimit-count": 2577424,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::garbage_collector",
+          "time": 6843,
+          "time-micros": 6843404,
+          "rlimit-count": 2599112,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_eventually_objects_owner_references_satisfies",
+              "mode:": "proof",
+              "time": 4851,
+              "time-micros": 4851338,
+              "rlimit-count": 2550560,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_delete_msg_in_flight_leads_to_owner_references_satisfies",
+              "mode:": "proof",
+              "time": 1992,
+              "time-micros": 1992065,
+              "rlimit-count": 48552,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::network_liveness",
+          "time": 3697,
+          "time-micros": 3697053,
+          "rlimit-count": 5206186,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_always_no_req_before_rpc_id_is_in_flight",
+              "mode:": "proof",
+              "time": 1806,
+              "time-micros": 1806358,
+              "rlimit-count": 53561,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_some_rpc_id_leads_to_always_every_in_flight_req_msg_satisfies_with_rpc_id",
+              "mode:": "proof",
+              "time": 72,
+              "time-micros": 72891,
+              "rlimit-count": 2452247,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_eventually_no_req_before_rpc_id_is_in_flight",
+              "mode:": "proof",
+              "time": 28,
+              "time-micros": 28794,
+              "rlimit-count": 55533,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_always_every_in_flight_req_msg_satisfies",
+              "mode:": "proof",
+              "time": 26,
+              "time-micros": 26332,
+              "rlimit-count": 130623,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::pending_requests_num_decreases",
+              "mode:": "proof",
+              "time": 1732,
+              "time-micros": 1732106,
+              "rlimit-count": 47812,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_pending_requests_number_is_n_leads_to_no_pending_requests",
+              "mode:": "proof",
+              "time": 30,
+              "time-micros": 30569,
+              "rlimit-count": 2466410,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::objects_in_reconcile",
+          "time": 1167,
+          "time-micros": 1167893,
+          "rlimit-count": 1088039,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_object_in_reconcile_has_consistent_key_and_valid_metadata",
+              "mode:": "proof",
+              "time": 771,
+              "time-micros": 771900,
+              "rlimit-count": 1041945,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_scheduled_object_has_consistent_key_and_valid_metadata",
+              "mode:": "proof",
+              "time": 395,
+              "time-micros": 395992,
+              "rlimit-count": 46094,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "temporal_logic::rules",
+          "time": 725,
+          "time-micros": 725346,
+          "rlimit-count": 2200103,
+          "function-breakdown": [
+            {
+              "function": "anvil::temporal_logic::rules::vacuous_leads_to",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5983,
+              "rlimit-count": 10530,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_rank_step_one",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3386,
+              "rlimit-count": 16461,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::entails_and_temp",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3033,
+              "rlimit-count": 18782,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::wf1",
+              "mode:": "proof",
+              "time": 49,
+              "time-micros": 49741,
+              "rlimit-count": 9174,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_always_enhance",
+              "mode:": "proof",
+              "time": 19,
+              "time-micros": 19749,
+              "rlimit-count": 106276,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_trans",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10385,
+              "rlimit-count": 13719,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_stable",
+              "mode:": "proof",
+              "time": 19,
+              "time-micros": 19940,
+              "rlimit-count": 53071,
+              "success": false
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_p_or_eventually_q_rec",
+              "mode:": "proof",
+              "time": 50,
+              "time-micros": 50327,
+              "rlimit-count": 5633,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_unfold",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2315,
+              "rlimit-count": 45955,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::init_invariant",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6945,
+              "rlimit-count": 15179,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_implies_to_leads_to",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6159,
+              "rlimit-count": 23062,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::spec_entails_tla_forall",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2889,
+              "rlimit-count": 48801,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_lift_state_unfold",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2490,
+              "rlimit-count": 7016,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_always_implies_equality2",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3250,
+              "rlimit-count": 17908,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::not_eventually_unfold",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2028,
+              "rlimit-count": 3983,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_framed_by_or",
+              "mode:": "proof",
+              "time": 9,
+              "time-micros": 9758,
+              "rlimit-count": 79011,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::eventually_unfold",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1617,
+              "rlimit-count": 14914,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::strengthen_next",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3252,
+              "rlimit-count": 19144,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::not_proved_by_contraposition",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1934,
+              "rlimit-count": 6881,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_apply",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5637,
+              "rlimit-count": 49728,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_distributed_by_and",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3919,
+              "rlimit-count": 4880,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_leads_to_equality1",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3387,
+              "rlimit-count": 21399,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_implies_equality1",
+              "mode:": "proof",
+              "time": 8,
+              "time-micros": 8479,
+              "rlimit-count": 13856,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_p_or_eventually_q",
+              "mode:": "proof",
+              "time": 16,
+              "time-micros": 16827,
+              "rlimit-count": 188370,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_self_temp",
+              "mode:": "proof",
+              "time": 21,
+              "time-micros": 21023,
+              "rlimit-count": 8441,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_double",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2284,
+              "rlimit-count": 6171,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_implies_equality2",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7596,
+              "rlimit-count": 18158,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_shortcut_temp",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5951,
+              "rlimit-count": 21343,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::eventually_proved_by_witness",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1828,
+              "rlimit-count": 5825,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_to_current",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2312,
+              "rlimit-count": 5720,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::use_tla_forall",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2352,
+              "rlimit-count": 4654,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_propagate_forwards",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4281,
+              "rlimit-count": 11111,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_weaken",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4052,
+              "rlimit-count": 25960,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::instantiate_entailed_leads_to",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3077,
+              "rlimit-count": 6839,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_and_equality",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6231,
+              "rlimit-count": 13829,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::wf1_variant_temp",
+              "mode:": "proof",
+              "time": 20,
+              "time-micros": 20437,
+              "rlimit-count": 4433,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_to_future",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2090,
+              "rlimit-count": 5137,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_a_p_leads_to_q_a_is_stable",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7380,
+              "rlimit-count": 3956,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::transform_leads_to_with_until",
+              "mode:": "proof",
+              "time": 18,
+              "time-micros": 18436,
+              "rlimit-count": 8485,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_exists_and_equality",
+              "mode:": "proof",
+              "time": 8,
+              "time-micros": 8114,
+              "rlimit-count": 8154,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_implies_preserved_by_always",
+              "mode:": "proof",
+              "time": 9,
+              "time-micros": 9059,
+              "rlimit-count": 4249,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_always_equality",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6681,
+              "rlimit-count": 4302,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_lift_action_unfold",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2593,
+              "rlimit-count": 6124,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_or_equality",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6195,
+              "rlimit-count": 7031,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::entails_and_different_temp",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3774,
+              "rlimit-count": 10641,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::p_leads_to_q_is_stable",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1688,
+              "rlimit-count": 11277,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::entails_apply",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1856,
+              "rlimit-count": 7434,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_by_borrowing_inv",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6228,
+              "rlimit-count": 7821,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::next_preserves_inv_rec",
+              "mode:": "proof",
+              "time": 65,
+              "time-micros": 65667,
+              "rlimit-count": 9122,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_not_equality",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5521,
+              "rlimit-count": 15616,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_unfold",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1787,
+              "rlimit-count": 58822,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::or_leads_to_combine",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6861,
+              "rlimit-count": 14182,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_exists_intro",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4208,
+              "rlimit-count": 7887,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::later_unfold",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1587,
+              "rlimit-count": 10388,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_and_equality",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6430,
+              "rlimit-count": 9250,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::entails_preserved_by_always",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3282,
+              "rlimit-count": 16324,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::entails_implies_leads_to",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2782,
+              "rlimit-count": 3286,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::init_invariant_rec",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5281,
+              "rlimit-count": 4775,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::p_and_always_p_equals_always_p",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3417,
+              "rlimit-count": 17710,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_exists_or_equality",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7518,
+              "rlimit-count": 19442,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::simplify_predicate",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3821,
+              "rlimit-count": 13014,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::eventually_propagate_backwards",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5501,
+              "rlimit-count": 4215,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_tla_forall_apply",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3456,
+              "rlimit-count": 3770,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_p_is_stable",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2830,
+              "rlimit-count": 8308,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_always_combine",
+              "mode:": "proof",
+              "time": 30,
+              "time-micros": 30726,
+              "rlimit-count": 110385,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::entails_trans",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2803,
+              "rlimit-count": 8428,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_rank_step_one_help",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6625,
+              "rlimit-count": 14636,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_weaken",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4358,
+              "rlimit-count": 8950,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::a_to_temp_pred_equality",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2058,
+              "rlimit-count": 7224,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::weak_fairness_unfold",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2728,
+              "rlimit-count": 10190,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::pack_conditions_to_spec",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5313,
+              "rlimit-count": 9697,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::temp_pred_equality",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3689,
+              "rlimit-count": 5059,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_always_tla_forall",
+              "mode:": "proof",
+              "time": 47,
+              "time-micros": 47046,
+              "rlimit-count": 12981,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_rank_step_one_usize_help",
+              "mode:": "proof",
+              "time": 8,
+              "time-micros": 8517,
+              "rlimit-count": 8427,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::execution_equality",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1414,
+              "rlimit-count": 6101,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::stable_and_temp",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4376,
+              "rlimit-count": 6562,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_unfold",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1630,
+              "rlimit-count": 5440,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_exists_proved_by_witness",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1745,
+              "rlimit-count": 4144,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::implies_apply_with_always",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2805,
+              "rlimit-count": 4226,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_apply",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1654,
+              "rlimit-count": 15326,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_implies_forall_intro",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4225,
+              "rlimit-count": 7660,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_forall_always_equality_variant",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2663,
+              "rlimit-count": 17470,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_exists_equality",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5281,
+              "rlimit-count": 7790,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::leads_to_rank_step_one_usize",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3499,
+              "rlimit-count": 20895,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::spec_entails_always_tla_forall",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3945,
+              "rlimit-count": 40575,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::not_eventually_by_always_not",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2633,
+              "rlimit-count": 4865,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::implies_contraposition_apply",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1868,
+              "rlimit-count": 7959,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::implies_apply",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1839,
+              "rlimit-count": 5175,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::eliminate_always",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3731,
+              "rlimit-count": 20054,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::instantiate_entailed_always",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2773,
+              "rlimit-count": 15906,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::valid_p_implies_always_p",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1527,
+              "rlimit-count": 8471,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::unpack_conditions_from_spec",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7886,
+              "rlimit-count": 6490,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_exists_unfold",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1637,
+              "rlimit-count": 6318,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_to_always_later",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6889,
+              "rlimit-count": 17109,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::always_double_equality",
+              "mode:": "proof",
+              "time": 8,
+              "time-micros": 8487,
+              "rlimit-count": 522778,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::tla_exists_implies_equality1",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7468,
+              "rlimit-count": 18902,
+              "success": true
+            },
+            {
+              "function": "anvil::temporal_logic::rules::stable_unfold",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2564,
+              "rlimit-count": 6971,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::failures_liveness",
+          "time": 223,
+          "time-micros": 223366,
+          "rlimit-count": 729556,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_crash_always_disabled",
+              "mode:": "proof",
+              "time": 91,
+              "time-micros": 91380,
+              "rlimit-count": 45731,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_req_drop_always_disabled",
+              "mode:": "proof",
+              "time": 58,
+              "time-micros": 58221,
+              "rlimit-count": 586170,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_true_leads_to_pod_monkey_always_disabled",
+              "mode:": "proof",
+              "time": 73,
+              "time-micros": 73764,
+              "rlimit-count": 97655,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::wf1_helpers",
+          "time": 206,
+          "time-micros": 206559,
+          "rlimit-count": 789903,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_pre_leads_to_post_by_builtin_controllers",
+              "mode:": "proof",
+              "time": 19,
+              "time-micros": 19743,
+              "rlimit-count": 39319,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_pre_leads_to_post_by_api_server",
+              "mode:": "proof",
+              "time": 19,
+              "time-micros": 19362,
+              "rlimit-count": 37638,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_pre_leads_to_post_by_schedule_controller_reconcile",
+              "mode:": "proof",
+              "time": 20,
+              "time-micros": 20888,
+              "rlimit-count": 45504,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::external_action_pre_implies_next_pre",
+              "mode:": "proof",
+              "time": 24,
+              "time-micros": 24734,
+              "rlimit-count": 39567,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::controller_action_pre_implies_next_pre",
+              "mode:": "proof",
+              "time": 31,
+              "time-micros": 31746,
+              "rlimit-count": 41415,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_pre_leads_to_post_by_external",
+              "mode:": "proof",
+              "time": 21,
+              "time-micros": 21939,
+              "rlimit-count": 45054,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_pre_leads_to_post_by_controller",
+              "mode:": "proof",
+              "time": 25,
+              "time-micros": 25953,
+              "rlimit-count": 443264,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::builtin_controllers_action_pre_implies_next_pre",
+              "mode:": "proof",
+              "time": 22,
+              "time-micros": 22125,
+              "rlimit-count": 42125,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::api_server_action_pre_implies_next_pre",
+              "mode:": "proof",
+              "time": 20,
+              "time-micros": 20065,
+              "rlimit-count": 56017,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::cluster",
+          "time": 200,
+          "time-micros": 200456,
+          "rlimit-count": 555898,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_there_is_the_external_state_if_external_model_exists",
+              "mode:": "proof",
+              "time": 148,
+              "time-micros": 148535,
+              "rlimit-count": 510747,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_there_is_the_controller_state",
+              "mode:": "proof",
+              "time": 51,
+              "time-micros": 51920,
+              "rlimit-count": 45151,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "vstd_ext::seq_lib",
+          "time": 132,
+          "time-micros": 132009,
+          "rlimit-count": 390635,
+          "function-breakdown": [
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_unequal_preserved_by_add_auto",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1752,
+              "rlimit-count": 9428,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::commutativity_of_seq_drop_last_and_map",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6587,
+              "rlimit-count": 81120,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_unequal_preserved_by_add",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3810,
+              "rlimit-count": 4649,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::push_filter_and_filter_push",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3678,
+              "rlimit-count": 6995,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_equal_preserved_by_add_prefix",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3695,
+              "rlimit-count": 7565,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::map_values_to_set_eq_to_set_mk_map_values",
+              "mode:": "proof",
+              "time": 30,
+              "time-micros": 30572,
+              "rlimit-count": 8689,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_pred_false_on_all_elements_implies_empty_filter",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7453,
+              "rlimit-count": 4556,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::push_to_set_eq_to_set_insert",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3320,
+              "rlimit-count": 10995,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_filter_preserves_no_duplicates",
+              "mode:": "proof",
+              "time": 13,
+              "time-micros": 13781,
+              "rlimit-count": 29570,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::true_pred_on_all_element_equal_to_pred_on_all_index",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4157,
+              "rlimit-count": 9255,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::true_pred_on_seq_implies_true_pred_on_filtered_seq",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4170,
+              "rlimit-count": 884,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_equal_preserved_by_add",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3189,
+              "rlimit-count": 57785,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_pred_false_on_all_elements_is_equivalent_to_empty_filter",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3994,
+              "rlimit-count": 20106,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_filter_is_a_subset_of_original_seq",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10614,
+              "rlimit-count": 9453,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::empty_filter_implies_seq_pred_false_on_all_elements",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7852,
+              "rlimit-count": 19131,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::commutativity_of_seq_map_and_filter",
+              "mode:": "proof",
+              "time": 22,
+              "time-micros": 22961,
+              "rlimit-count": 75186,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::seq_lib::seq_filter_contains_implies_seq_contains",
+              "mode:": "proof",
+              "time": 0,
+              "time-micros": 417,
+              "rlimit-count": 35268,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::retentive_cluster",
+          "time": 120,
+          "time-micros": 120609,
+          "rlimit-count": 633688,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::retentive_cluster::RetentiveCluster::transfer_invariant_to_cluster",
+              "mode:": "proof",
+              "time": 47,
+              "time-micros": 47919,
+              "rlimit-count": 20769,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::retentive_cluster::RetentiveCluster::refinement_next",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10252,
+              "rlimit-count": 20678,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::retentive_cluster::RetentiveCluster::transfer_invariant_from_cluster",
+              "mode:": "proof",
+              "time": 26,
+              "time-micros": 26017,
+              "rlimit-count": 19344,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::retentive_cluster::RetentiveCluster::reverse_refinement_init",
+              "mode:": "proof",
+              "time": 13,
+              "time-micros": 13294,
+              "rlimit-count": 422794,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::retentive_cluster::RetentiveCluster::reverse_refinement_next",
+              "mode:": "proof",
+              "time": 11,
+              "time-micros": 11076,
+              "rlimit-count": 29541,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::retentive_cluster::RetentiveCluster::refinement_init",
+              "mode:": "proof",
+              "time": 11,
+              "time-micros": 11366,
+              "rlimit-count": 75703,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::retentive_cluster::RetentiveCluster::construct_history_from_state",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 681,
+              "rlimit-count": 44859,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::compositionality",
+          "time": 88,
+          "time-micros": 88533,
+          "rlimit-count": 606461,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::proof::compositionality::compose_horizontally",
+              "mode:": "proof",
+              "time": 36,
+              "time-micros": 36488,
+              "rlimit-count": 46686,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::proof::compositionality::compose_vertically",
+              "mode:": "proof",
+              "time": 21,
+              "time-micros": 21604,
+              "rlimit-count": 510623,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::proof::compositionality::compose",
+              "mode:": "proof",
+              "time": 30,
+              "time-micros": 30440,
+              "rlimit-count": 49152,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "vstd_ext::vec_lib",
+          "time": 53,
+          "time-micros": 53437,
+          "rlimit-count": 248134,
+          "function-breakdown": [
+            {
+              "function": "anvil::vstd_ext::vec_lib::vec_filter",
+              "mode:": "exec",
+              "time": 53,
+              "time-micros": 53437,
+              "rlimit-count": 248134,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::compositionality::example",
+          "time": 51,
+          "time-micros": 51536,
+          "rlimit-count": 47521,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::proof::compositionality::example::waiter_and_cooks_are_correct",
+              "mode:": "proof",
+              "time": 51,
+              "time-micros": 51536,
+              "rlimit-count": 47521,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "vstd_ext::set_lib",
+          "time": 34,
+          "time-micros": 34383,
+          "rlimit-count": 92796,
+          "function-breakdown": [
+            {
+              "function": "anvil::vstd_ext::set_lib::finite_set_to_finite_filtered_set",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2551,
+              "rlimit-count": 50588,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::set_lib::finite_set_to_seq_contains_all_set_elements",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4766,
+              "rlimit-count": 14352,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::set_lib::lemma_mk_map_insert_k",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2347,
+              "rlimit-count": 4376,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::set_lib::element_in_finite_set_exists_in_set_to_seq",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3428,
+              "rlimit-count": 5315,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::set_lib::element_in_seq_exists_in_original_finite_set",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6909,
+              "rlimit-count": 6828,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::set_lib::finite_set_to_seq_has_no_duplicates",
+              "mode:": "proof",
+              "time": 14,
+              "time-micros": 14379,
+              "rlimit-count": 11337,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_cluster::proof::stability",
+          "time": 30,
+          "time-micros": 30477,
+          "rlimit-count": 237245,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::tla_forall_external_next_weak_fairness_is_stable",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6414,
+              "rlimit-count": 14856,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::action_weak_fairness_is_stable",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3300,
+              "rlimit-count": 15052,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::tla_forall_controller_next_weak_fairness_is_stable",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7561,
+              "rlimit-count": 17260,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::tla_forall_action_weak_fairness_is_stable",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6627,
+              "rlimit-count": 182370,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_cluster::spec::cluster::Cluster::tla_forall_schedule_controller_reconcile_weak_fairness_is_stable",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6574,
+              "rlimit-count": 7707,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::role",
+          "time": 21,
+          "time-micros": 21580,
+          "rlimit-count": 70209,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role::RoleView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2282,
+              "rlimit-count": 3391,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role::RoleView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3502,
+              "rlimit-count": 6569,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role::RoleView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6146,
+              "rlimit-count": 2239,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role::RoleView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3365,
+              "rlimit-count": 4651,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role::RoleView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6282,
+              "rlimit-count": 53359,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::service",
+          "time": 18,
+          "time-micros": 18491,
+          "rlimit-count": 73108,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service::ServiceView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1383,
+              "rlimit-count": 3429,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service::ServiceView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4541,
+              "rlimit-count": 2217,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service::ServiceView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3002,
+              "rlimit-count": 6742,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service::ServiceView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3172,
+              "rlimit-count": 4896,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service::ServiceView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6390,
+              "rlimit-count": 55824,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::stateful_set",
+          "time": 17,
+          "time-micros": 17026,
+          "rlimit-count": 147376,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::stateful_set::StatefulSetView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2747,
+              "rlimit-count": 11321,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::stateful_set::StatefulSetView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4565,
+              "rlimit-count": 120386,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::stateful_set::StatefulSetView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2835,
+              "rlimit-count": 7852,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::stateful_set::StatefulSetView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1928,
+              "rlimit-count": 4667,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::stateful_set::StatefulSetView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4949,
+              "rlimit-count": 3150,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::role_binding",
+          "time": 15,
+          "time-micros": 15783,
+          "rlimit-count": 88856,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role_binding::RoleBindingView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2184,
+              "rlimit-count": 8566,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role_binding::RoleBindingView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2467,
+              "rlimit-count": 5972,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role_binding::RoleBindingView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1554,
+              "rlimit-count": 4096,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role_binding::RoleBindingView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5038,
+              "rlimit-count": 67429,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::role_binding::RoleBindingView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4538,
+              "rlimit-count": 2793,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::service_account",
+          "time": 14,
+          "time-micros": 14540,
+          "rlimit-count": 68262,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service_account::ServiceAccountView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3941,
+              "rlimit-count": 51601,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service_account::ServiceAccountView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3295,
+              "rlimit-count": 4470,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service_account::ServiceAccountView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2124,
+              "rlimit-count": 6561,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service_account::ServiceAccountView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3889,
+              "rlimit-count": 2239,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::service_account::ServiceAccountView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1289,
+              "rlimit-count": 3391,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::exec::api_method",
+          "time": 14,
+          "time-micros": 14209,
+          "rlimit-count": 170789,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::is_get_then_delete_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 61,
+              "rlimit-count": 777,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeGetThenDeleteRequest::well_formed",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4681,
+              "rlimit-count": 13047,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::into_update_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 277,
+              "rlimit-count": 816,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::into_update_status_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 380,
+              "rlimit-count": 816,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::is_update_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 80,
+              "rlimit-count": 777,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::is_get_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 56,
+              "rlimit-count": 8080,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::into_get_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 226,
+              "rlimit-count": 826,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::into_list_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 180,
+              "rlimit-count": 820,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::into_create_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 279,
+              "rlimit-count": 816,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::is_create_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 58,
+              "rlimit-count": 777,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeGetThenUpdateRequest::well_formed",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4734,
+              "rlimit-count": 136201,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::is_list_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 60,
+              "rlimit-count": 777,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::as_get_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 281,
+              "rlimit-count": 185,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::is_delete_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 72,
+              "rlimit-count": 777,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::as_delete_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 331,
+              "rlimit-count": 185,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::into_delete_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 261,
+              "rlimit-count": 816,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::as_list_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 247,
+              "rlimit-count": 185,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::as_create_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 216,
+              "rlimit-count": 185,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::as_update_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 298,
+              "rlimit-count": 185,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::is_update_status_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 84,
+              "rlimit-count": 777,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::as_update_response_status_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 380,
+              "rlimit-count": 185,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::as_get_then_update_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 218,
+              "rlimit-count": 185,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::into_get_then_update_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 206,
+              "rlimit-count": 816,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::as_get_then_delete_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 203,
+              "rlimit-count": 185,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::into_get_then_delete_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 263,
+              "rlimit-count": 816,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::api_method::KubeAPIResponse::is_get_then_update_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 63,
+              "rlimit-count": 777,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::daemon_set",
+          "time": 13,
+          "time-micros": 13673,
+          "rlimit-count": 119441,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::daemon_set::DaemonSetView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4186,
+              "rlimit-count": 2217,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::daemon_set::DaemonSetView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3822,
+              "rlimit-count": 97916,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::daemon_set::DaemonSetView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1408,
+              "rlimit-count": 3429,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::daemon_set::DaemonSetView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2105,
+              "rlimit-count": 9137,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::daemon_set::DaemonSetView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2150,
+              "rlimit-count": 6742,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::pod",
+          "time": 13,
+          "time-micros": 13646,
+          "rlimit-count": 115646,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::pod::PodView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2330,
+              "rlimit-count": 8788,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::pod::PodView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3979,
+              "rlimit-count": 2217,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::pod::PodView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3844,
+              "rlimit-count": 94470,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::pod::PodView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2155,
+              "rlimit-count": 6742,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::pod::PodView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1337,
+              "rlimit-count": 3429,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::secret",
+          "time": 13,
+          "time-micros": 13253,
+          "rlimit-count": 68252,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::secret::SecretView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1379,
+              "rlimit-count": 3391,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::secret::SecretView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3956,
+              "rlimit-count": 2239,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::secret::SecretView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2143,
+              "rlimit-count": 6235,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::secret::SecretView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3699,
+              "rlimit-count": 51861,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::secret::SecretView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2075,
+              "rlimit-count": 4526,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::persistent_volume_claim",
+          "time": 13,
+          "time-micros": 13129,
+          "rlimit-count": 71764,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::persistent_volume_claim::PersistentVolumeClaimView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2074,
+              "rlimit-count": 4774,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::persistent_volume_claim::PersistentVolumeClaimView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2052,
+              "rlimit-count": 6742,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::persistent_volume_claim::PersistentVolumeClaimView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3733,
+              "rlimit-count": 54602,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::persistent_volume_claim::PersistentVolumeClaimView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3927,
+              "rlimit-count": 2217,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::persistent_volume_claim::PersistentVolumeClaimView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1340,
+              "rlimit-count": 3429,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::spec::config_map",
+          "time": 13,
+          "time-micros": 13082,
+          "rlimit-count": 68190,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::spec::config_map::ConfigMapView::marshal_preserves_integrity",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3733,
+              "rlimit-count": 51390,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::config_map::ConfigMapView::object_ref_is_well_formed",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2063,
+              "rlimit-count": 4466,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::config_map::ConfigMapView::marshal_preserves_metadata",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2040,
+              "rlimit-count": 6704,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::config_map::ConfigMapView::unmarshal_result_determined_by_unmarshal_spec_and_status",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3899,
+              "rlimit-count": 2239,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::spec::config_map::ConfigMapView::marshal_preserves_kind",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1345,
+              "rlimit-count": 3391,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "state_machine::action",
+          "time": 13,
+          "time-micros": 13064,
+          "rlimit-count": 4109,
+          "function-breakdown": [
+            {
+              "function": "anvil::state_machine::action::Action::wf1",
+              "mode:": "proof",
+              "time": 13,
+              "time-micros": 13064,
+              "rlimit-count": 4109,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "vstd_ext::multiset_lib",
+          "time": 12,
+          "time-micros": 12742,
+          "rlimit-count": 34354,
+          "function-breakdown": [
+            {
+              "function": "anvil::vstd_ext::multiset_lib::len_is_zero_means_count_for_each_value_is_zero",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1111,
+              "rlimit-count": 2131,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::multiset_lib::filtered_size_is_one_means_only_one_such_value",
+              "mode:": "proof",
+              "time": 8,
+              "time-micros": 8416,
+              "rlimit-count": 8064,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::multiset_lib::filtered_size_is_zero_means_no_such_value",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3214,
+              "rlimit-count": 24159,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "vstd_ext::map_lib",
+          "time": 11,
+          "time-micros": 11975,
+          "rlimit-count": 44237,
+          "function-breakdown": [
+            {
+              "function": "anvil::vstd_ext::map_lib::injective_finite_map_implies_dom_len_is_equal_to_values_len",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10143,
+              "rlimit-count": 40675,
+              "success": true
+            },
+            {
+              "function": "anvil::vstd_ext::map_lib::a_submap_of_a_finite_map_is_finite",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1832,
+              "rlimit-count": 3562,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::exec::container",
+          "time": 8,
+          "time-micros": 8758,
+          "rlimit-count": 140063,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::exec::container::EnvVarSource::new_with_field_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 520,
+              "rlimit-count": 9021,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::container::ContainerPort::new_with",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1000,
+              "rlimit-count": 12388,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::container::VolumeMount::new_with",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 758,
+              "rlimit-count": 117237,
+              "success": true
+            },
+            {
+              "function": "anvil::kubernetes_api_objects::exec::container::EnvVar::new_with",
+              "mode:": "exec",
+              "time": 6,
+              "time-micros": 6479,
+              "rlimit-count": 1417,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::exec::object_meta",
+          "time": 4,
+          "time-micros": 4745,
+          "rlimit-count": 8546,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::exec::object_meta::ObjectMeta::well_formed_for_namespaced",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4745,
+              "rlimit-count": 8546,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "reconciler::exec::io",
+          "time": 1,
+          "time-micros": 1000,
+          "rlimit-count": 146328,
+          "function-breakdown": [
+            {
+              "function": "anvil::reconciler::exec::io::Response::is_k_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 48,
+              "rlimit-count": 843,
+              "success": true
+            },
+            {
+              "function": "anvil::reconciler::exec::io::Response::into_external_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 205,
+              "rlimit-count": 890,
+              "success": true
+            },
+            {
+              "function": "anvil::reconciler::exec::io::Response::is_external_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 104,
+              "rlimit-count": 13205,
+              "success": true
+            },
+            {
+              "function": "anvil::reconciler::exec::io::Response::as_k_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 212,
+              "rlimit-count": 193,
+              "success": true
+            },
+            {
+              "function": "anvil::reconciler::exec::io::Response::into_k_response",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 180,
+              "rlimit-count": 906,
+              "success": true
+            },
+            {
+              "function": "anvil::reconciler::exec::io::Response::as_external_response_ref",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 249,
+              "rlimit-count": 130291,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::exec::volume",
+          "time": 0,
+          "time-micros": 854,
+          "rlimit-count": 9068,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::exec::volume::ObjectFieldSelector::new_with",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 854,
+              "rlimit-count": 9068,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::exec::service",
+          "time": 0,
+          "time-micros": 762,
+          "rlimit-count": 10783,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::exec::service::ServicePort::new_with",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 762,
+              "rlimit-count": 10783,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "vstd_ext::string_map",
+          "time": 0,
+          "time-micros": 377,
+          "rlimit-count": 6702,
+          "function-breakdown": [
+            {
+              "function": "anvil::vstd_ext::string_map::StringMap::empty",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 377,
+              "rlimit-count": 6702,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "kubernetes_api_objects::error",
+          "time": 0,
+          "time-micros": 83,
+          "rlimit-count": 1600,
+          "function-breakdown": [
+            {
+              "function": "anvil::kubernetes_api_objects::error::APIError::is_object_not_found",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 83,
+              "rlimit-count": 1600,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "vstd_ext::string_view",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::api_method",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::message",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::common",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "reconciler::exec::reconciler",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::toleration",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::owner_reference",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::install_helpers",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::label_selector",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::secret",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "vstd_ext::option_lib",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::persistent_volume_claim",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::service_account",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::dynamic",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::config_map",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::volume_resource_requirements",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::resource_requirements",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::external::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::resource",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::controller::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::preconditions",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::object_meta",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::owner_reference",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::controller::types",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "reconciler::spec::reconciler",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::dynamic",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::pod_template_spec",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::retentive_cluster",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::role",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::pod",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::pod_monkey::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::volume",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::role_binding",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::api_server::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::label_selector",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::preconditions",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::pod_template_spec",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::daemon_set",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::common",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "temporal_logic::defs",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::stateful_set",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "reconciler::spec::io",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::affinity",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::network::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::types",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::volume_resource_requirements",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::esr",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "reconciler::spec::resource_builder",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::spec::container",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "reconciler::exec::resource_builder",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::cluster",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::resource_requirements",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_cluster::spec::builtin_controllers::garbage_collector",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "kubernetes_api_objects::exec::api_resource",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        },
+        {
+          "module": "state_machine::state_machine",
+          "time": 0,
+          "time-micros": 0,
+          "rlimit-count": 0,
+          "function-breakdown": []
+        }
+      ]
+    }
+  },
+  "verus": {
+    "profile": "release",
+    "version": "0.2025.07.14.228aed7",
+    "platform": {
+      "os": "linux",
+      "arch": "x86_64"
+    },
+    "toolchain": "1.88.0-x86_64-unknown-linux-gnu",
+    "commit": "228aed7654980525d066895bed8b71752352ab5d"
+  }
+}

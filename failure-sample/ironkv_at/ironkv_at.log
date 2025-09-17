@@ -1,0 +1,45 @@
+verus succeeded with time: 46233ms
+sampled 20 asserts out of 235
+commenting out line Lines { lines: 959..=966 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 45907
+commenting out line Lines { lines: 884..=884 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 45369
+commenting out line Lines { lines: 923..=923 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 45395
+commenting out line Lines { lines: 585..=585 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 44837
+commenting out line Lines { lines: 1492..=1496 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/host_impl_v.rs"
+verus failed with 44695
+commenting out line Lines { lines: 909..=909 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 44836
+commenting out line Lines { lines: 826..=829 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/delegation_map_v.rs"
+verus failed with 70325
+commenting out line Lines { lines: 1540..=1542 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/host_impl_v.rs"
+verus failed with 44969
+commenting out line Lines { lines: 558..=558 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 44976
+commenting out line Lines { lines: 1680..=1680 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/delegation_map_v.rs"
+verus failed with 43845
+commenting out line Lines { lines: 1530..=1530 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/delegation_map_v.rs"
+verus failed with 56516
+commenting out line Lines { lines: 596..=597 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/host_impl_v.rs"
+verus failed with 44940
+commenting out line Lines { lines: 823..=825 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/host_impl_v.rs"
+verus failed with 45264
+commenting out line Lines { lines: 312..=328 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/delegation_map_v.rs"
+verus failed with 55405
+commenting out line Lines { lines: 659..=659 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 45488
+commenting out line Lines { lines: 314..=314 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/host_impl_v.rs"
+verus failed with 45242
+commenting out line Lines { lines: 1123..=1123 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 44852
+commenting out line Lines { lines: 827..=827 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/host_impl_v.rs"
+verus failed with 45247
+commenting out line Lines { lines: 132..=140 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/verus_extra/set_lib_ext_v.rs"
+verus failed with 44849
+commenting out line Lines { lines: 576..=576 } in "../../../../../experiments/all-triggers/verified-ironkv-min/ironsht/src/marshal_v.rs"
+verus failed with 44344
+max failure time: 70325 
+original verification time: 46233
+caused by 826-829 in delegation_map_v.rs
