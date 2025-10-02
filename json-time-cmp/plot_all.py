@@ -65,25 +65,25 @@ def main():
 
     # Calculate the ratios of runtime_map1 to runtime_map2 for all functions
     ironkv_ratios = [
-        (runtime_map1[func_name] / runtime_map2[func_name]) * 100
+        (runtime_map1[func_name] / runtime_map2[func_name])
         for func_name in runtime_map1
         if func_name in runtime_map2 and runtime_map2[func_name] != 0
     ]
 
     splinter_ratios = [
-        (runtime_map3[func_name] / runtime_map4[func_name]) * 100
+        (runtime_map3[func_name] / runtime_map4[func_name])
         for func_name in runtime_map3
         if func_name in runtime_map4 and runtime_map4[func_name] != 0
     ]
 
     anvil_ratios = [
-        (runtime_map5[func_name] / runtime_map6[func_name]) * 100
+        (runtime_map5[func_name] / runtime_map6[func_name])
         for func_name in runtime_map5
         if func_name in runtime_map6 and runtime_map6[func_name] != 0
     ]
 
     capybara_ratios = [
-        (runtime_map7[func_name] / runtime_map8[func_name]) * 100
+        (runtime_map7[func_name] / runtime_map8[func_name])
         for func_name in runtime_map7
         if func_name in runtime_map8 and runtime_map8[func_name] != 0
     ]
@@ -127,7 +127,7 @@ def main():
              label='Capybara')
 
     # Add lines at 200% for ironkv_ratios
-    threshold = 200
+    threshold = 2
     percentage_below_threshold = np.sum(
         sorted_capybara_ratios <= threshold) / len(sorted_capybara_ratios)
     plt.plot([threshold, threshold], [
@@ -137,7 +137,7 @@ def main():
 
     # Add text indicating percentage_below_threshold for ironkv_ratios
     plt.text(
-        threshold + 5,
+        threshold + 0.05,
         percentage_below_threshold - 0.17,
         f"{percentage_below_threshold * 100:.2f}% of IronKV functions take at most \n 2x of their original verification time",
         color='black',
@@ -150,8 +150,8 @@ def main():
     plt.ylabel('\% of functions', fontsize=16)
     plt.ylim(0, 1.05)
     plt.xlim(0, max_ratio * 1.1)
-    plt.xticks(np.arange(0, max_ratio * 1.1, 100),
-               [f"{int(i)}%" for i in np.arange(0, max_ratio * 1.1, 100)],
+    plt.xticks(np.arange(0, max_ratio * 1.1, 1),
+               [f"{i}" for i in np.arange(0, max_ratio * 1.1, 1)],
                fontsize=16)
     plt.yticks(np.arange(0, 1.1, 0.2), [
         f"{int(i * 100)}%" for i in np.arange(0, 1.1, 0.2)], fontsize=16)

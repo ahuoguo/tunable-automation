@@ -130,10 +130,11 @@ def extract_one_experiment(project, path):
     failed = [(x, compound_map[x]) for x in compound_map if len(compound_map[x]['failed']) > 0]
     failed = [item for sublist in [[(x[0], y) for y in x[1]['failure'] if not y[1]] for x in failed] for item in sublist]
     print([x for x in failed if x[1][3] > 4.0])
-    failed_percent = [x[1][3] * 100 for x in failed]
+    failed_percent = [x[1][3] for x in failed]
     median = np.median(failed_percent)
+    mean = np.mean(failed_percent)
     sorted_failed_percent = np.sort(failed_percent)
-    return sorted_failed_percent, median
+    return sorted_failed_percent, median, mean
 
 if __name__ == "__main__":
 
@@ -143,7 +144,7 @@ if __name__ == "__main__":
         print(f"Error: Invalid mode '{mode}'.")
         sys.exit(1)
     if mode == "broadcast":
-        projects = [("anvil", "Anvil"), ("splinter", "Splinter"), ("capybara", "CapybaraKV"), ("ironkv", "IronKV")]
+        projects = [("splinter", "Splinter"), ("anvil", "Anvil"), ("capybara", "CapybaraKV"), ("ironkv", "IronKV")]
     else:
         projects = [("ironkv_at", "IronKV")]
     output_name = sys.argv[3]
@@ -163,20 +164,25 @@ if __name__ == "__main__":
     # adjust data for plotting
     data_x = []
     data_y = []
-    for project, (percent, median) in data:
+    for project, (percent, median, mean) in data:
         data_x.extend(percent)
         data_y.extend([project] * len(percent))
 
     plt.scatter(data_x, data_y, alpha=0.7)
-    
-    median_x = [median for _, (_, median) in data]
+
+    median_x = [median for _, (_, median, _) in data]
+    mean_x = [mean for _, (_, _, mean) in data]
     median_y = [project for project, _ in data]
     # plt.barh(median_y, [1] * len(median_y), left=[x - 0.5 for x in median_x], height=0.8, color='red', alpha=0.3, label='Median')
     plt.scatter(median_x, median_y, color='red', marker='|', s=200, linewidth=3, label='Median')
-    plt.legend(fontsize=16, loc='upper right')
+    plt.scatter(mean_x, median_y, color='blue', marker='|', s=200, linewidth=3, label='Mean')   
+    plt.legend(fontsize=12, loc='upper right')
 
     # Labels and title
-    plt.xlabel('Verification Time Ratio (%)', fontsize=16)
+    plt.xlabel('Verification Time Ratio', fontsize=16)
+    # plt.xticks(np.arange(0, float(max(data_x) + 1), 1.0), 
+    #            [f"{i}" for i in np.arange(0, float(max(data_x)) + 1, 1)],
+    #            fontsize=16)
     plt.ylim(-0.2 if mode == "all_triggers" else -0.5, len(set(data_y)) - 0.5)
 
     # Layout

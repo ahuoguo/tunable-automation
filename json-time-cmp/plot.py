@@ -96,7 +96,7 @@ def main():
 
     # TODO: we ignored functions with runtime 0 in the denominator
     ratios = [
-        (runtime_map1[func_name] / runtime_map2[func_name]) * 100
+        (runtime_map1[func_name] / runtime_map2[func_name])
         for func_name in runtime_map1
         if func_name in runtime_map2 and runtime_map2[func_name] != 0
     ]
@@ -107,7 +107,7 @@ def main():
     cumulative = np.linspace(0, 1, len(sorted_ratios))
 
     # Calculate the percentage of functions taking at most 200% of verification time
-    threshold = 200
+    threshold = 2
     percentage_below_threshold = np.sum(
         sorted_ratios <= threshold) / len(sorted_ratios)
 
@@ -131,7 +131,7 @@ def main():
 
     # Add text indicating percentage_below_threshold
     plt.text(
-        threshold + 5,
+        threshold + 0.05,
         percentage_below_threshold - 0.3,
         f"{percentage_below_threshold * 100:.2f}% of IronKV functions \n take at most 2x of their \n original verification time",
         color='black',
@@ -140,12 +140,12 @@ def main():
     )
 
     # Labels and title
-    plt.xlabel('Verification Time Ratio (%)', fontsize=24)
-    plt.ylabel('Percentage of Functions', fontsize=24)
+    plt.xlabel('Verification Time Ratio', fontsize=24)
+    plt.ylabel('\% of Functions', fontsize=24)
     plt.ylim(0, 1.05)
     plt.xlim(0, max(sorted_ratios) * 1.1)
-    plt.xticks(np.arange(0, max(sorted_ratios) * 1.1, 100),
-               [f"{int(i)}%" for i in np.arange(0, max(sorted_ratios) * 1.1, 100)],
+    plt.xticks(np.arange(0, max(sorted_ratios) * 1.1, 1),
+               [f"{i}" for i in np.arange(0, max(sorted_ratios) * 1.1, 1)],
                fontsize=20)
     plt.yticks(np.arange(0, 1.1, 0.2), [
                f"{int(i * 100)}%" for i in np.arange(0, 1.1, 0.2)],
@@ -156,7 +156,7 @@ def main():
     plt.tight_layout()
     # Save the plot as a high-resolution image
     plt.savefig("plot.pgf")
-    plt.savefig("a.png", dpi=300)
+    plt.savefig("plot.png", dpi=300)
     plt.show()
 
 
