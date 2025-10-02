@@ -13,291 +13,291 @@
       "version": "0.2025.07.03.3105aa2"
     },
     "num-threads": 9,
-    "total": 3419,
-    "estimated-cpu-time": 12373,
+    "total": 7709,
+    "estimated-cpu-time": 23646,
     "rust": {
-      "total": 901,
-      "init-and-types": 416,
-      "lifetime": 103,
-      "compile": 381
+      "total": 2370,
+      "init-and-types": 1091,
+      "lifetime": 245,
+      "compile": 1034
     },
     "verification": {
-      "total": 2435,
+      "total": 5134,
       "vir": {
-        "total": 466,
-        "hir": 168,
-        "import": 40,
-        "rust-to-vir": 131
+        "total": 1148,
+        "hir": 406,
+        "import": 114,
+        "rust-to-vir": 333
       }
     },
-    "total-verify": 10857,
+    "total-verify": 19770,
     "total-verify-module-times": [
       {
         "module": "marshal_ironsht_specific_v",
-        "time": 1757
+        "time": 3594
       },
       {
         "module": "host_impl_v",
-        "time": 1687
+        "time": 3375
       },
       {
         "module": "delegation_map_v",
-        "time": 1601
+        "time": 3173
       },
       {
         "module": "single_delivery_model_v",
-        "time": 1152
+        "time": 2124
       },
       {
         "module": "marshal_v",
-        "time": 1005
+        "time": 1828
       },
       {
         "module": "cmessage_v",
-        "time": 602
-      },
-      {
-        "module": "host_impl_v",
-        "time": 322
+        "time": 1213
       },
       {
         "module": "single_delivery_state_v",
-        "time": 310
+        "time": 550
       },
       {
         "module": "host_impl_v",
-        "time": 242
+        "time": 550
       },
       {
-        "module": "host_protocol_t",
-        "time": 228
-      },
-      {
-        "module": "main_t",
-        "time": 210
-      },
-      {
-        "module": "host_impl_t",
-        "time": 208
+        "module": "host_impl_v",
+        "time": 372
       },
       {
         "module": "verus_extra::seq_lib_v",
-        "time": 192
+        "time": 294
+      },
+      {
+        "module": "main_t",
+        "time": 276
       },
       {
         "module": "net_sht_v",
-        "time": 162
+        "time": 273
       },
       {
         "module": "net_sht_v",
-        "time": 160
+        "time": 270
+      },
+      {
+        "module": "host_protocol_t",
+        "time": 264
+      },
+      {
+        "module": "host_impl_t",
+        "time": 260
       },
       {
         "module": "net_sht_v",
-        "time": 152
+        "time": 220
       },
       {
         "module": "verus_extra::set_lib_ext_v",
-        "time": 151
+        "time": 218
       },
       {
         "module": "seq_is_unique_v",
-        "time": 108
+        "time": 151
       },
       {
         "module": "single_delivery_t",
-        "time": 92
+        "time": 115
       },
       {
         "module": "io_t",
-        "time": 90
+        "time": 96
       },
       {
         "module": "args_t",
-        "time": 76
+        "time": 83
       },
       {
         "module": "keys_t",
-        "time": 68
+        "time": 82
       },
       {
         "module": "endpoint_hashmap_t",
-        "time": 51
-      },
-      {
-        "module": "hashmap_t",
-        "time": 45
+        "time": 80
       },
       {
         "module": "verus_extra::choose_v",
-        "time": 32
+        "time": 52
       },
       {
-        "module": "app_interface_t",
-        "time": 30
-      },
-      {
-        "module": "environment_t",
-        "time": 27
+        "module": "hashmap_t",
+        "time": 50
       },
       {
         "module": "delegation_map_t",
-        "time": 24
+        "time": 32
       },
       {
-        "module": "message_t",
-        "time": 15
+        "module": "environment_t",
+        "time": 28
       },
       {
-        "module": "verus_extra::clone_v",
-        "time": 11
+        "module": "app_interface_t",
+        "time": 28
       },
       {
         "module": "single_message_t",
-        "time": 11
+        "time": 23
+      },
+      {
+        "module": "verus_extra::clone_v",
+        "time": 18
+      },
+      {
+        "module": "message_t",
+        "time": 18
       },
       {
         "module": "abstract_service_t",
-        "time": 10
+        "time": 15
       },
       {
         "module": "abstract_end_point_t",
-        "time": 7
+        "time": 15
       },
       {
         "module": "abstract_parameters_t",
-        "time": 6
+        "time": 13
       }
     ],
     "air": {
-      "total": 1675,
+      "total": 2076,
       "module-times": [
         {
           "module": "host_impl_v",
-          "time": 179
+          "time": 223
         },
         {
           "module": "delegation_map_v",
-          "time": 143
+          "time": 144
         },
         {
           "module": "marshal_ironsht_specific_v",
-          "time": 110
-        },
-        {
-          "module": "marshal_v",
-          "time": 105
+          "time": 140
         },
         {
           "module": "single_delivery_model_v",
-          "time": 104
+          "time": 125
+        },
+        {
+          "module": "marshal_v",
+          "time": 124
+        },
+        {
+          "module": "host_impl_v",
+          "time": 117
+        },
+        {
+          "module": "cmessage_v",
+          "time": 108
+        },
+        {
+          "module": "main_t",
+          "time": 105
+        },
+        {
+          "module": "host_impl_t",
+          "time": 102
+        },
+        {
+          "module": "host_impl_v",
+          "time": 94
         },
         {
           "module": "host_protocol_t",
           "time": 93
         },
         {
-          "module": "host_impl_v",
-          "time": 92
-        },
-        {
-          "module": "host_impl_v",
-          "time": 85
-        },
-        {
-          "module": "host_impl_t",
-          "time": 81
-        },
-        {
-          "module": "cmessage_v",
-          "time": 80
-        },
-        {
-          "module": "main_t",
-          "time": 79
-        },
-        {
           "module": "single_delivery_state_v",
-          "time": 70
+          "time": 91
         },
         {
           "module": "net_sht_v",
-          "time": 58
+          "time": 78
         },
         {
           "module": "verus_extra::seq_lib_v",
-          "time": 57
+          "time": 77
         },
         {
           "module": "net_sht_v",
-          "time": 42
+          "time": 60
         },
         {
           "module": "net_sht_v",
-          "time": 40
+          "time": 51
         },
         {
           "module": "verus_extra::set_lib_ext_v",
-          "time": 40
+          "time": 49
         },
         {
           "module": "single_delivery_t",
-          "time": 38
-        },
-        {
-          "module": "io_t",
-          "time": 32
+          "time": 47
         },
         {
           "module": "seq_is_unique_v",
-          "time": 30
+          "time": 43
         },
         {
-          "module": "args_t",
-          "time": 25
-        },
-        {
-          "module": "keys_t",
-          "time": 25
+          "module": "io_t",
+          "time": 42
         },
         {
           "module": "endpoint_hashmap_t",
-          "time": 19
+          "time": 36
+        },
+        {
+          "module": "args_t",
+          "time": 33
+        },
+        {
+          "module": "keys_t",
+          "time": 31
         },
         {
           "module": "verus_extra::choose_v",
-          "time": 13
+          "time": 22
         },
         {
           "module": "hashmap_t",
           "time": 11
         },
         {
-          "module": "app_interface_t",
+          "module": "environment_t",
           "time": 4
         },
         {
           "module": "delegation_map_t",
-          "time": 2
+          "time": 4
         },
         {
-          "module": "environment_t",
-          "time": 2
+          "module": "app_interface_t",
+          "time": 3
         },
         {
           "module": "message_t",
+          "time": 2
+        },
+        {
+          "module": "abstract_service_t",
+          "time": 1
+        },
+        {
+          "module": "single_message_t",
           "time": 1
         },
         {
           "module": "verus_extra::clone_v",
-          "time": 0
-        },
-        {
-          "module": "single_message_t",
-          "time": 0
-        },
-        {
-          "module": "abstract_service_t",
           "time": 0
         },
         {
@@ -311,131 +311,131 @@
       ]
     },
     "smt": {
-      "total": 7123,
-      "smt-init": 696,
+      "total": 14924,
+      "smt-init": 736,
       "smt-init-module-times": [
         {
           "module": "host_impl_v",
-          "time": 137,
-          "time-micros": 138859,
+          "time": 159,
+          "time-micros": 160068,
           "rlimit-count": 5018422
         },
         {
           "module": "delegation_map_v",
-          "time": 90,
-          "time-micros": 90185,
+          "time": 76,
+          "time-micros": 76215,
           "rlimit-count": 9356976
         },
         {
-          "module": "marshal_v",
-          "time": 58,
-          "time-micros": 58365,
-          "rlimit-count": 9665443
-        },
-        {
-          "module": "marshal_ironsht_specific_v",
-          "time": 57,
-          "time-micros": 57209,
-          "rlimit-count": 22588422
-        },
-        {
           "module": "net_sht_v",
-          "time": 48,
-          "time-micros": 49697,
+          "time": 60,
+          "time-micros": 60670,
           "rlimit-count": 692767
         },
         {
+          "module": "marshal_ironsht_specific_v",
+          "time": 59,
+          "time-micros": 59209,
+          "rlimit-count": 22588422
+        },
+        {
+          "module": "marshal_v",
+          "time": 49,
+          "time-micros": 49704,
+          "rlimit-count": 9665443
+        },
+        {
           "module": "single_delivery_model_v",
-          "time": 46,
-          "time-micros": 46269,
+          "time": 45,
+          "time-micros": 45699,
           "rlimit-count": 8541193
         },
         {
-          "module": "host_protocol_t",
-          "time": 37,
-          "time-micros": 37605,
-          "rlimit-count": 245398
-        },
-        {
-          "module": "main_t",
-          "time": 32,
-          "time-micros": 32902,
-          "rlimit-count": 260223
-        },
-        {
           "module": "cmessage_v",
-          "time": 32,
-          "time-micros": 32604,
+          "time": 37,
+          "time-micros": 37296,
           "rlimit-count": 5745176
         },
         {
           "module": "single_delivery_state_v",
-          "time": 30,
-          "time-micros": 30092,
+          "time": 36,
+          "time-micros": 36148,
           "rlimit-count": 1224917
         },
         {
+          "module": "host_protocol_t",
+          "time": 34,
+          "time-micros": 34331,
+          "rlimit-count": 245398
+        },
+        {
+          "module": "host_impl_t",
+          "time": 31,
+          "time-micros": 31697,
+          "rlimit-count": 248945
+        },
+        {
+          "module": "main_t",
+          "time": 31,
+          "time-micros": 31430,
+          "rlimit-count": 260223
+        },
+        {
           "module": "verus_extra::seq_lib_v",
-          "time": 20,
-          "time-micros": 20510,
+          "time": 24,
+          "time-micros": 24630,
           "rlimit-count": 444937
         },
         {
           "module": "verus_extra::set_lib_ext_v",
-          "time": 20,
-          "time-micros": 20061,
+          "time": 21,
+          "time-micros": 21392,
           "rlimit-count": 272691
         },
         {
-          "module": "host_impl_t",
-          "time": 16,
-          "time-micros": 16770,
-          "rlimit-count": 248945
-        },
-        {
           "module": "seq_is_unique_v",
-          "time": 16,
-          "time-micros": 16370,
+          "time": 15,
+          "time-micros": 15479,
           "rlimit-count": 202164
         },
         {
           "module": "single_delivery_t",
-          "time": 11,
-          "time-micros": 11921,
+          "time": 14,
+          "time-micros": 14837,
           "rlimit-count": 90495
         },
         {
           "module": "io_t",
-          "time": 11,
-          "time-micros": 11850,
+          "time": 10,
+          "time-micros": 10516,
           "rlimit-count": 82511
         },
         {
           "module": "endpoint_hashmap_t",
           "time": 8,
-          "time-micros": 8942,
+          "time-micros": 8318,
           "rlimit-count": 5131
         },
         {
-          "module": "keys_t",
-          "time": 5,
-          "time-micros": 5931,
-          "rlimit-count": 71060
-        },
-        {
           "module": "args_t",
-          "time": 5,
-          "time-micros": 5769,
+          "time": 7,
+          "time-micros": 7963,
           "rlimit-count": 73077
         },
         {
+          "module": "keys_t",
+          "time": 7,
+          "time-micros": 7431,
+          "rlimit-count": 71060
+        },
+        {
           "module": "verus_extra::choose_v",
-          "time": 4,
-          "time-micros": 4130,
+          "time": 3,
+          "time-micros": 3942,
           "rlimit-count": 1501
         },
         {
-          "module": "hashmap_t",
+          "module": "verus_extra::clone_v",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0
@@ -447,7 +447,7 @@
           "rlimit-count": 0
         },
         {
-          "module": "delegation_map_t",
+          "module": "message_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0
@@ -465,13 +465,13 @@
           "rlimit-count": 0
         },
         {
-          "module": "abstract_parameters_t",
+          "module": "delegation_map_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0
         },
         {
-          "module": "verus_extra::clone_v",
+          "module": "abstract_service_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0
@@ -483,1711 +483,1823 @@
           "rlimit-count": 0
         },
         {
-          "module": "message_t",
+          "module": "abstract_parameters_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0
         },
         {
-          "module": "abstract_service_t",
+          "module": "hashmap_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0
         }
       ],
-      "smt-run": 6427,
+      "smt-run": 14188,
       "smt-run-module-times": [
         {
           "module": "marshal_ironsht_specific_v",
-          "time": 1430,
-          "time-micros": 1430638,
+          "time": 3180,
+          "time-micros": 3180439,
           "rlimit-count": 22588422,
           "function-breakdown": [
             {
-              "function": "lib::io_t::EndPoint::serialize",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1376,
-              "rlimit-count": 5451,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1982,
-              "rlimit-count": 7704,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyRange::serialized_size",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2850,
-              "rlimit-count": 7624,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyKV::deserialize",
-              "mode:": "exec",
-              "time": 9,
-              "time-micros": 9064,
-              "rlimit-count": 51891,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyRange::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1889,
-              "rlimit-count": 19024,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyKV::serialized_size",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3710,
-              "rlimit-count": 47017,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1186,
-              "rlimit-count": 5301,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::_is_marshalable",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 972,
-              "rlimit-count": 3994,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::deserialize",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2495,
-              "rlimit-count": 6812,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4330,
-              "rlimit-count": 6226,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::serialize",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2041,
-              "rlimit-count": 4735,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1156,
-              "rlimit-count": 8003,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyRange::_is_marshalable",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2486,
-              "rlimit-count": 6032,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyHashMap::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 6,
-              "time-micros": 6145,
-              "rlimit-count": 34942,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_ironsht_specific_v::ckeyhashmap_max_serialized_size_exec",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 203,
-              "rlimit-count": 7031,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::serialized_size",
-              "mode:": "exec",
-              "time": 26,
-              "time-micros": 26264,
-              "rlimit-count": 400690,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyHashMap::_is_marshalable",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2077,
-              "rlimit-count": 463,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::view_equal_spec",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 544,
-              "rlimit-count": 5721,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::view_equal_spec",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 664,
-              "rlimit-count": 164602,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1925,
-              "rlimit-count": 6535,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyHashMap::serialized_size",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2263,
-              "rlimit-count": 9249,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::deserialize",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2245,
-              "rlimit-count": 6504,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::serialized_size",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1115,
-              "rlimit-count": 4248,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_ironsht_specific_v::lemma_is_marshalable_CKeyHashMap",
-              "mode:": "proof",
-              "time": 14,
-              "time-micros": 14079,
-              "rlimit-count": 26286,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyRange::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 7,
-              "time-micros": 7018,
-              "rlimit-count": 7075,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyHashMap::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 8,
-              "time-micros": 8133,
-              "rlimit-count": 34924,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 13,
-              "time-micros": 13778,
-              "rlimit-count": 10479802,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyRange::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2326,
-              "rlimit-count": 31967,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyKV::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 3,
-              "time-micros": 3964,
-              "rlimit-count": 235901,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 6,
-              "time-micros": 6887,
-              "rlimit-count": 29032,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_ironsht_specific_v::sorted_keys",
-              "mode:": "exec",
-              "time": 12,
-              "time-micros": 12427,
-              "rlimit-count": 100317,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyHashMap::deserialize",
-              "mode:": "exec",
-              "time": 8,
-              "time-micros": 8111,
-              "rlimit-count": 8862,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::_is_marshalable",
-              "mode:": "exec",
-              "time": 32,
-              "time-micros": 32300,
-              "rlimit-count": 37639,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyRange::serialize",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3730,
-              "rlimit-count": 8789,
-              "success": true
-            },
-            {
               "function": "lib::cmessage_v::CMessage::deserialize",
               "mode:": "exec",
-              "time": 306,
-              "time-micros": 306496,
+              "time": 577,
+              "time-micros": 577376,
               "rlimit-count": 3881688,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 3,
-              "time-micros": 3397,
-              "rlimit-count": 74625,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyHashMap::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 8,
-              "time-micros": 8916,
-              "rlimit-count": 32279,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyKV::_is_marshalable",
-              "mode:": "exec",
-              "time": 4,
-              "time-micros": 4103,
-              "rlimit-count": 6339,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyRange::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2532,
-              "rlimit-count": 6741,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyHashMap::serialize",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3204,
-              "rlimit-count": 6950,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyKV::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 8,
-              "time-micros": 8383,
-              "rlimit-count": 12070,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1557,
-              "rlimit-count": 7533,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2222,
-              "rlimit-count": 4811,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::serialize",
-              "mode:": "exec",
-              "time": 247,
-              "time-micros": 247305,
-              "rlimit-count": 188996,
               "success": true
             },
             {
               "function": "lib::cmessage_v::CMessage::lemma_serialization_is_not_a_prefix_of",
               "mode:": "proof",
-              "time": 609,
-              "time-micros": 609730,
+              "time": 1427,
+              "time-micros": 1427765,
               "rlimit-count": 6240688,
               "success": true
             },
             {
-              "function": "lib::hashmap_t::CKeyKV::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1578,
-              "rlimit-count": 3769,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyKV::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 17,
-              "time-micros": 17937,
-              "rlimit-count": 116356,
-              "success": true
-            },
-            {
-              "function": "lib::hashmap_t::CKeyHashMap::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1027,
-              "rlimit-count": 43780,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1304,
-              "rlimit-count": 9224,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::serialized_size",
+              "function": "lib::io_t::EndPoint::serialize",
               "mode:": "exec",
-              "time": 1,
-              "time-micros": 1382,
-              "rlimit-count": 4294,
+              "time": 3,
+              "time-micros": 3374,
+              "rlimit-count": 5451,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyHashMap::deserialize",
+              "mode:": "exec",
+              "time": 17,
+              "time-micros": 17601,
+              "rlimit-count": 8862,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::view_equal_spec",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2695,
+              "rlimit-count": 5721,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyKV::_is_marshalable",
+              "mode:": "exec",
+              "time": 11,
+              "time-micros": 11763,
+              "rlimit-count": 6339,
               "success": true
             },
             {
               "function": "lib::hashmap_t::CKeyKV::serialize",
               "mode:": "exec",
-              "time": 8,
-              "time-micros": 8464,
+              "time": 15,
+              "time-micros": 15719,
               "rlimit-count": 16719,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::deserialize",
+              "mode:": "exec",
+              "time": 3,
+              "time-micros": 3645,
+              "rlimit-count": 6504,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3706,
+              "rlimit-count": 4811,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::_is_marshalable",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1869,
+              "rlimit-count": 3994,
               "success": true
             },
             {
               "function": "lib::keys_t::SHTKey::_is_marshalable",
               "mode:": "exec",
               "time": 1,
-              "time-micros": 1013,
+              "time-micros": 1921,
               "rlimit-count": 98852,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyHashMap::serialized_size",
+              "mode:": "exec",
+              "time": 3,
+              "time-micros": 3667,
+              "rlimit-count": 9249,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3179,
+              "rlimit-count": 7704,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyRange::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2721,
+              "rlimit-count": 19024,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyHashMap::_is_marshalable",
+              "mode:": "exec",
+              "time": 7,
+              "time-micros": 7547,
+              "rlimit-count": 463,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyHashMap::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 16,
+              "time-micros": 16943,
+              "rlimit-count": 34924,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_ironsht_specific_v::lemma_is_marshalable_CKeyHashMap",
+              "mode:": "proof",
+              "time": 48,
+              "time-micros": 48660,
+              "rlimit-count": 26286,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::serialized_size",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2243,
+              "rlimit-count": 4248,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3231,
+              "rlimit-count": 6535,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2492,
+              "rlimit-count": 7533,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyRange::serialize",
+              "mode:": "exec",
+              "time": 6,
+              "time-micros": 6419,
+              "rlimit-count": 8789,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10756,
+              "rlimit-count": 74625,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::deserialize",
+              "mode:": "exec",
+              "time": 3,
+              "time-micros": 3697,
+              "rlimit-count": 6812,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::view_equal_spec",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2727,
+              "rlimit-count": 164602,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyHashMap::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 13,
+              "time-micros": 13477,
+              "rlimit-count": 32279,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::serialized_size",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2545,
+              "rlimit-count": 4294,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyKV::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2571,
+              "rlimit-count": 3769,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyKV::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7324,
+              "rlimit-count": 235901,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyHashMap::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 16,
+              "time-micros": 16556,
+              "rlimit-count": 34942,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyRange::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3266,
+              "rlimit-count": 6741,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_ironsht_specific_v::ckeyhashmap_max_serialized_size_exec",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 395,
+              "rlimit-count": 7031,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyRange::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3299,
+              "rlimit-count": 31967,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 18,
+              "time-micros": 18939,
+              "rlimit-count": 29032,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::serialize",
+              "mode:": "exec",
+              "time": 520,
+              "time-micros": 520717,
+              "rlimit-count": 188996,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2190,
+              "rlimit-count": 5301,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7380,
+              "rlimit-count": 6226,
               "success": true
             },
             {
               "function": "lib::keys_t::KeyRange::deserialize",
               "mode:": "exec",
-              "time": 8,
-              "time-micros": 8327,
+              "time": 16,
+              "time-micros": 16200,
               "rlimit-count": 12315,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2000,
+              "rlimit-count": 8003,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 40,
+              "time-micros": 40158,
+              "rlimit-count": 10479802,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyRange::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 19,
+              "time-micros": 19071,
+              "rlimit-count": 7075,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyHashMap::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1830,
+              "rlimit-count": 43780,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::serialize",
+              "mode:": "exec",
+              "time": 3,
+              "time-micros": 3243,
+              "rlimit-count": 4735,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyKV::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 54,
+              "time-micros": 54271,
+              "rlimit-count": 116356,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyKV::serialized_size",
+              "mode:": "exec",
+              "time": 6,
+              "time-micros": 6709,
+              "rlimit-count": 47017,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyKV::deserialize",
+              "mode:": "exec",
+              "time": 19,
+              "time-micros": 19890,
+              "rlimit-count": 51891,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyRange::_is_marshalable",
+              "mode:": "exec",
+              "time": 3,
+              "time-micros": 3020,
+              "rlimit-count": 6032,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2289,
+              "rlimit-count": 9224,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyKV::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 18,
+              "time-micros": 18692,
+              "rlimit-count": 12070,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyRange::serialized_size",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4230,
+              "rlimit-count": 7624,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_ironsht_specific_v::sorted_keys",
+              "mode:": "exec",
+              "time": 30,
+              "time-micros": 30240,
+              "rlimit-count": 100317,
+              "success": true
+            },
+            {
+              "function": "lib::hashmap_t::CKeyHashMap::serialize",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4495,
+              "rlimit-count": 6950,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::_is_marshalable",
+              "mode:": "exec",
+              "time": 104,
+              "time-micros": 104345,
+              "rlimit-count": 37639,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::serialized_size",
+              "mode:": "exec",
+              "time": 69,
+              "time-micros": 69357,
+              "rlimit-count": 400690,
               "success": true
             }
           ]
         },
         {
           "module": "host_impl_v",
-          "time": 1364,
-          "time-micros": 1364980,
+          "time": 3128,
+          "time-micros": 3129294,
           "rlimit-count": 5018422,
           "function-breakdown": [
             {
+              "function": "lib::host_impl_v::HostState::host_next_receive_packet",
+              "mode:": "exec",
+              "time": 312,
+              "time-micros": 312063,
+              "rlimit-count": 21125,
+              "success": true
+            },
+            {
               "function": "lib::host_impl_v::HostState::host_noreceive_noclock_next",
               "mode:": "exec",
-              "time": 36,
-              "time-micros": 36723,
+              "time": 75,
+              "time-micros": 75297,
               "rlimit-count": 25298,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::deliver_packet_seq",
-              "mode:": "exec",
-              "time": 19,
-              "time-micros": 19663,
-              "rlimit-count": 55543,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::process_received_packet_next_impl",
-              "mode:": "exec",
-              "time": 39,
-              "time-micros": 39448,
-              "rlimit-count": 136560,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::receive_packet_next",
-              "mode:": "exec",
-              "time": 68,
-              "time-micros": 68750,
-              "rlimit-count": 16903,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::host_model_next_delegate",
-              "mode:": "exec",
-              "time": 90,
-              "time-micros": 90805,
-              "rlimit-count": 25765,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::host_model_receive_packet",
-              "mode:": "exec",
-              "time": 43,
-              "time-micros": 43676,
-              "rlimit-count": 23566,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::host_model_next_get_request",
-              "mode:": "exec",
-              "time": 209,
-              "time-micros": 209981,
-              "rlimit-count": 44175,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::empty_event_results",
-              "mode:": "proof",
-              "time": 5,
-              "time-micros": 5337,
-              "rlimit-count": 195128,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::make_send_only_event_results",
-              "mode:": "exec",
-              "time": 4,
-              "time-micros": 4739,
-              "rlimit-count": 26942,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::effect_of_hashmap_bulk_update",
-              "mode:": "proof",
-              "time": 3,
-              "time-micros": 3120,
-              "rlimit-count": 28800,
               "success": true
             },
             {
               "function": "lib::host_impl_v::make_empty_event_results",
               "mode:": "exec",
-              "time": 6,
-              "time-micros": 6754,
+              "time": 12,
+              "time-micros": 12519,
               "rlimit-count": 314558,
               "success": true
             },
             {
-              "function": "lib::host_impl_v::HostState::effect_of_delegation_map_set",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4328,
-              "rlimit-count": 1408563,
+              "function": "lib::host_impl_v::HostState::process_received_packet_next_impl",
+              "mode:": "exec",
+              "time": 103,
+              "time-micros": 103056,
+              "rlimit-count": 136560,
               "success": true
             },
             {
-              "function": "lib::host_impl_v::HostState::host_model_next_shard",
+              "function": "lib::host_impl_v::HostState::parse_end_point",
               "mode:": "exec",
-              "time": 203,
-              "time-micros": 203613,
-              "rlimit-count": 176855,
+              "time": 5,
+              "time-micros": 5512,
+              "rlimit-count": 24476,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::deliver_packet_seq",
+              "mode:": "exec",
+              "time": 61,
+              "time-micros": 61193,
+              "rlimit-count": 55543,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::parse_end_points",
+              "mode:": "exec",
+              "time": 34,
+              "time-micros": 34016,
+              "rlimit-count": 53872,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::effect_of_hashmap_bulk_update",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10448,
+              "rlimit-count": 28800,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::host_model_next_delegate",
+              "mode:": "exec",
+              "time": 129,
+              "time-micros": 129840,
+              "rlimit-count": 25765,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::host_model_next_set_request",
+              "mode:": "exec",
+              "time": 753,
+              "time-micros": 753618,
+              "rlimit-count": 768566,
               "success": true
             },
             {
               "function": "lib::host_impl_v::HostState::real_next_impl",
               "mode:": "exec",
-              "time": 71,
-              "time-micros": 71322,
+              "time": 181,
+              "time-micros": 181195,
               "rlimit-count": 169090,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::effect_of_delegation_map_set",
+              "mode:": "proof",
+              "time": 14,
+              "time-micros": 14274,
+              "rlimit-count": 1408563,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::host_model_next_receive_message",
+              "mode:": "exec",
+              "time": 80,
+              "time-micros": 80432,
+              "rlimit-count": 994193,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::receive_packet_next",
+              "mode:": "exec",
+              "time": 194,
+              "time-micros": 194391,
+              "rlimit-count": 16903,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::host_model_next_shard",
+              "mode:": "exec",
+              "time": 450,
+              "time-micros": 450652,
+              "rlimit-count": 176855,
               "success": true
             },
             {
               "function": "lib::host_impl_v::Parameters::static_params",
               "mode:": "exec",
-              "time": 2,
-              "time-micros": 2820,
+              "time": 4,
+              "time-micros": 4574,
               "rlimit-count": 30414,
               "success": true
             },
             {
-              "function": "lib::host_impl_v::HostState::real_init_impl",
+              "function": "lib::host_impl_v::make_send_only_event_results",
               "mode:": "exec",
-              "time": 13,
-              "time-micros": 13565,
-              "rlimit-count": 35813,
+              "time": 9,
+              "time-micros": 9490,
+              "rlimit-count": 26942,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::host_model_receive_packet",
+              "mode:": "exec",
+              "time": 128,
+              "time-micros": 128127,
+              "rlimit-count": 23566,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::extract_range_impl",
+              "mode:": "exec",
+              "time": 12,
+              "time-micros": 12303,
+              "rlimit-count": 20654,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::host_model_next_get_request",
+              "mode:": "exec",
+              "time": 448,
+              "time-micros": 448777,
+              "rlimit-count": 44175,
+              "success": true
+            },
+            {
+              "function": "lib::host_impl_v::HostState::parse_command_line_configuration",
+              "mode:": "exec",
+              "time": 18,
+              "time-micros": 18258,
+              "rlimit-count": 37871,
               "success": true
             },
             {
               "function": "lib::host_impl_v::HostState::should_process_received_message_impl",
               "mode:": "exec",
-              "time": 21,
-              "time-micros": 21319,
+              "time": 28,
+              "time-micros": 28608,
               "rlimit-count": 253823,
               "success": true
             },
             {
               "function": "lib::host_impl_v::HostState::deliver_outbound_packets",
               "mode:": "exec",
-              "time": 5,
-              "time-micros": 5855,
+              "time": 11,
+              "time-micros": 11680,
               "rlimit-count": 129869,
               "success": true
             },
             {
-              "function": "lib::host_impl_v::extract_range_impl",
+              "function": "lib::host_impl_v::HostState::real_init_impl",
               "mode:": "exec",
-              "time": 5,
-              "time-micros": 5233,
-              "rlimit-count": 20654,
+              "time": 39,
+              "time-micros": 39881,
+              "rlimit-count": 35813,
               "success": true
             },
             {
-              "function": "lib::host_impl_v::HostState::parse_end_points",
-              "mode:": "exec",
-              "time": 16,
-              "time-micros": 16116,
-              "rlimit-count": 53872,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::parse_command_line_configuration",
-              "mode:": "exec",
-              "time": 11,
-              "time-micros": 11345,
-              "rlimit-count": 37871,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::host_model_next_set_request",
-              "mode:": "exec",
-              "time": 309,
-              "time-micros": 309608,
-              "rlimit-count": 768566,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::host_model_next_receive_message",
-              "mode:": "exec",
-              "time": 36,
-              "time-micros": 36475,
-              "rlimit-count": 994193,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::parse_end_point",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2280,
-              "rlimit-count": 24476,
-              "success": true
-            },
-            {
-              "function": "lib::host_impl_v::HostState::host_next_receive_packet",
-              "mode:": "exec",
-              "time": 132,
-              "time-micros": 132094,
-              "rlimit-count": 21125,
+              "function": "lib::host_impl_v::HostState::empty_event_results",
+              "mode:": "proof",
+              "time": 9,
+              "time-micros": 9078,
+              "rlimit-count": 195128,
               "success": true
             }
           ]
         },
         {
           "module": "delegation_map_v",
-          "time": 1181,
-          "time-micros": 1181595,
+          "time": 2710,
+          "time-micros": 2710987,
           "rlimit-count": 9356976,
           "function-breakdown": [
             {
-              "function": "lib::delegation_map_v::DelegationMap::almost_all_keys_agree",
-              "mode:": "proof",
-              "time": 18,
-              "time-micros": 18035,
-              "rlimit-count": 10052,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedVec::to_set",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1988,
-              "rlimit-count": 5541,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedVec::insert",
-              "mode:": "exec",
-              "time": 24,
-              "time-micros": 24996,
-              "rlimit-count": 223168,
-              "success": true
-            },
-            {
               "function": "lib::delegation_map_v::StrictlyOrderedVec::new",
               "mode:": "exec",
-              "time": 2,
-              "time-micros": 2382,
-              "rlimit-count": 8002,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::greatest_lower_bound_index",
-              "mode:": "exec",
-              "time": 33,
-              "time-micros": 33136,
-              "rlimit-count": 110714,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedVec::set",
-              "mode:": "exec",
-              "time": 14,
-              "time-micros": 14842,
-              "rlimit-count": 7277,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::Ordering::is_le",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1405,
-              "rlimit-count": 5437,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyIterator::lt",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1388,
-              "rlimit-count": 5335,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::erase",
-              "mode:": "exec",
-              "time": 129,
-              "time-micros": 129593,
-              "rlimit-count": 59634,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::DelegationMap::get",
-              "mode:": "exec",
-              "time": 4,
-              "time-micros": 4232,
-              "rlimit-count": 26675,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::DelegationMap::empty_key_range_is_consistent",
-              "mode:": "proof",
               "time": 3,
-              "time-micros": 3335,
-              "rlimit-count": 19599,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::Ordering::is_gt",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1302,
-              "rlimit-count": 5464,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::DelegationMap::not_range_consistent",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4004,
-              "rlimit-count": 993613,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::vec_erase",
-              "mode:": "exec",
-              "time": 22,
-              "time-micros": 22024,
-              "rlimit-count": 220545,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::DelegationMap::range_consistent_impl",
-              "mode:": "exec",
-              "time": 551,
-              "time-micros": 551803,
-              "rlimit-count": 22081,
+              "time-micros": 3964,
+              "rlimit-count": 8002,
               "success": true
             },
             {
               "function": "lib::delegation_map_v::StrictlyOrderedMap::find_key",
               "mode:": "exec",
-              "time": 6,
-              "time-micros": 6684,
+              "time": 14,
+              "time-micros": 14832,
               "rlimit-count": 34971,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::Ordering::is_ne",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1284,
-              "rlimit-count": 5441,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::choose_gap_violator",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1187,
-              "rlimit-count": 2035,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyIterator::get",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2330,
-              "rlimit-count": 677,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::DelegationMap::delegate_for_key_range_is_host_impl",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3971,
-              "rlimit-count": 3883158,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyIterator::new",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 575,
-              "rlimit-count": 530255,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::Ordering::is_lt",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1307,
-              "rlimit-count": 117960,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::new",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3822,
-              "rlimit-count": 8779,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyIterator::is_end",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1904,
-              "rlimit-count": 10758,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedVec::len",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1543,
-              "rlimit-count": 8296,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::get",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2494,
-              "rlimit-count": 40374,
               "success": true
             },
             {
               "function": "lib::keys_t::KeyIterator::above",
               "mode:": "exec",
-              "time": 2,
-              "time-micros": 2170,
+              "time": 3,
+              "time-micros": 3546,
               "rlimit-count": 7139,
               "success": true
             },
             {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::set",
-              "mode:": "exec",
-              "time": 11,
-              "time-micros": 11937,
-              "rlimit-count": 11766,
+              "function": "lib::delegation_map_v::DelegationMap::almost_all_keys_agree",
+              "mode:": "proof",
+              "time": 28,
+              "time-micros": 28880,
+              "rlimit-count": 10052,
               "success": true
             },
             {
               "function": "lib::delegation_map_v::DelegationMap::get_internal",
               "mode:": "exec",
-              "time": 11,
-              "time-micros": 11441,
+              "time": 14,
+              "time-micros": 14862,
               "rlimit-count": 6442,
               "success": true
             },
             {
-              "function": "lib::keys_t::Ordering::is_ge",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1185,
-              "rlimit-count": 5464,
+              "function": "lib::delegation_map_v::DelegationMap::all_keys_agree",
+              "mode:": "proof",
+              "time": 8,
+              "time-micros": 8561,
+              "rlimit-count": 84545,
               "success": true
             },
             {
-              "function": "lib::keys_t::Ordering::is_eq",
+              "function": "lib::keys_t::KeyIterator::is_end",
               "mode:": "exec",
-              "time": 1,
-              "time-micros": 1438,
-              "rlimit-count": 9724,
+              "time": 3,
+              "time-micros": 3317,
+              "rlimit-count": 10758,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::set",
+              "mode:": "exec",
+              "time": 32,
+              "time-micros": 32929,
+              "rlimit-count": 11766,
               "success": true
             },
             {
               "function": "lib::delegation_map_v::StrictlyOrderedVec::remove",
               "mode:": "exec",
-              "time": 13,
-              "time-micros": 13696,
+              "time": 35,
+              "time-micros": 35007,
               "rlimit-count": 141473,
               "success": true
             },
             {
               "function": "lib::delegation_map_v::StrictlyOrderedMap::mind_the_gap",
               "mode:": "proof",
-              "time": 4,
-              "time-micros": 4955,
+              "time": 11,
+              "time-micros": 11535,
               "rlimit-count": 441877,
               "success": true
             },
             {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::values_agree",
-              "mode:": "exec",
-              "time": 9,
-              "time-micros": 9767,
-              "rlimit-count": 41951,
+              "function": "lib::delegation_map_v::StrictlyOrderedVec::to_set",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3628,
+              "rlimit-count": 5541,
               "success": true
             },
             {
-              "function": "lib::keys_t::KeyIterator::end",
+              "function": "lib::keys_t::KeyIterator::lt",
               "mode:": "exec",
-              "time": 0,
-              "time-micros": 285,
-              "rlimit-count": 922,
+              "time": 4,
+              "time-micros": 4315,
+              "rlimit-count": 5335,
               "success": true
             },
             {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::greatest_lower_bound",
+              "function": "lib::delegation_map_v::StrictlyOrderedVec::insert",
               "mode:": "exec",
-              "time": 2,
-              "time-micros": 2613,
-              "rlimit-count": 219641,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedVec::index",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1509,
-              "rlimit-count": 5639,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::keys_in_index_range_agree",
-              "mode:": "exec",
-              "time": 7,
-              "time-micros": 7129,
-              "rlimit-count": 13999,
+              "time": 62,
+              "time-micros": 62029,
+              "rlimit-count": 223168,
               "success": true
             },
             {
               "function": "lib::delegation_map_v::DelegationMap::set",
               "mode:": "exec",
-              "time": 190,
-              "time-micros": 190516,
+              "time": 437,
+              "time-micros": 437974,
               "rlimit-count": 10481,
               "success": true
             },
             {
-              "function": "lib::delegation_map_v::DelegationMap::extend_range_consistent",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2145,
-              "rlimit-count": 8876,
+              "function": "lib::delegation_map_v::DelegationMap::delegate_for_key_range_is_host_impl",
+              "mode:": "exec",
+              "time": 9,
+              "time-micros": 9931,
+              "rlimit-count": 3883158,
               "success": true
             },
             {
-              "function": "lib::delegation_map_v::StrictlyOrderedMap::gap_means_empty",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 790,
-              "rlimit-count": 28100,
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::keys_in_index_range_agree",
+              "mode:": "exec",
+              "time": 14,
+              "time-micros": 14486,
+              "rlimit-count": 13999,
               "success": true
             },
             {
               "function": "lib::delegation_map_v::DelegationMap::valid_implies_complete",
               "mode:": "proof",
-              "time": 2,
-              "time-micros": 2337,
+              "time": 3,
+              "time-micros": 3513,
               "rlimit-count": 23072,
               "success": true
             },
             {
               "function": "lib::delegation_map_v::DelegationMap::range_consistent_subset",
               "mode:": "proof",
-              "time": 6,
-              "time-micros": 6025,
+              "time": 8,
+              "time-micros": 8072,
               "rlimit-count": 7221,
               "success": true
             },
             {
-              "function": "lib::delegation_map_v::DelegationMap::lemma_set_is_update",
-              "mode:": "proof",
-              "time": 9,
-              "time-micros": 9345,
-              "rlimit-count": 17361,
-              "success": true
-            },
-            {
-              "function": "lib::delegation_map_v::DelegationMap::new",
+              "function": "lib::delegation_map_v::vec_erase",
               "mode:": "exec",
-              "time": 11,
-              "time-micros": 11937,
-              "rlimit-count": 743199,
+              "time": 55,
+              "time-micros": 55342,
+              "rlimit-count": 220545,
               "success": true
             },
             {
-              "function": "lib::delegation_map_v::DelegationMap::all_keys_agree",
-              "mode:": "proof",
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::new",
+              "mode:": "exec",
               "time": 5,
-              "time-micros": 5784,
-              "rlimit-count": 84545,
+              "time-micros": 5742,
+              "rlimit-count": 8779,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::Ordering::is_ne",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2484,
+              "rlimit-count": 5441,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::greatest_lower_bound_index",
+              "mode:": "exec",
+              "time": 90,
+              "time-micros": 90284,
+              "rlimit-count": 110714,
               "success": true
             },
             {
               "function": "lib::delegation_map_v::StrictlyOrderedVec::erase",
               "mode:": "exec",
-              "time": 43,
-              "time-micros": 43001,
+              "time": 118,
+              "time-micros": 118990,
               "rlimit-count": 1162243,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::Ordering::is_gt",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2499,
+              "rlimit-count": 5464,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedVec::index",
+              "mode:": "exec",
+              "time": 3,
+              "time-micros": 3075,
+              "rlimit-count": 5639,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::get",
+              "mode:": "exec",
+              "time": 5,
+              "time-micros": 5997,
+              "rlimit-count": 40374,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::DelegationMap::not_range_consistent",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5975,
+              "rlimit-count": 993613,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::erase",
+              "mode:": "exec",
+              "time": 269,
+              "time-micros": 269617,
+              "rlimit-count": 59634,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::DelegationMap::range_consistent_impl",
+              "mode:": "exec",
+              "time": 1328,
+              "time-micros": 1328994,
+              "rlimit-count": 22081,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::Ordering::is_le",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2471,
+              "rlimit-count": 5437,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedVec::len",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2613,
+              "rlimit-count": 8296,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::DelegationMap::extend_range_consistent",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3141,
+              "rlimit-count": 8876,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyIterator::new",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 711,
+              "rlimit-count": 530255,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::choose_gap_violator",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4128,
+              "rlimit-count": 2035,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::Ordering::is_ge",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2507,
+              "rlimit-count": 5464,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::greatest_lower_bound",
+              "mode:": "exec",
+              "time": 5,
+              "time-micros": 5877,
+              "rlimit-count": 219641,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::DelegationMap::empty_key_range_is_consistent",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4391,
+              "rlimit-count": 19599,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedVec::set",
+              "mode:": "exec",
+              "time": 37,
+              "time-micros": 37475,
+              "rlimit-count": 7277,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyIterator::end",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 216,
+              "rlimit-count": 922,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::Ordering::is_lt",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2512,
+              "rlimit-count": 117960,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyIterator::get",
+              "mode:": "exec",
+              "time": 3,
+              "time-micros": 3323,
+              "rlimit-count": 677,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::gap_means_empty",
+              "mode:": "proof",
+              "time": 0,
+              "time-micros": 767,
+              "rlimit-count": 28100,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::DelegationMap::get",
+              "mode:": "exec",
+              "time": 5,
+              "time-micros": 5618,
+              "rlimit-count": 26675,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::DelegationMap::new",
+              "mode:": "exec",
+              "time": 15,
+              "time-micros": 15211,
+              "rlimit-count": 743199,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::Ordering::is_eq",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2487,
+              "rlimit-count": 9724,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::DelegationMap::lemma_set_is_update",
+              "mode:": "proof",
+              "time": 11,
+              "time-micros": 11804,
+              "rlimit-count": 17361,
+              "success": true
+            },
+            {
+              "function": "lib::delegation_map_v::StrictlyOrderedMap::values_agree",
+              "mode:": "exec",
+              "time": 15,
+              "time-micros": 15331,
+              "rlimit-count": 41951,
               "success": true
             }
           ]
         },
         {
           "module": "single_delivery_model_v",
-          "time": 875,
-          "time-micros": 875044,
+          "time": 1800,
+          "time-micros": 1800379,
           "rlimit-count": 8541193,
           "function-breakdown": [
             {
-              "function": "lib::single_delivery_state_v::CSingleDelivery::should_ack_sigle_message_impl",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 78,
-              "rlimit-count": 23574,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CSingleDelivery::retransmit_un_acked_packets_for_dst",
-              "mode:": "exec",
-              "time": 44,
-              "time-micros": 44282,
-              "rlimit-count": 187904,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CSingleDelivery::receive_real_packet_impl",
-              "mode:": "exec",
-              "time": 7,
-              "time-micros": 7742,
-              "rlimit-count": 293746,
-              "success": true
-            },
-            {
               "function": "lib::single_delivery_state_v::CSingleDelivery::receive_ack_impl",
               "mode:": "exec",
-              "time": 24,
-              "time-micros": 24242,
+              "time": 47,
+              "time-micros": 47315,
               "rlimit-count": 19696,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CSingleDelivery::retransmit_un_acked_packets",
-              "mode:": "exec",
-              "time": 41,
-              "time-micros": 41907,
-              "rlimit-count": 200758,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CSingleDelivery::send_single_cmessage",
-              "mode:": "exec",
-              "time": 722,
-              "time-micros": 722032,
-              "rlimit-count": 49913,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_model_v::same_view_same_marshalable",
-              "mode:": "proof",
-              "time": 5,
-              "time-micros": 5014,
-              "rlimit-count": 7569107,
               "success": true
             },
             {
               "function": "lib::single_delivery_state_v::CSingleDelivery::maybe_ack_packet_impl",
               "mode:": "exec",
-              "time": 8,
-              "time-micros": 8929,
+              "time": 25,
+              "time-micros": 25082,
               "rlimit-count": 42505,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSingleDelivery::retransmit_un_acked_packets_for_dst",
+              "mode:": "exec",
+              "time": 95,
+              "time-micros": 95993,
+              "rlimit-count": 187904,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSingleDelivery::retransmit_un_acked_packets",
+              "mode:": "exec",
+              "time": 96,
+              "time-micros": 96091,
+              "rlimit-count": 200758,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSingleDelivery::should_ack_sigle_message_impl",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 100,
+              "rlimit-count": 23574,
               "success": true
             },
             {
               "function": "lib::single_delivery_state_v::CSingleDelivery::new_impl",
               "mode:": "exec",
-              "time": 6,
-              "time-micros": 6636,
+              "time": 12,
+              "time-micros": 12091,
               "rlimit-count": 108319,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSingleDelivery::send_single_cmessage",
+              "mode:": "exec",
+              "time": 1466,
+              "time-micros": 1466739,
+              "rlimit-count": 49913,
               "success": true
             },
             {
               "function": "lib::single_delivery_state_v::CSingleDelivery::receive_impl",
               "mode:": "exec",
-              "time": 14,
-              "time-micros": 14176,
+              "time": 28,
+              "time-micros": 28647,
               "rlimit-count": 45671,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_model_v::same_view_same_marshalable",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6777,
+              "rlimit-count": 7569107,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSingleDelivery::receive_real_packet_impl",
+              "mode:": "exec",
+              "time": 21,
+              "time-micros": 21540,
+              "rlimit-count": 293746,
               "success": true
             }
           ]
         },
         {
           "module": "marshal_v",
-          "time": 717,
-          "time-micros": 717882,
+          "time": 1481,
+          "time-micros": 1481853,
           "rlimit-count": 9665443,
           "function-breakdown": [
-            {
-              "function": "lib::marshal_v::impl&%0::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1551,
-              "rlimit-count": 19669,
-              "success": true
-            },
-            {
-              "function": "core::option::Option::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4891,
-              "rlimit-count": 7411,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%5::serialize",
-              "mode:": "exec",
-              "time": 6,
-              "time-micros": 6974,
-              "rlimit-count": 7733,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%0::_is_marshalable",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 773,
-              "rlimit-count": 2503,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4944,
-              "rlimit-count": 35321,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%5::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2211,
-              "rlimit-count": 105191,
-              "success": true
-            },
             {
               "function": "lib::marshal_v::impl&%1::serialized_size",
               "mode:": "exec",
               "time": 1,
-              "time-micros": 1502,
+              "time-micros": 1772,
               "rlimit-count": 3039,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%0::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 790,
-              "rlimit-count": 5211,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::serialized_size",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3231,
-              "rlimit-count": 14687,
-              "success": true
-            },
-            {
-              "function": "core::option::Option::serialized_size",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3120,
-              "rlimit-count": 8032,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%5::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 18,
-              "time-micros": 18483,
-              "rlimit-count": 54146,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%1::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1540,
-              "rlimit-count": 5725,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::deserialize",
-              "mode:": "exec",
-              "time": 4,
-              "time-micros": 4706,
-              "rlimit-count": 145654,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 867,
-              "rlimit-count": 6271,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%5::serialized_size",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1280,
-              "rlimit-count": 10981,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::_is_marshalable",
-              "mode:": "exec",
-              "time": 47,
-              "time-micros": 47533,
-              "rlimit-count": 540768,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 283,
-              "time-micros": 283075,
-              "rlimit-count": 113241,
-              "success": true
-            },
-            {
-              "function": "core::option::Option::serialize",
-              "mode:": "exec",
-              "time": 6,
-              "time-micros": 6699,
-              "rlimit-count": 10016,
-              "success": true
-            },
-            {
-              "function": "core::option::Option::deserialize",
-              "mode:": "exec",
-              "time": 10,
-              "time-micros": 10382,
-              "rlimit-count": 53661,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%1::serialize",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1574,
-              "rlimit-count": 3509,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%5::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1311,
-              "rlimit-count": 36955,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2712,
-              "rlimit-count": 11286,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::lemma_same_views_serialize_the_same",
-              "mode:": "proof",
-              "time": 10,
-              "time-micros": 10383,
-              "rlimit-count": 5928129,
-              "success": true
-            },
-            {
-              "function": "core::option::Option::_is_marshalable",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1921,
-              "rlimit-count": 6340,
               "success": true
             },
             {
               "function": "alloc::vec::Vec::serialize",
               "mode:": "exec",
-              "time": 92,
-              "time-micros": 92726,
-              "rlimit-count": 904203,
+              "time": 59,
+              "time-micros": 59472,
+              "rlimit-count": 297953,
               "success": true
             },
             {
-              "function": "lib::marshal_v::impl&%1::_is_marshalable",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 836,
-              "rlimit-count": 2905,
-              "success": true
-            },
-            {
-              "function": "core::option::Option::lemma_serialization_is_not_a_prefix_of",
+              "function": "alloc::vec::Vec::lemma_same_views_serialize_the_same",
               "mode:": "proof",
-              "time": 6,
-              "time-micros": 6774,
-              "rlimit-count": 136312,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%0::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 755,
-              "rlimit-count": 67034,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 7,
-              "time-micros": 7427,
-              "rlimit-count": 4670,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%5::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2459,
-              "rlimit-count": 5730,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%0::serialized_size",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 733,
-              "rlimit-count": 2341,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%1::deserialize",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3263,
-              "rlimit-count": 5615,
-              "success": true
-            },
-            {
-              "function": "alloc::vec::Vec::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
-              "time": 16,
-              "time-micros": 16867,
-              "rlimit-count": 94278,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%5::deserialize",
-              "mode:": "exec",
-              "time": 4,
-              "time-micros": 4621,
-              "rlimit-count": 56657,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%0::serialize",
-              "mode:": "exec",
               "time": 17,
-              "time-micros": 17378,
-              "rlimit-count": 161478,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%1::lemma_view_equal_symmetric",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 662,
-              "rlimit-count": 2960,
+              "time-micros": 17870,
+              "rlimit-count": 5928129,
               "success": true
             },
             {
               "function": "lib::marshal_v::impl&%1::lemma_serialize_injective",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1853,
+              "time": 2,
+              "time-micros": 2700,
               "rlimit-count": 4062,
               "success": true
             },
             {
               "function": "lib::marshal_v::impl&%0::lemma_serialize_injective",
               "mode:": "proof",
-              "time": 0,
-              "time-micros": 832,
+              "time": 1,
+              "time-micros": 1316,
               "rlimit-count": 2681,
               "success": true
             },
             {
-              "function": "core::option::Option::lemma_view_equal_symmetric",
+              "function": "alloc::vec::Vec::_is_marshalable",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4311,
+              "rlimit-count": 5958,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%1::lemma_view_equal_symmetric",
               "mode:": "proof",
               "time": 1,
-              "time-micros": 1943,
-              "rlimit-count": 39883,
+              "time-micros": 1239,
+              "rlimit-count": 2960,
               "success": true
             },
             {
-              "function": "alloc::vec::Vec::deserialize",
+              "function": "lib::marshal_v::impl&%1::_is_marshalable",
               "mode:": "exec",
-              "time": 40,
-              "time-micros": 40132,
-              "rlimit-count": 226174,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%1::lemma_serialization_is_not_a_prefix_of",
-              "mode:": "proof",
               "time": 1,
-              "time-micros": 1834,
-              "rlimit-count": 11382,
+              "time-micros": 1488,
+              "rlimit-count": 2905,
               "success": true
             },
             {
-              "function": "core::option::Option::lemma_same_views_serialize_the_same",
+              "function": "alloc::vec::Vec::lemma_serialization_is_not_a_prefix_of",
               "mode:": "proof",
-              "time": 2,
-              "time-micros": 2338,
-              "rlimit-count": 60823,
+              "time": 23,
+              "time-micros": 23126,
+              "rlimit-count": 94278,
               "success": true
             },
             {
-              "function": "alloc::vec::Vec::serialize",
+              "function": "core::option::Option::deserialize",
               "mode:": "exec",
-              "time": 37,
-              "time-micros": 37435,
-              "rlimit-count": 297953,
-              "success": true
-            },
-            {
-              "function": "lib::marshal_v::impl&%0::deserialize",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3669,
-              "rlimit-count": 12941,
+              "time": 22,
+              "time-micros": 22245,
+              "rlimit-count": 53661,
               "success": true
             },
             {
               "function": "lib::marshal_v::impl&%5::_is_marshalable",
               "mode:": "exec",
-              "time": 1,
-              "time-micros": 1623,
+              "time": 3,
+              "time-micros": 3908,
               "rlimit-count": 4732,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4162,
+              "rlimit-count": 11286,
+              "success": true
+            },
+            {
+              "function": "core::option::Option::_is_marshalable",
+              "mode:": "exec",
+              "time": 3,
+              "time-micros": 3558,
+              "rlimit-count": 6340,
+              "success": true
+            },
+            {
+              "function": "core::option::Option::serialized_size",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4657,
+              "rlimit-count": 8032,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%0::_is_marshalable",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1073,
+              "rlimit-count": 2503,
+              "success": true
+            },
+            {
+              "function": "core::option::Option::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3560,
+              "rlimit-count": 60823,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%5::serialize",
+              "mode:": "exec",
+              "time": 12,
+              "time-micros": 12898,
+              "rlimit-count": 7733,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%0::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1135,
+              "rlimit-count": 67034,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%0::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2590,
+              "rlimit-count": 19669,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%5::serialized_size",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4481,
+              "rlimit-count": 10981,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%5::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 28,
+              "time-micros": 28996,
+              "rlimit-count": 54146,
+              "success": true
+            },
+            {
+              "function": "core::option::Option::serialize",
+              "mode:": "exec",
+              "time": 12,
+              "time-micros": 12730,
+              "rlimit-count": 10016,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%1::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2638,
+              "rlimit-count": 11382,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10409,
+              "rlimit-count": 4670,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 610,
+              "time-micros": 610011,
+              "rlimit-count": 113241,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%5::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3984,
+              "rlimit-count": 5730,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 8,
+              "time-micros": 8605,
+              "rlimit-count": 35321,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%5::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3040,
+              "rlimit-count": 105191,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::deserialize",
+              "mode:": "exec",
+              "time": 92,
+              "time-micros": 92346,
+              "rlimit-count": 226174,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%1::serialize",
+              "mode:": "exec",
+              "time": 2,
+              "time-micros": 2709,
+              "rlimit-count": 3509,
+              "success": true
+            },
+            {
+              "function": "core::option::Option::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2636,
+              "rlimit-count": 39883,
+              "success": true
+            },
+            {
+              "function": "core::option::Option::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 11,
+              "time-micros": 11451,
+              "rlimit-count": 7411,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%5::deserialize",
+              "mode:": "exec",
+              "time": 10,
+              "time-micros": 10682,
+              "rlimit-count": 56657,
               "success": true
             },
             {
               "function": "alloc::vec::Vec::serialized_size",
               "mode:": "exec",
-              "time": 45,
-              "time-micros": 45173,
+              "time": 4,
+              "time-micros": 4514,
+              "rlimit-count": 14687,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%0::serialized_size",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1240,
+              "rlimit-count": 2341,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%5::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1681,
+              "rlimit-count": 36955,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::serialized_size",
+              "mode:": "exec",
+              "time": 96,
+              "time-micros": 96505,
               "rlimit-count": 320693,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::serialize",
+              "mode:": "exec",
+              "time": 192,
+              "time-micros": 192320,
+              "rlimit-count": 904203,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%0::serialize",
+              "mode:": "exec",
+              "time": 30,
+              "time-micros": 30863,
+              "rlimit-count": 161478,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::lemma_view_equal_symmetric",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1371,
+              "rlimit-count": 6271,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%0::deserialize",
+              "mode:": "exec",
+              "time": 6,
+              "time-micros": 6053,
+              "rlimit-count": 12941,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%0::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1290,
+              "rlimit-count": 5211,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%1::lemma_same_views_serialize_the_same",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1954,
+              "rlimit-count": 5725,
               "success": true
             },
             {
               "function": "alloc::vec::Vec::lemma_same_views_serialize_the_same",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1863,
+              "time": 2,
+              "time-micros": 2306,
               "rlimit-count": 98499,
               "success": true
             },
             {
               "function": "alloc::vec::Vec::_is_marshalable",
               "mode:": "exec",
-              "time": 2,
-              "time-micros": 2210,
-              "rlimit-count": 5958,
+              "time": 129,
+              "time-micros": 129211,
+              "rlimit-count": 540768,
+              "success": true
+            },
+            {
+              "function": "core::option::Option::lemma_serialization_is_not_a_prefix_of",
+              "mode:": "proof",
+              "time": 15,
+              "time-micros": 15492,
+              "rlimit-count": 136312,
+              "success": true
+            },
+            {
+              "function": "alloc::vec::Vec::deserialize",
+              "mode:": "exec",
+              "time": 14,
+              "time-micros": 14526,
+              "rlimit-count": 145654,
+              "success": true
+            },
+            {
+              "function": "lib::marshal_v::impl&%1::deserialize",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4706,
+              "rlimit-count": 5615,
               "success": true
             }
           ]
         },
         {
           "module": "cmessage_v",
-          "time": 368,
-          "time-micros": 368434,
+          "time": 899,
+          "time-micros": 899317,
           "rlimit-count": 5745176,
           "function-breakdown": [
             {
-              "function": "lib::cmessage_v::is_value_valid",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2066,
-              "rlimit-count": 2613,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::is_message_marshallable",
-              "mode:": "exec",
-              "time": 7,
-              "time-micros": 7120,
-              "rlimit-count": 19559,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::clone_up_to_view",
-              "mode:": "exec",
-              "time": 7,
-              "time-micros": 7889,
-              "rlimit-count": 8065,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CMessage::clone_value",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2257,
-              "rlimit-count": 79738,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CSingleMessage::view_equal_spec",
-              "mode:": "proof",
-              "time": 18,
-              "time-micros": 18959,
-              "rlimit-count": 19506,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CSingleMessage::serialize",
-              "mode:": "exec",
-              "time": 59,
-              "time-micros": 59445,
-              "rlimit-count": 46720,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CSingleMessage::clone_up_to_view",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3834,
-              "rlimit-count": 90011,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CPacket::clone_up_to_view",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 44,
-              "rlimit-count": 8875,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CSingleMessage::_is_marshalable",
-              "mode:": "exec",
-              "time": 23,
-              "time-micros": 23333,
-              "rlimit-count": 164467,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CSingleMessage::deserialize",
-              "mode:": "exec",
-              "time": 77,
-              "time-micros": 77599,
-              "rlimit-count": 1578991,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CSingleMessage::serialized_size",
-              "mode:": "exec",
-              "time": 9,
-              "time-micros": 9890,
-              "rlimit-count": 215346,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::CSingleMessage::lemma_serialize_injective",
-              "mode:": "proof",
-              "time": 11,
-              "time-micros": 11725,
-              "rlimit-count": 47739,
-              "success": true
-            },
-            {
               "function": "lib::cmessage_v::CSingleMessage::is_marshallable",
               "mode:": "exec",
-              "time": 2,
-              "time-micros": 2576,
+              "time": 4,
+              "time-micros": 4241,
               "rlimit-count": 10552,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::is_value_valid",
+              "mode:": "exec",
+              "time": 6,
+              "time-micros": 6575,
+              "rlimit-count": 2613,
               "success": true
             },
             {
               "function": "lib::cmessage_v::CSingleMessage::lemma_view_equal_symmetric",
               "mode:": "proof",
-              "time": 6,
-              "time-micros": 6232,
+              "time": 9,
+              "time-micros": 9039,
               "rlimit-count": 14895,
-              "success": true
-            },
-            {
-              "function": "lib::cmessage_v::clone_optional_value",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2507,
-              "rlimit-count": 57586,
               "success": true
             },
             {
               "function": "lib::cmessage_v::CSingleMessage::lemma_same_views_serialize_the_same",
               "mode:": "proof",
-              "time": 10,
-              "time-micros": 10153,
+              "time": 23,
+              "time-micros": 23360,
               "rlimit-count": 1671587,
               "success": true
             },
             {
               "function": "lib::cmessage_v::is_key_valid",
               "mode:": "exec",
-              "time": 0,
-              "time-micros": 842,
+              "time": 2,
+              "time-micros": 2428,
               "rlimit-count": 10850,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::clone_up_to_view",
+              "mode:": "exec",
+              "time": 11,
+              "time-micros": 11333,
+              "rlimit-count": 8065,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CSingleMessage::lemma_serialize_injective",
+              "mode:": "proof",
+              "time": 31,
+              "time-micros": 31573,
+              "rlimit-count": 47739,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CSingleMessage::serialized_size",
+              "mode:": "exec",
+              "time": 14,
+              "time-micros": 14792,
+              "rlimit-count": 215346,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CSingleMessage::deserialize",
+              "mode:": "exec",
+              "time": 179,
+              "time-micros": 179498,
+              "rlimit-count": 1578991,
               "success": true
             },
             {
               "function": "lib::cmessage_v::CSingleMessage::lemma_serialization_is_not_a_prefix_of",
               "mode:": "proof",
-              "time": 105,
-              "time-micros": 105014,
+              "time": 258,
+              "time-micros": 258984,
               "rlimit-count": 1690687,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::clone_optional_value",
+              "mode:": "exec",
+              "time": 7,
+              "time-micros": 7620,
+              "rlimit-count": 57586,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::clone_value",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4195,
+              "rlimit-count": 79738,
               "success": true
             },
             {
               "function": "lib::cmessage_v::CMessage::view_equal_spec",
               "mode:": "proof",
-              "time": 16,
-              "time-micros": 16943,
+              "time": 53,
+              "time-micros": 53387,
               "rlimit-count": 7389,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CMessage::is_message_marshallable",
+              "mode:": "exec",
+              "time": 10,
+              "time-micros": 10392,
+              "rlimit-count": 19559,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CSingleMessage::serialize",
+              "mode:": "exec",
+              "time": 176,
+              "time-micros": 176575,
+              "rlimit-count": 46720,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CSingleMessage::_is_marshalable",
+              "mode:": "exec",
+              "time": 39,
+              "time-micros": 39573,
+              "rlimit-count": 164467,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CPacket::clone_up_to_view",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 60,
+              "rlimit-count": 8875,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CSingleMessage::clone_up_to_view",
+              "mode:": "exec",
+              "time": 6,
+              "time-micros": 6125,
+              "rlimit-count": 90011,
+              "success": true
+            },
+            {
+              "function": "lib::cmessage_v::CSingleMessage::view_equal_spec",
+              "mode:": "proof",
+              "time": 59,
+              "time-micros": 59558,
+              "rlimit-count": 19506,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "single_delivery_state_v",
+          "time": 324,
+          "time-micros": 324460,
+          "rlimit-count": 1224917,
+          "function-breakdown": [
+            {
+              "function": "lib::single_delivery_t::SingleDelivery::lemma_un_acked_messages_for_dests_empty",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5734,
+              "rlimit-count": 14056,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CAckState::clone_up_to_view",
+              "mode:": "exec",
+              "time": 16,
+              "time-micros": 16703,
+              "rlimit-count": 192766,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CAckState::new",
+              "mode:": "exec",
+              "time": 5,
+              "time-micros": 5355,
+              "rlimit-count": 12476,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CTombstoneTable::insert",
+              "mode:": "exec",
+              "time": 7,
+              "time-micros": 7872,
+              "rlimit-count": 11156,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CAckState::lemma_seqno_in_un_acked_list",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6598,
+              "rlimit-count": 18543,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSingleDelivery::empty",
+              "mode:": "exec",
+              "time": 8,
+              "time-micros": 8439,
+              "rlimit-count": 14761,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSendState::put",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 665,
+              "rlimit-count": 267486,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CAckState::truncate",
+              "mode:": "exec",
+              "time": 193,
+              "time-micros": 193783,
+              "rlimit-count": 497244,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSendState::get",
+              "mode:": "exec",
+              "time": 5,
+              "time-micros": 5348,
+              "rlimit-count": 168108,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSingleDelivery::un_acked_messages_extend",
+              "mode:": "proof",
+              "time": 57,
+              "time-micros": 57603,
+              "rlimit-count": 13760,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CSendState::cack_state_swap",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 491,
+              "rlimit-count": 11367,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CAckState::abstractify_distributes_over_skip",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10565,
+              "rlimit-count": 1886,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_state_v::CTombstoneTable::lookup",
+              "mode:": "exec",
+              "time": 5,
+              "time-micros": 5299,
+              "rlimit-count": 1308,
               "success": true
             }
           ]
         },
         {
           "module": "net_sht_v",
-          "time": 138,
-          "time-micros": 138697,
+          "time": 274,
+          "time-micros": 275493,
           "rlimit-count": 692767,
           "function-breakdown": [
             {
               "function": "lib::net_sht_v::send_packet_seq",
               "mode:": "exec",
-              "time": 35,
-              "time-micros": 35155,
+              "time": 64,
+              "time-micros": 64841,
               "rlimit-count": 353435,
               "success": true
             },
             {
-              "function": "lib::net_sht_v::sht_marshal_data_injective",
-              "mode:": "proof",
-              "time": 66,
-              "time-micros": 66070,
-              "rlimit-count": 10845,
+              "function": "lib::net_sht_v::receive_with_demarshal",
+              "mode:": "exec",
+              "time": 16,
+              "time-micros": 16762,
+              "rlimit-count": 90862,
               "success": true
             },
             {
               "function": "lib::net_sht_v::send_packet",
               "mode:": "exec",
-              "time": 9,
-              "time-micros": 9470,
+              "time": 27,
+              "time-micros": 27857,
               "rlimit-count": 14180,
               "success": true
             },
@@ -2195,807 +2307,695 @@
               "function": "lib::net_sht_v::take_buf",
               "mode:": "exec",
               "time": 0,
-              "time-micros": 52,
+              "time-micros": 63,
               "rlimit-count": 31764,
-              "success": true
-            },
-            {
-              "function": "lib::net_sht_v::receive_with_demarshal",
-              "mode:": "exec",
-              "time": 5,
-              "time-micros": 5803,
-              "rlimit-count": 90862,
               "success": true
             },
             {
               "function": "lib::net_sht_v::sht_demarshall_data_method",
               "mode:": "exec",
-              "time": 22,
-              "time-micros": 22146,
+              "time": 33,
+              "time-micros": 33816,
               "rlimit-count": 191681,
               "success": true
-            }
-          ]
-        },
-        {
-          "module": "single_delivery_state_v",
-          "time": 125,
-          "time-micros": 125778,
-          "rlimit-count": 1224917,
-          "function-breakdown": [
-            {
-              "function": "lib::single_delivery_state_v::CSendState::put",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 544,
-              "rlimit-count": 267486,
-              "success": true
             },
             {
-              "function": "lib::single_delivery_state_v::CAckState::new",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3483,
-              "rlimit-count": 12476,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CTombstoneTable::insert",
-              "mode:": "exec",
-              "time": 4,
-              "time-micros": 4924,
-              "rlimit-count": 11156,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::SingleDelivery::lemma_un_acked_messages_for_dests_empty",
+              "function": "lib::net_sht_v::sht_marshal_data_injective",
               "mode:": "proof",
-              "time": 3,
-              "time-micros": 3879,
-              "rlimit-count": 14056,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CSingleDelivery::empty",
-              "mode:": "exec",
-              "time": 5,
-              "time-micros": 5492,
-              "rlimit-count": 14761,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CTombstoneTable::lookup",
-              "mode:": "exec",
-              "time": 3,
-              "time-micros": 3556,
-              "rlimit-count": 1308,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CAckState::lemma_seqno_in_un_acked_list",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4268,
-              "rlimit-count": 18543,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CSingleDelivery::un_acked_messages_extend",
-              "mode:": "proof",
-              "time": 17,
-              "time-micros": 17433,
-              "rlimit-count": 13760,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CAckState::abstractify_distributes_over_skip",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4278,
-              "rlimit-count": 1886,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CSendState::cack_state_swap",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 550,
-              "rlimit-count": 11367,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CAckState::truncate",
-              "mode:": "exec",
-              "time": 62,
-              "time-micros": 62260,
-              "rlimit-count": 497244,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CAckState::clone_up_to_view",
-              "mode:": "exec",
-              "time": 10,
-              "time-micros": 10937,
-              "rlimit-count": 192766,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_state_v::CSendState::get",
-              "mode:": "exec",
-              "time": 4,
-              "time-micros": 4168,
-              "rlimit-count": 168108,
+              "time": 132,
+              "time-micros": 132153,
+              "rlimit-count": 10845,
               "success": true
             }
           ]
         },
         {
           "module": "verus_extra::seq_lib_v",
-          "time": 64,
-          "time-micros": 64856,
+          "time": 128,
+          "time-micros": 128932,
           "rlimit-count": 444937,
           "function-breakdown": [
             {
-              "function": "lib::verus_extra::seq_lib_v::lemma_subrange_subrange",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1583,
-              "rlimit-count": 5725,
-              "success": true
-            },
-            {
               "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_sum_right",
               "mode:": "proof",
-              "time": 2,
-              "time-micros": 2619,
-              "rlimit-count": 41962,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_append_len_int_le",
-              "mode:": "proof",
               "time": 6,
-              "time-micros": 6769,
-              "rlimit-count": 7373,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::some_differing_index_for_unequal_seqs",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1662,
-              "rlimit-count": 11646,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_sum_le",
-              "mode:": "proof",
-              "time": 3,
-              "time-micros": 3674,
-              "rlimit-count": 15369,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::lemma_if_everything_in_seq_satisfies_filter_then_filter_is_identity",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4527,
-              "rlimit-count": 9808,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::lemma_if_nothing_in_seq_satisfies_filter_then_filter_result_is_empty",
-              "mode:": "proof",
-              "time": 4,
-              "time-micros": 4086,
-              "rlimit-count": 23958,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::lemma_filter_skip_rejected",
-              "mode:": "proof",
-              "time": 7,
-              "time-micros": 7413,
-              "rlimit-count": 22886,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::lemma_fold_left_on_equiv_seqs",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2562,
-              "rlimit-count": 152345,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::lemma_seq_add_subrange",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1510,
-              "rlimit-count": 3530,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_merge_right_assoc",
-              "mode:": "proof",
-              "time": 8,
-              "time-micros": 8559,
-              "rlimit-count": 53000,
+              "time-micros": 6219,
+              "rlimit-count": 41962,
               "success": true
             },
             {
               "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_append_len_int",
               "mode:": "proof",
               "time": 3,
-              "time-micros": 3374,
+              "time-micros": 3923,
               "rlimit-count": 55078,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::some_differing_index_for_unequal_seqs",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2195,
+              "rlimit-count": 11646,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_append_len_int_le",
+              "mode:": "proof",
+              "time": 17,
+              "time-micros": 17165,
+              "rlimit-count": 7373,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_fold_left_on_equiv_seqs",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3727,
+              "rlimit-count": 152345,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_seq_add_subrange",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4240,
+              "rlimit-count": 3530,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_sum_le",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5317,
+              "rlimit-count": 15369,
               "success": true
             },
             {
               "function": "lib::verus_extra::seq_lib_v::lemma_fold_left_append_merge",
               "mode:": "proof",
-              "time": 10,
-              "time-micros": 10571,
+              "time": 36,
+              "time-micros": 36175,
               "rlimit-count": 15955,
               "success": true
             },
             {
-              "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_sum_len_int_positive",
+              "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_merge_right_assoc",
               "mode:": "proof",
-              "time": 2,
-              "time-micros": 2426,
-              "rlimit-count": 16474,
+              "time": 13,
+              "time-micros": 13323,
+              "rlimit-count": 53000,
               "success": true
             },
             {
               "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_append_right",
               "mode:": "proof",
-              "time": 3,
-              "time-micros": 3513,
+              "time": 5,
+              "time-micros": 5495,
               "rlimit-count": 9828,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_filter_skip_rejected",
+              "mode:": "proof",
+              "time": 11,
+              "time-micros": 11526,
+              "rlimit-count": 22886,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_if_everything_in_seq_satisfies_filter_then_filter_is_identity",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6942,
+              "rlimit-count": 9808,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_seq_fold_left_sum_len_int_positive",
+              "mode:": "proof",
+              "time": 3,
+              "time-micros": 3082,
+              "rlimit-count": 16474,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_if_nothing_in_seq_satisfies_filter_then_filter_result_is_empty",
+              "mode:": "proof",
+              "time": 6,
+              "time-micros": 6788,
+              "rlimit-count": 23958,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::seq_lib_v::lemma_subrange_subrange",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2808,
+              "rlimit-count": 5725,
               "success": true
             }
           ]
         },
         {
           "module": "verus_extra::set_lib_ext_v",
-          "time": 53,
-          "time-micros": 53176,
+          "time": 87,
+          "time-micros": 87827,
           "rlimit-count": 272691,
           "function-breakdown": [
             {
-              "function": "lib::verus_extra::set_lib_ext_v::set_map_union_auto",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1818,
-              "rlimit-count": 11024,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::set_map_union",
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_to_set_singleton_auto",
               "mode:": "proof",
               "time": 3,
-              "time-micros": 3601,
-              "rlimit-count": 7213,
+              "time-micros": 3353,
+              "rlimit-count": 4799,
               "success": true
             },
             {
-              "function": "lib::verus_extra::set_lib_ext_v::seq_map_values_concat_auto",
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_map_values_singleton_auto",
               "mode:": "proof",
-              "time": 2,
-              "time-micros": 2987,
-              "rlimit-count": 20177,
+              "time": 3,
+              "time-micros": 3135,
+              "rlimit-count": 7511,
               "success": true
             },
             {
               "function": "lib::verus_extra::set_lib_ext_v::lemma_flatten_sets_union",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1754,
+              "time": 3,
+              "time-micros": 3639,
               "rlimit-count": 7208,
               "success": true
             },
             {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_flatten_set_seq_spec",
+              "function": "lib::verus_extra::set_lib_ext_v::set_map_union",
               "mode:": "proof",
               "time": 4,
-              "time-micros": 4093,
-              "rlimit-count": 15286,
+              "time-micros": 4408,
+              "rlimit-count": 7213,
               "success": true
             },
             {
               "function": "lib::verus_extra::set_lib_ext_v::lemma_seq_push_to_set",
               "mode:": "proof",
-              "time": 3,
-              "time-micros": 3596,
-              "rlimit-count": 22911,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_seq_map_equiv",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1645,
-              "rlimit-count": 10889,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_flatten_sets_union_auto",
-              "mode:": "proof",
-              "time": 2,
-              "time-micros": 2300,
-              "rlimit-count": 8270,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_to_set_distributes_over_addition",
-              "mode:": "proof",
               "time": 5,
-              "time-micros": 5895,
-              "rlimit-count": 6489,
+              "time-micros": 5044,
+              "rlimit-count": 22911,
               "success": true
             },
             {
               "function": "lib::verus_extra::set_lib_ext_v::map_fold_finite",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1293,
+              "time": 2,
+              "time-micros": 2784,
               "rlimit-count": 11645,
               "success": true
             },
             {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_map_set_singleton_auto",
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_map_seq_singleton_auto",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1880,
-              "rlimit-count": 7271,
+              "time": 3,
+              "time-micros": 3312,
+              "rlimit-count": 7513,
               "success": true
             },
             {
               "function": "lib::verus_extra::set_lib_ext_v::flatten_sets_singleton_auto",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1331,
+              "time": 2,
+              "time-micros": 2001,
               "rlimit-count": 7229,
               "success": true
             },
             {
-              "function": "lib::verus_extra::set_lib_ext_v::map_fold_ok",
-              "mode:": "proof",
-              "time": 3,
-              "time-micros": 3674,
-              "rlimit-count": 5693,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::flatten_sets_spec",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 742,
-              "rlimit-count": 50843,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_set_map_insert",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1759,
-              "rlimit-count": 12379,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_to_set_union_auto",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1430,
-              "rlimit-count": 17803,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::map_finite",
-              "mode:": "proof",
-              "time": 1,
-              "time-micros": 1059,
-              "rlimit-count": 6091,
-              "success": true
-            },
-            {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_flatten_sets_insert",
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_map_set_singleton_auto",
               "mode:": "proof",
               "time": 2,
-              "time-micros": 2459,
-              "rlimit-count": 9217,
+              "time-micros": 2899,
+              "rlimit-count": 7271,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_seq_map_equiv",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2695,
+              "rlimit-count": 10889,
               "success": true
             },
             {
               "function": "lib::verus_extra::set_lib_ext_v::map_set_finite_auto",
               "mode:": "proof",
               "time": 1,
-              "time-micros": 1195,
+              "time-micros": 1949,
               "rlimit-count": 3908,
               "success": true
             },
             {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_to_set_singleton_auto",
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_flatten_sets_insert",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1537,
-              "rlimit-count": 4799,
+              "time": 3,
+              "time-micros": 3070,
+              "rlimit-count": 9217,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_to_set_distributes_over_addition",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7293,
+              "rlimit-count": 6489,
               "success": true
             },
             {
               "function": "lib::verus_extra::set_lib_ext_v::set_fold",
               "mode:": "spec",
-              "time": 1,
-              "time-micros": 1015,
+              "time": 2,
+              "time-micros": 2042,
               "rlimit-count": 4489,
               "success": true
             },
             {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_map_values_singleton_auto",
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_flatten_sets_union_auto",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1955,
-              "rlimit-count": 7511,
+              "time": 3,
+              "time-micros": 3015,
+              "rlimit-count": 8270,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::map_fold_ok",
+              "mode:": "proof",
+              "time": 5,
+              "time-micros": 5232,
+              "rlimit-count": 5693,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::seq_map_values_concat_auto",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4811,
+              "rlimit-count": 20177,
               "success": true
             },
             {
               "function": "lib::verus_extra::set_lib_ext_v::seq_map_values_concat",
               "mode:": "proof",
-              "time": 2,
-              "time-micros": 2100,
+              "time": 6,
+              "time-micros": 6300,
               "rlimit-count": 6833,
               "success": true
             },
             {
-              "function": "lib::verus_extra::set_lib_ext_v::lemma_map_seq_singleton_auto",
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_flatten_set_seq_spec",
+              "mode:": "proof",
+              "time": 7,
+              "time-micros": 7781,
+              "rlimit-count": 15286,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::map_finite",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1764,
+              "rlimit-count": 6091,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_to_set_union_auto",
               "mode:": "proof",
               "time": 2,
-              "time-micros": 2048,
-              "rlimit-count": 7513,
+              "time-micros": 2256,
+              "rlimit-count": 17803,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::flatten_sets_spec",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2400,
+              "rlimit-count": 50843,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::lemma_set_map_insert",
+              "mode:": "proof",
+              "time": 4,
+              "time-micros": 4109,
+              "rlimit-count": 12379,
+              "success": true
+            },
+            {
+              "function": "lib::verus_extra::set_lib_ext_v::set_map_union_auto",
+              "mode:": "proof",
+              "time": 2,
+              "time-micros": 2525,
+              "rlimit-count": 11024,
               "success": true
             }
           ]
         },
         {
           "module": "seq_is_unique_v",
-          "time": 31,
-          "time-micros": 31914,
+          "time": 47,
+          "time-micros": 47854,
           "rlimit-count": 202164,
           "function-breakdown": [
             {
-              "function": "lib::seq_is_unique_v::clone_option_end_point",
+              "function": "lib::seq_is_unique_v::clone_end_point",
               "mode:": "exec",
-              "time": 1,
-              "time-micros": 1328,
-              "rlimit-count": 6466,
+              "time": 0,
+              "time-micros": 862,
+              "rlimit-count": 2844,
               "success": true
             },
             {
-              "function": "lib::seq_is_unique_v::do_end_points_match",
+              "function": "lib::seq_is_unique_v::do_vec_u8s_match",
               "mode:": "exec",
-              "time": 0,
-              "time-micros": 769,
-              "rlimit-count": 7381,
+              "time": 8,
+              "time-micros": 8414,
+              "rlimit-count": 73658,
+              "success": true
+            },
+            {
+              "function": "lib::seq_is_unique_v::test_unique",
+              "mode:": "exec",
+              "time": 21,
+              "time-micros": 21137,
+              "rlimit-count": 72036,
               "success": true
             },
             {
               "function": "lib::seq_is_unique_v::clone_option_vec_u8",
               "mode:": "exec",
               "time": 1,
-              "time-micros": 1193,
+              "time-micros": 1639,
               "rlimit-count": 9279,
-              "success": true
-            },
-            {
-              "function": "lib::seq_is_unique_v::clone_end_point",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 556,
-              "rlimit-count": 2844,
-              "success": true
-            },
-            {
-              "function": "lib::seq_is_unique_v::endpoints_contain",
-              "mode:": "exec",
-              "time": 5,
-              "time-micros": 5988,
-              "rlimit-count": 26821,
-              "success": true
-            },
-            {
-              "function": "lib::seq_is_unique_v::test_unique",
-              "mode:": "exec",
-              "time": 14,
-              "time-micros": 14911,
-              "rlimit-count": 72036,
               "success": true
             },
             {
               "function": "lib::seq_is_unique_v::singleton_seq_to_set_is_singleton_set",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1440,
+              "time": 3,
+              "time-micros": 3268,
               "rlimit-count": 3679,
               "success": true
             },
             {
-              "function": "lib::seq_is_unique_v::do_vec_u8s_match",
+              "function": "lib::seq_is_unique_v::do_end_points_match",
               "mode:": "exec",
-              "time": 5,
-              "time-micros": 5726,
-              "rlimit-count": 73658,
+              "time": 1,
+              "time-micros": 1342,
+              "rlimit-count": 7381,
+              "success": true
+            },
+            {
+              "function": "lib::seq_is_unique_v::endpoints_contain",
+              "mode:": "exec",
+              "time": 9,
+              "time-micros": 9558,
+              "rlimit-count": 26821,
+              "success": true
+            },
+            {
+              "function": "lib::seq_is_unique_v::clone_option_end_point",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1630,
+              "rlimit-count": 6466,
               "success": true
             }
           ]
         },
         {
           "module": "host_protocol_t",
-          "time": 27,
-          "time-micros": 27047,
+          "time": 43,
+          "time-micros": 43188,
           "rlimit-count": 245398,
           "function-breakdown": [
             {
-              "function": "lib::host_protocol_t::next_set_request",
+              "function": "lib::host_protocol_t::receive_packet_without_reading_clock",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 595,
-              "rlimit-count": 8291,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::init",
-              "mode:": "spec",
-              "time": 2,
-              "time-micros": 2224,
-              "rlimit-count": 3718,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::should_process_received_message",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 53,
-              "rlimit-count": 10624,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::ignore_nonsensical_delegation_packet",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 45,
-              "rlimit-count": 8531,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::next_step",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 42,
-              "rlimit-count": 639,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::spontaneously_retransmit_next",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 488,
-              "rlimit-count": 4090,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::workaround_dermarshal_not_invertible",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 364,
-              "rlimit-count": 1298,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::process_message",
-              "mode:": "spec",
-              "time": 4,
-              "time-micros": 4548,
-              "rlimit-count": 1188,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::next_get_request_reply",
-              "mode:": "spec",
-              "time": 1,
-              "time-micros": 1804,
-              "rlimit-count": 2935,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::parse_args",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 244,
-              "rlimit-count": 4483,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::hashtable_lookup",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 227,
-              "rlimit-count": 93190,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::next_delegate",
-              "mode:": "spec",
-              "time": 1,
-              "time-micros": 1205,
-              "rlimit-count": 2258,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::process_received_packet_next",
-              "mode:": "spec",
-              "time": 2,
-              "time-micros": 2216,
-              "rlimit-count": 1528,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::receive_packet_next",
-              "mode:": "spec",
-              "time": 3,
-              "time-micros": 3116,
-              "rlimit-count": 1736,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::receive_packet_wrapper",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 43,
-              "rlimit-count": 6549,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::next",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 96,
-              "rlimit-count": 8254,
+              "time-micros": 655,
+              "rlimit-count": 1051,
               "success": true
             },
             {
               "function": "lib::host_protocol_t::process_received_packet",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 381,
+              "time-micros": 379,
               "rlimit-count": 14725,
               "success": true
             },
             {
-              "function": "lib::host_protocol_t::receive_packet_without_reading_clock",
+              "function": "lib::host_protocol_t::process_received_packet_next",
               "mode:": "spec",
-              "time": 0,
-              "time-micros": 494,
-              "rlimit-count": 1051,
+              "time": 3,
+              "time-micros": 3781,
+              "rlimit-count": 1528,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_delegate",
+              "mode:": "spec",
+              "time": 1,
+              "time-micros": 1297,
+              "rlimit-count": 2258,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::process_message",
+              "mode:": "spec",
+              "time": 6,
+              "time-micros": 6384,
+              "rlimit-count": 1188,
               "success": true
             },
             {
               "function": "lib::host_protocol_t::ignore_unparseable_packet",
               "mode:": "spec",
-              "time": 1,
-              "time-micros": 1468,
+              "time": 3,
+              "time-micros": 3313,
               "rlimit-count": 1666,
               "success": true
             },
             {
-              "function": "lib::host_protocol_t::next_redirect",
+              "function": "lib::host_protocol_t::workaround_dermarshal_not_invertible",
+              "mode:": "proof",
+              "time": 0,
+              "time-micros": 175,
+              "rlimit-count": 1298,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::ignore_nonsensical_delegation_packet",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 40,
-              "rlimit-count": 1152,
+              "time-micros": 52,
+              "rlimit-count": 8531,
               "success": true
             },
             {
-              "function": "lib::host_protocol_t::next_set_request_complete",
-              "mode:": "spec",
-              "time": 1,
-              "time-micros": 1654,
-              "rlimit-count": 4788,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::next_shard_wrapper",
+              "function": "lib::host_protocol_t::spontaneously_retransmit_next",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 539,
-              "rlimit-count": 14798,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::spontaneously_retransmit",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 45,
-              "rlimit-count": 9342,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::receive_packet",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 63,
-              "rlimit-count": 1638,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::next_shard",
-              "mode:": "spec",
-              "time": 2,
-              "time-micros": 2005,
-              "rlimit-count": 4574,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::no_invalid_sends",
-              "mode:": "spec",
-              "time": 2,
-              "time-micros": 2120,
-              "rlimit-count": 1282,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::AbstractHostState::wf",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 45,
-              "rlimit-count": 8969,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::next_reply",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 46,
-              "rlimit-count": 1410,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::bulk_update_domain",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 48,
-              "rlimit-count": 3868,
-              "success": true
-            },
-            {
-              "function": "lib::host_protocol_t::next_get_request",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 696,
-              "rlimit-count": 7647,
+              "time-micros": 554,
+              "rlimit-count": 4090,
               "success": true
             },
             {
               "function": "lib::host_protocol_t::valid_optional_value",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 79,
+              "time-micros": 112,
               "rlimit-count": 9176,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_step",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 53,
+              "rlimit-count": 639,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::no_invalid_sends",
+              "mode:": "spec",
+              "time": 3,
+              "time-micros": 3120,
+              "rlimit-count": 1282,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_get_request_reply",
+              "mode:": "spec",
+              "time": 3,
+              "time-micros": 3017,
+              "rlimit-count": 2935,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_shard",
+              "mode:": "spec",
+              "time": 5,
+              "time-micros": 5018,
+              "rlimit-count": 4574,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_set_request_complete",
+              "mode:": "spec",
+              "time": 3,
+              "time-micros": 3083,
+              "rlimit-count": 4788,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::should_process_received_message",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 84,
+              "rlimit-count": 10624,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::receive_packet",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 86,
+              "rlimit-count": 1638,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_reply",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 82,
+              "rlimit-count": 1410,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::spontaneously_retransmit",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 57,
+              "rlimit-count": 9342,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 99,
+              "rlimit-count": 8254,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::receive_packet_wrapper",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 82,
+              "rlimit-count": 6549,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_get_request",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 881,
+              "rlimit-count": 7647,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_redirect",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 82,
+              "rlimit-count": 1152,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_set_request",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 844,
+              "rlimit-count": 8291,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::hashtable_lookup",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 370,
+              "rlimit-count": 93190,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::receive_packet_next",
+              "mode:": "spec",
+              "time": 4,
+              "time-micros": 4627,
+              "rlimit-count": 1736,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::AbstractHostState::wf",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 87,
+              "rlimit-count": 8969,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::parse_args",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 397,
+              "rlimit-count": 4483,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::bulk_update_domain",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 108,
+              "rlimit-count": 3868,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::init",
+              "mode:": "spec",
+              "time": 3,
+              "time-micros": 3243,
+              "rlimit-count": 3718,
+              "success": true
+            },
+            {
+              "function": "lib::host_protocol_t::next_shard_wrapper",
+              "mode:": "spec",
+              "time": 1,
+              "time-micros": 1052,
+              "rlimit-count": 14798,
               "success": true
             }
           ]
         },
         {
           "module": "main_t",
-          "time": 12,
-          "time-micros": 12326,
+          "time": 19,
+          "time-micros": 19022,
           "rlimit-count": 260223,
           "function-breakdown": [
             {
               "function": "lib::main_t::sht_main",
               "mode:": "exec",
-              "time": 12,
-              "time-micros": 12326,
+              "time": 19,
+              "time-micros": 19022,
               "rlimit-count": 260223,
               "success": true
             }
@@ -3003,15 +3003,47 @@
         },
         {
           "module": "keys_t",
-          "time": 9,
-          "time-micros": 9482,
+          "time": 16,
+          "time-micros": 16258,
           "rlimit-count": 71060,
           "function-breakdown": [
+            {
+              "function": "lib::keys_t::SHTKey::cmp_properties",
+              "mode:": "proof",
+              "time": 10,
+              "time-micros": 10567,
+              "rlimit-count": 2119,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::cmp",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1021,
+              "rlimit-count": 27902,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::zero_properties",
+              "mode:": "proof",
+              "time": 1,
+              "time-micros": 1220,
+              "rlimit-count": 29389,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::KeyIterator::clone",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 842,
+              "rlimit-count": 715,
+              "success": true
+            },
             {
               "function": "lib::keys_t::KeyRange::clone",
               "mode:": "exec",
               "time": 0,
-              "time-micros": 354,
+              "time-micros": 420,
               "rlimit-count": 4116,
               "success": true
             },
@@ -3019,103 +3051,183 @@
               "function": "lib::keys_t::SHTKey::zero",
               "mode:": "exec",
               "time": 0,
-              "time-micros": 442,
+              "time-micros": 590,
               "rlimit-count": 2661,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::cmp",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 748,
-              "rlimit-count": 27902,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::zero_properties",
-              "mode:": "proof",
-              "time": 0,
-              "time-micros": 776,
-              "rlimit-count": 29389,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::clone",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 158,
-              "rlimit-count": 2067,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::KeyIterator::clone",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 567,
-              "rlimit-count": 715,
-              "success": true
-            },
-            {
-              "function": "lib::keys_t::SHTKey::clone",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 193,
-              "rlimit-count": 1263,
               "success": true
             },
             {
               "function": "lib::keys_t::KeyRange::contains_exec",
               "mode:": "exec",
-              "time": 0,
-              "time-micros": 882,
+              "time": 1,
+              "time-micros": 1197,
               "rlimit-count": 828,
               "success": true
             },
             {
-              "function": "lib::keys_t::SHTKey::cmp_properties",
-              "mode:": "proof",
-              "time": 5,
-              "time-micros": 5359,
-              "rlimit-count": 2119,
+              "function": "lib::keys_t::SHTKey::clone",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 211,
+              "rlimit-count": 1263,
+              "success": true
+            },
+            {
+              "function": "lib::keys_t::SHTKey::clone",
+              "mode:": "exec",
+              "time": 0,
+              "time-micros": 186,
+              "rlimit-count": 2067,
               "success": true
             }
           ]
         },
         {
           "module": "host_impl_t",
-          "time": 6,
-          "time-micros": 6612,
+          "time": 11,
+          "time-micros": 11974,
           "rlimit-count": 248945,
           "function-breakdown": [
             {
-              "function": "lib::host_impl_v::HostState::next_impl",
+              "function": "lib::host_impl_v::HostState::init_impl",
               "mode:": "exec",
-              "time": 3,
-              "time-micros": 3566,
-              "rlimit-count": 227202,
+              "time": 6,
+              "time-micros": 6345,
+              "rlimit-count": 21743,
               "success": true
             },
             {
-              "function": "lib::host_impl_v::HostState::init_impl",
+              "function": "lib::host_impl_v::HostState::next_impl",
               "mode:": "exec",
-              "time": 3,
-              "time-micros": 3046,
-              "rlimit-count": 21743,
+              "time": 5,
+              "time-micros": 5628,
+              "rlimit-count": 227202,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "io_t",
+          "time": 9,
+          "time-micros": 9501,
+          "rlimit-count": 82511,
+          "function-breakdown": [
+            {
+              "function": "lib::io_t::NetClient::reset",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1539,
+              "rlimit-count": 9045,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::NetClient::send",
+              "mode:": "exec",
+              "time": 4,
+              "time-micros": 4049,
+              "rlimit-count": 2158,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::NetClient::get_my_end_point",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1066,
+              "rlimit-count": 3473,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::valid_physical_address",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1837,
+              "rlimit-count": 61794,
+              "success": true
+            },
+            {
+              "function": "lib::io_t::EndPoint::clone_up_to_view",
+              "mode:": "exec",
+              "time": 1,
+              "time-micros": 1008,
+              "rlimit-count": 6041,
               "success": true
             }
           ]
         },
         {
           "module": "single_delivery_t",
-          "time": 6,
-          "time-micros": 6081,
+          "time": 8,
+          "time-micros": 8946,
           "rlimit-count": 90495,
           "function-breakdown": [
+            {
+              "function": "lib::single_delivery_t::SingleDelivery::should_ack_single_message",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 44,
+              "rlimit-count": 522,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_t::SingleDelivery::receive_ack",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 74,
+              "rlimit-count": 3158,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_t::SingleDelivery::send_no_message",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 55,
+              "rlimit-count": 2707,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_t::SingleDelivery::send_single_message",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 818,
+              "rlimit-count": 60156,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_t::SingleDelivery::send_ack",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 44,
+              "rlimit-count": 452,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_t::SingleDelivery::receive",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 320,
+              "rlimit-count": 1168,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_t::truncate_un_ack_list",
+              "mode:": "spec",
+              "time": 3,
+              "time-micros": 3227,
+              "rlimit-count": 4959,
+              "success": true
+            },
+            {
+              "function": "lib::single_delivery_t::SingleDelivery::receive_real_packet",
+              "mode:": "spec",
+              "time": 0,
+              "time-micros": 45,
+              "rlimit-count": 1201,
+              "success": true
+            },
             {
               "function": "lib::single_delivery_t::ack_state_lookup",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 257,
+              "time-micros": 262,
               "rlimit-count": 5779,
               "success": true
             },
@@ -3123,63 +3235,15 @@
               "function": "lib::single_delivery_t::SingleDelivery::new_single_message",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 53,
+              "time-micros": 73,
               "rlimit-count": 1657,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::SingleDelivery::should_ack_single_message",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 59,
-              "rlimit-count": 522,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::SingleDelivery::receive",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 274,
-              "rlimit-count": 1168,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::SingleDelivery::receive_no_message",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 48,
-              "rlimit-count": 1271,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::SingleDelivery::receive_real_packet",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 48,
-              "rlimit-count": 1201,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::truncate_un_ack_list",
-              "mode:": "spec",
-              "time": 2,
-              "time-micros": 2005,
-              "rlimit-count": 4959,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::SingleDelivery::send_single_message",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 408,
-              "rlimit-count": 60156,
               "success": true
             },
             {
               "function": "lib::single_delivery_t::SingleDelivery::maybe_ack_packet",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 263,
+              "time-micros": 285,
               "rlimit-count": 666,
               "success": true
             },
@@ -3187,127 +3251,63 @@
               "function": "lib::single_delivery_t::SingleDelivery::un_acked_messages_for_dest_up_to",
               "mode:": "spec",
               "time": 1,
-              "time-micros": 1411,
+              "time-micros": 1976,
               "rlimit-count": 1081,
               "success": true
             },
             {
-              "function": "lib::single_delivery_t::SingleDelivery::send_no_message",
+              "function": "lib::single_delivery_t::SingleDelivery::receive_no_message",
               "mode:": "spec",
               "time": 0,
-              "time-micros": 58,
-              "rlimit-count": 2707,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::SingleDelivery::receive_ack",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 57,
-              "rlimit-count": 3158,
-              "success": true
-            },
-            {
-              "function": "lib::single_delivery_t::SingleDelivery::send_ack",
-              "mode:": "spec",
-              "time": 0,
-              "time-micros": 48,
-              "rlimit-count": 452,
+              "time-micros": 49,
+              "rlimit-count": 1271,
               "success": true
             },
             {
               "function": "lib::single_delivery_t::SingleDelivery::un_acked_messages_for_dest",
               "mode:": "spec",
               "time": 1,
-              "time-micros": 1085,
+              "time-micros": 1668,
               "rlimit-count": 5718,
               "success": true
             }
           ]
         },
         {
-          "module": "io_t",
-          "time": 5,
-          "time-micros": 5903,
-          "rlimit-count": 82511,
-          "function-breakdown": [
-            {
-              "function": "lib::io_t::NetClient::get_my_end_point",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 633,
-              "rlimit-count": 3473,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::NetClient::reset",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1033,
-              "rlimit-count": 9045,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::clone_up_to_view",
-              "mode:": "exec",
-              "time": 0,
-              "time-micros": 722,
-              "rlimit-count": 6041,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::NetClient::send",
-              "mode:": "exec",
-              "time": 2,
-              "time-micros": 2396,
-              "rlimit-count": 2158,
-              "success": true
-            },
-            {
-              "function": "lib::io_t::EndPoint::valid_physical_address",
-              "mode:": "exec",
-              "time": 1,
-              "time-micros": 1116,
-              "rlimit-count": 61794,
-              "success": true
-            }
-          ]
-        },
-        {
           "module": "args_t",
-          "time": 4,
-          "time-micros": 4774,
+          "time": 8,
+          "time-micros": 8768,
           "rlimit-count": 73077,
           "function-breakdown": [
+            {
+              "function": "lib::args_t::clone_vec_u8",
+              "mode:": "exec",
+              "time": 8,
+              "time-micros": 8576,
+              "rlimit-count": 65375,
+              "success": true
+            },
             {
               "function": "lib::args_t::clone_arg",
               "mode:": "exec",
               "time": 0,
-              "time-micros": 181,
+              "time-micros": 191,
               "rlimit-count": 7702,
-              "success": true
-            },
-            {
-              "function": "lib::args_t::clone_vec_u8",
-              "mode:": "exec",
-              "time": 4,
-              "time-micros": 4593,
-              "rlimit-count": 65375,
               "success": true
             }
           ]
         },
         {
           "module": "verus_extra::choose_v",
-          "time": 1,
-          "time-micros": 1798,
+          "time": 2,
+          "time-micros": 2633,
           "rlimit-count": 1501,
           "function-breakdown": [
             {
               "function": "lib::verus_extra::choose_v::choose_smallest",
               "mode:": "proof",
-              "time": 1,
-              "time-micros": 1798,
+              "time": 2,
+              "time-micros": 2633,
               "rlimit-count": 1501,
               "success": true
             }
@@ -3315,22 +3315,22 @@
         },
         {
           "module": "endpoint_hashmap_t",
-          "time": 0,
-          "time-micros": 815,
+          "time": 1,
+          "time-micros": 1455,
           "rlimit-count": 5131,
           "function-breakdown": [
             {
               "function": "lib::endpoint_hashmap_t::HashMap::put",
               "mode:": "exec",
-              "time": 0,
-              "time-micros": 815,
+              "time": 1,
+              "time-micros": 1455,
               "rlimit-count": 5131,
               "success": true
             }
           ]
         },
         {
-          "module": "hashmap_t",
+          "module": "verus_extra::clone_v",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0,
@@ -3344,7 +3344,7 @@
           "function-breakdown": []
         },
         {
-          "module": "delegation_map_t",
+          "module": "message_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0,
@@ -3365,14 +3365,14 @@
           "function-breakdown": []
         },
         {
-          "module": "abstract_parameters_t",
+          "module": "delegation_map_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0,
           "function-breakdown": []
         },
         {
-          "module": "verus_extra::clone_v",
+          "module": "abstract_service_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0,
@@ -3386,14 +3386,14 @@
           "function-breakdown": []
         },
         {
-          "module": "message_t",
+          "module": "abstract_parameters_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0,
           "function-breakdown": []
         },
         {
-          "module": "abstract_service_t",
+          "module": "hashmap_t",
           "time": 0,
           "time-micros": 0,
           "rlimit-count": 0,
@@ -3406,10 +3406,10 @@
     "profile": "release",
     "version": "0.2025.07.03.3105aa2",
     "platform": {
-      "os": "macos",
-      "arch": "aarch64"
+      "os": "linux",
+      "arch": "x86_64"
     },
-    "toolchain": "1.88.0-aarch64-apple-darwin",
+    "toolchain": "1.88.0-x86_64-unknown-linux-gnu",
     "commit": "3105aa2924afab30e4635183a3503959ac4d70f0"
   }
 }
