@@ -82,3 +82,6 @@
 	path = experiments/all-triggers/verified-ironkv-min
 	url = https://github.com/ahuoguo/verified-ironkv.git
 	branch = min-all-triggers
+[submodule "mariposa"]
+	path = mariposa
+	url = https://github.com/ahuoguo/mariposa.git

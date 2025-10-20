@@ -21,10 +21,14 @@ popd
 rm -rf ./original/logs/ironkv/
 rm -rf ./minimized/logs/ironkv/
 rm -rf ./broadcast-from-main/logs/ironkv/
+rm -rf ./all-triggers/logs/ironkv/
+rm -rf ./all-triggers/logs/ironkv_min/
 
 rm -rf ../mariposa/data/dbs/ironkv_original
 rm -rf ../mariposa/data/dbs/ironkv_minimized
 rm -rf ../mariposa/data/dbs/ironkv_broadcast
+rm -rf ../mariposa/data/dbs/ironkv_all_triggers
+rm -rf ../mariposa/data/dbs/ironkv_all_triggers_minimized
 
 rm -rf ../mariposa/data/dbs/splinter_original
 rm -rf ../mariposa/data/dbs/splinter_minimized
@@ -42,6 +46,8 @@ rm -rf ../mariposa/data/dbs/capybara_broadcast
 mkdir -p ./original/logs/ironkv/
 mkdir -p ./minimized/logs/ironkv/
 mkdir -p ./broadcast-from-main/logs/ironkv/
+mkdir -p ./all-triggers/logs/ironkv/
+mkdir -p ./all-triggers/logs/ironkv_min/
 
 mkdir -p ./original/logs/splinter/
 mkdir -p ./minimized/logs/splinter/
@@ -71,6 +77,17 @@ $VERUS --crate-type=lib lib.rs --num-threads=$NTHREADS --log smt 2> /dev/null
 popd
 mv ./broadcast-from-main/verified-ironkv/ironsht/src/.verus-log/ ./broadcast-from-main/logs/ironkv/
 
+# Note IRONKV with all_triggers still fails one task with default rlimit
+pushd ./all-triggers/verified-ironkv/ironsht/src
+$VERUS --crate-type=lib lib.rs --num-threads=$NTHREADS --rlimit 50 --log smt 2> /dev/null
+popd
+mv ./all-triggers/verified-ironkv/ironsht/src/.verus-log/ ./all-triggers/logs/ironkv/
+
+pushd ./all-triggers/verified-ironkv-min/ironsht/src
+$VERUS --crate-type=lib lib.rs --num-threads=$NTHREADS --rlimit 50 --log smt 2> /dev/null
+popd
+mv ./all-triggers/verified-ironkv-min/ironsht/src/.verus-log/ ./all-triggers/logs/ironkv_min/
+
 pushd ../mariposa
 source ./myenv/bin/activate
 pip install networkx
@@ -90,6 +107,20 @@ source ./myenv/bin/activate
 pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/broadcast-from-main/logs/ironkv/ --new-project-name ironkv_broadcast
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/ironkv_broadcast/base.z3/ -e debug
+popd
+
+pushd ../mariposa
+source ./myenv/bin/activate
+pip install networkx
+$PYTHON ./src/proj_wizard.py create -i ../experiments/all-triggers/logs/ironkv/ --new-project-name ironkv_all_triggers
+$PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/ironkv_all_triggers/base.z3/ -e debug
+popd
+
+pushd ../mariposa
+source ./myenv/bin/activate
+pip install networkx
+$PYTHON ./src/proj_wizard.py create -i ../experiments/all-triggers/logs/ironkv_min/ --new-project-name ironkv_all_triggers_minimized
+$PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/ironkv_all_triggers_minimized/base.z3/ -e debug
 popd
 
 # Splinter
