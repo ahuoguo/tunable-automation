@@ -61,6 +61,19 @@ mkdir -p ./original/logs/capybara/
 mkdir -p ./minimized/logs/capybara/
 mkdir -p ./broadcast-from-main/logs/capybara/
 
+# Initializing mariposa env
+pushd ../mariposa
+$PYTHON -m venv myenv
+source ./myenv/bin/activate
+pip install -r doc/requirements.txt
+pip install networkx
+# the following requires a working rust toolchain
+cd src/smt2action/
+cargo build --release
+cd -
+# Mariposa also requires ninja
+popd
+
 # IRONKV
 pushd ./original/verified-ironkv/ironsht/src
 $VERUS --crate-type=lib lib.rs --num-threads=$NTHREADS --log smt 2> /dev/null
@@ -90,35 +103,30 @@ mv ./all-triggers/verified-ironkv-min/ironsht/src/.verus-log/ ./all-triggers/log
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/original/logs/ironkv/ --new-project-name ironkv_original
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/ironkv_original/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/minimized/logs/ironkv/ --new-project-name ironkv_minimized
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/ironkv_minimized/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/broadcast-from-main/logs/ironkv/ --new-project-name ironkv_broadcast
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/ironkv_broadcast/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/all-triggers/logs/ironkv/ --new-project-name ironkv_all_triggers
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/ironkv_all_triggers/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/all-triggers/logs/ironkv_min/ --new-project-name ironkv_all_triggers_minimized
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/ironkv_all_triggers_minimized/base.z3/ -e debug
 popd
@@ -141,21 +149,18 @@ mv ./broadcast-from-main/verified-betrfs/Splinter/src/.verus-log/ ./broadcast-fr
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/original/logs/splinter/ --new-project-name splinter_original
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/splinter_original/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/minimized/logs/splinter/ --new-project-name splinter_minimized
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/splinter_minimized/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/broadcast-from-main/logs/splinter/ --new-project-name splinter_broadcast
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/splinter_broadcast/base.z3/ -e debug
 popd
@@ -188,21 +193,18 @@ mv ./broadcast-from-main/anvil/src/.verus-log/ ./broadcast-from-main/logs/anvil/
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/original/logs/anvil/ --new-project-name anvil_original
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/anvil_original/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/minimized/logs/anvil/ --new-project-name anvil_minimized
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/anvil_minimized/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/broadcast-from-main/logs/anvil/ --new-project-name anvil_broadcast
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/anvil_broadcast/base.z3/ -e debug
 popd
@@ -235,21 +237,18 @@ mv ./broadcast-from-main/verified-storage/osdi25/capybaraKV/capybarakv/src/.veru
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/original/logs/capybara/ --new-project-name capybara_original
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/capybara_original/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/minimized/logs/capybara/ --new-project-name capybara_minimized
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/capybara_minimized/base.z3/ -e debug
 popd
 
 pushd ../mariposa
 source ./myenv/bin/activate
-pip install networkx
 $PYTHON ./src/proj_wizard.py create -i ../experiments/broadcast-from-main/logs/capybara/ --new-project-name capybara_broadcast
 $PYTHON ./src/exper_wizard.py multiple -s z3_4_12_5 -i data/projs/capybara_broadcast/base.z3/ -e debug
 popd
