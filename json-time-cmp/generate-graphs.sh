@@ -10,4 +10,4 @@ python plot_all.py \
 
 # TODO: finish script
 
-python plot.py ../experiments/all-triggers/ironkv_at_min.json ../experiments/original/ironkv.json
+# python plot.py ../experiments/all-triggers/ironkv_at_min.json ../experiments/original/ironkv.json

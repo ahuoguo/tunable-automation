@@ -68,9 +68,9 @@ source ./myenv/bin/activate
 pip install -r doc/requirements.txt
 pip install networkx
 # the following requires a working rust toolchain
-cd src/smt2action/
+pushd ./src/smt2action/
 cargo build --release
-cd -
+popd
 # Mariposa also requires ninja
 popd
 

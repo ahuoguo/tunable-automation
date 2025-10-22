@@ -8,4 +8,4 @@
 # python plot.py ./ironkv_at ironkv_at
 
 python ./plot-all-scatter.py . broadcast broadcast 
-python ./plot-all-scatter.py . all_triggers all_triggers
+# python ./plot-all-scatter.py . all_triggers all_triggers
