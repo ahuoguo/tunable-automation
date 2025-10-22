@@ -13,15 +13,15 @@ We do not include scripts to minimize several Verus project as they can take day
 Here's the path of the logs for minimization:
 
 ```
-./broadcast-from-main/verified-ironkv/ironsht/src/min.log
-./broadcast-from-main/verified-betrfs/Splinter/src/min-after-brd.log
-./broadcast-from-main/anvil/src/min-after-brd.log
-./broadcast-from-main/verified-storage/osdi25/capybaraKV/brd-from-main.log1
-./minimized/verified-ironkv/ironsht/src/min.log
-./minimized/verified-betrfs/Splinter/src/min.log
-./minimized/anvil/src/min.log
-./minimized/verified-storage/osdi25/capybaraKV/capybarakv/src/deps_hack/min.log1
-./all-triggers/verified-ironkv-min/ironsht/src/min-at.log
+./experiments/broadcast-from-main/verified-ironkv/ironsht/src/min.log
+./experiments/broadcast-from-main/verified-betrfs/Splinter/src/min-after-brd.log
+./experiments/broadcast-from-main/anvil/src/min-after-brd.log
+./experiments/broadcast-from-main/verified-storage/osdi25/capybaraKV/brd-from-main.log1
+./experiments/minimized/verified-ironkv/ironsht/src/min.log
+./experiments/minimized/verified-betrfs/Splinter/src/min.log
+./experiments/minimized/anvil/src/min.log
+./experiments/minimized/verified-storage/osdi25/capybaraKV/capybarakv/src/deps_hack/min.log1
+./experiments/all-triggers/verified-ironkv-min/ironsht/src/min-at.log
 ```
 
 ### Running Minimization by Yourself
