@@ -6,16 +6,6 @@ Artifact for the paper "Tunable Automation in Automated Program Verification"
 
 We require a working version of `rustup`, `python3`, `ninja`, as Verus and Mariposa depend on them.
 
-## Installation
-
-Clone this repo with the following:
-
-```
-git clone https://github.com/ahuoguo/tunable-automation.git
-cd tunable-automation
-git submodule update --init --remote --filter=blob:none
-```
-
 ## Minimizing Verus Projects
 
 We do not include scripts to minimize several Verus project as they can take days. We provide the logs and minimized projects under `experiments/minimized`, the minimized projects after broadcasting.
@@ -23,15 +13,15 @@ We do not include scripts to minimize several Verus project as they can take day
 Here's the path of the logs for minimization:
 
 ```
-./broadcast-from-main/anvil/src/min-after-brd.log
-./broadcast-from-main/verified-betrfs/Splinter/src/min-after-brd.log
 ./broadcast-from-main/verified-ironkv/ironsht/src/min.log
-./minimized/anvil/src/min.log
+./broadcast-from-main/verified-betrfs/Splinter/src/min-after-brd.log
+./broadcast-from-main/anvil/src/min-after-brd.log
+./broadcast-from-main/verified-storage/osdi25/capybaraKV/brd-from-main.log1
 ./minimized/verified-ironkv/ironsht/src/min.log
 ./minimized/verified-betrfs/Splinter/src/min.log
-./all-triggers/verified-ironkv-min/ironsht/src/min-at.log
-./broadcast-from-main/verified-storage/osdi25/capybaraKV/brd-from-main.log1
+./minimized/anvil/src/min.log
 ./minimized/verified-storage/osdi25/capybaraKV/capybarakv/src/deps_hack/min.log1
+./all-triggers/verified-ironkv-min/ironsht/src/min-at.log
 ```
 
 ### Running Minimization by Yourself
@@ -61,19 +51,32 @@ cargo run --release -- -n <path-to-tunable-automation>/experiments/original/veri
 
 The time logs can be replicated by `experiments/run.sh`. It will generate a `<project-name>.json` file in `experiments/original`, `experiments/minimized`, and `experiments/braodcast-from-main`.
 
-Then running go to `json-time-cmp/` and run `generate-grphs.sh`.
-
+Then running go to `json-time-cmp/` and run `generate-grphs.sh`. Figure 3 should be the same as `json-time-cmp/plot_all.png`
 
 ## Figure 4
 
 ```
 cd failure-sample
 ./run.sh
-./generate-graph.sh
+./generate-graph.sh # This will generate `broadcast.png` corresponding to Figure 4
 cd -
 ```
 
+We also already include the logs from `./run.sh`, which are the under the following folders:
+
+```
+./failure-sample/ironkv/
+./failure-sample/splinter/
+./failure-sample/anvil/
+./failure-sample/capybara/
+```
+
+So you can directly run `./generate-graph.sh` in `failure-sample/` to generate Figure 4.
+
 ## Figure 5
+
+Figure 5 is only included in an extended version of the paper that studies impact of using #![all_triggers] on IronKV.
+
 ```
 cd ./experiments/all-triggers/
 ./run.sh
@@ -83,3 +86,9 @@ cd ../failure-sample
 python ./plot-all-scatter.py . all_triggers all_triggers
 ```
 
+Similarly, we also include the logs from `./run.sh`, which are:
+
+```
+./experiments/all-triggers/ironkv_at_min.json
+./failure-sample/ironkv_at/
+```
