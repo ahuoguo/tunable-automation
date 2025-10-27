@@ -69,6 +69,7 @@ pip install -r doc/requirements.txt
 pip install networkx
 # the following requires a working rust toolchain
 pushd ./src/smt2action/
+rustup default stable
 cargo build --release
 popd
 # Mariposa also requires ninja
