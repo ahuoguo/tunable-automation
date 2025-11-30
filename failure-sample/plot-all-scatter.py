@@ -180,6 +180,8 @@ if __name__ == "__main__":
 
     # Labels and title
     plt.xlabel('Verification Time Ratio', fontsize=16)
+    # TODO: uncomment the following to get `.0` for Figure 4.
+    # (it doesn't work well with figure 5...)
     # plt.xticks(np.arange(0, float(max(data_x) + 1), 1.0), 
     #            [f"{i}" for i in np.arange(0, float(max(data_x)) + 1, 1)],
     #            fontsize=16)
