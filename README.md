@@ -54,14 +54,31 @@ The VerusMinimizer can also count the number of asserts
 ```
 cd verus/minimizer/source/tools/minimize 
 cargo run --release -- -n <path-to-tunable-automation>/experiments/original/verified-ironkv/ironsht/src/lib.d
-
 ```
 
 ## Figure 3 Verification Time Ratio
 
 The time logs can be replicated by `experiments/run.sh`. It will generate a `<project-name>.json` file in `experiments/original`, `experiments/minimized`, and `experiments/braodcast-from-main`.
 
-Then running go to `json-time-cmp/` and run `generate-grphs.sh`. Figure 3 should be the same as `json-time-cmp/plot_all.png`
+Then go to `json-time-cmp/` and run `generate-grphs.sh`. Figure 3 should be the same as `json-time-cmp/plot_all.png`
+
+To get the omitted runtime ratios in Splinter and Anvil, described in the captions of Figure 3, you can run:
+
+```
+python plot.py ../experiments/broadcast-from-main/splinter.json ../experiments/original/splinter.json
+python plot.py ../experiments/broadcast-from-main/anvil.json ../experiments/original/anvil.json
+```
+
+The largest ratios will be printed in the terminal, for example:
+```
+Highest ratio of runtime_map1 to runtime_map2: 12.417095883226493
+Function: kubernetes_cluster::proof::objects_in_store::anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_builtin_object_in_etcd_is_well_formed
+Time in runtime_map1: 43563270
+Time in runtime_map2: 3508330
+Highest runtime in runtime_map1: 43563270
+Function: kubernetes_cluster::proof::objects_in_store::anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_builtin_object_in_etcd_is_well_formed
+Ratio: 12.417095883226493
+```
 
 ## Figure 4 Sampled Verification Failure Time
 
