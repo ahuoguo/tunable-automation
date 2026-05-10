@@ -1,26 +1,89 @@
 # Tunable Automation
 
-Artifact for the paper "Tunable Automation in Automated Program Verification"
+Artifact for the paper "Tunable Automation in Automated Program Verification".
+
+This artifact reproduces the figures and tables in the paper that compare
+verification time and stability of four large Verus projects (IronKV,
+VerifiedBetrFS/Splinter, Anvil, VerifiedStorage/CapybaraKV) under three
+"tunings" of automation: their original form, a minimized form, and a
+`broadcast-from-main` form. It also reproduces the Mariposa-based
+instability analysis in the appendix.
+
+## Repository Structure
+
+```
+.
+├── experiments/                     # All Verus experiments
+│   ├── original/                    # Each project as released upstream
+│   ├── minimized/                   # Same projects after VerusMinimizer
+│   ├── broadcast-from-main/         # Same projects after VerusMinimizer with ambient facts
+│   ├── all-triggers/                # IronKV with all triggers (Figure 5)
+│   ├── run.sh                       # Build Verus + run all four projects, emit *.json runtime data
+│   ├── mariposa.sh                  # Run Mariposa stability analysis (Table 3)
+│   ├── build-verus.sh               # Helper used by the scripts above
+│   └── mariposa.out                 # Cached Mariposa output for Table 3
+├── failure-sample/                  # Figure 4 (verification failure sampling)
+│   ├── run.sh                       # Re-run sampling on every benchmark
+│   ├── generate-graph.sh            # Render Figure 4 from existing logs
+│   ├── plot-all-scatter.py
+│   ├── plot.py
+│   └── ironkv/, splinter/,
+│       anvil/, capybara/,
+│       ironkv_at/                   # Pre-computed sample logs
+├── json-time-cmp/                   # Figure 3 plotting (runtime ratios)
+│   ├── generate-graphs.sh
+│   ├── plot_all.py
+│   └── plot.py
+├── verus/                           # Verus + VerusMinimizer variants (submodules)
+│   ├── verus/                       # Stock Verus used to time the projects
+│   ├── minimizer/, minimizer-anvil/,
+│   │   minimizer-capybara/          # VerusMinimizer variants
+│   └── sample-failure*/             # Verus forks used by failure-sample
+├── mariposa/                        # Mariposa (submodule) for Table 3
+└── LICENSE
+```
+
+The `experiments/original`, `experiments/minimized`, and
+`experiments/broadcast-from-main` trees each contain four submodules
+(`verified-ironkv`, `verified-betrfs`, `anvil`, `verified-storage`) on
+the appropriate branch.
+
+## Resource Requirements
+
+The four Verus projects together require substantial machine resources:
+
+- **CPU**: at least 9 cores (The script sets `--num-threads=9`).
+  16+ cores recommended.
+- **RAM**: 32 GB recommended. 16 GB may swap.
+- **Disk**: ~30 GB free for submodules, Verus build artifacts, Z3 logs, and
+  Mariposa databases
+
+We tested the artifact on:
+
+- Ubuntu 22.04, x86_64, 16 cores, 64 GB RAM
+- Apple silicon macOS, 24 GB RAM
 
 ## Dependencies
 
-We require a working version of `rustup`, `python3`, `ninja`, as Verus and Mariposa depend on them.
+The artifact runs natively (no Docker is provided). Please install the
+following on the host before running any script:
 
-## Installation
+- `rustup` with a working stable toolchain. Verus pins its own toolchain
+  via `rust-toolchain.toml`; `rustup` will install it on demand. Get it
+  from <https://rustup.rs>.
+- `python3` (3.10 or newer). Mariposa is tested with 3.10.
+- `ninja` (build system used by Mariposa / Z3 builds). Install with
+  `apt install ninja-build` (Linux) or `brew install ninja` (macOS).
+- `cargo` (provided by `rustup`).
 
-Clone this repo with the following:
+## Reproducing the Paper Results
 
-```
-git clone https://github.com/ahuoguo/tunable-automation.git
-cd tunable-automation
-git submodule update --init --remote --filter=blob:none
-```
+### Minimized Verus Projects
 
-## Minimizing Verus Projects
-
-We do not include scripts to minimize several Verus project as they can take days. We provide the logs and minimized projects under `experiments/minimized`, the minimized projects after broadcasting.
-
-Here's the path of the logs for minimization:
+We do **not** include scripts to minimize the Verus projects from
+scratch — minimization can take days. The minimized projects after
+broadcasting are checked into `experiments/minimized/`. The
+minimization logs we used are at:
 
 ```
 ./experiments/broadcast-from-main/verified-ironkv/ironsht/src/min.log
@@ -34,42 +97,64 @@ Here's the path of the logs for minimization:
 ./experiments/all-triggers/verified-ironkv-min/ironsht/src/min-at.log
 ```
 
-### Running Minimization by Yourself
+#### Running Minimization Yourself
 
-The VerusMinimizer corresponding to each project is in the `verus/` folder. An example to use VerusMinimizer is
+Each project has a corresponding VerusMinimizer fork under `verus/`
+(Anvil and VerifiedStorage use their own because of `deps_hack`).
+Example for IronKV:
 
 ```
 cd verus/minimizer/source/tools/minimize
-cargo run --release -- -d ./tmp <path-to-tunable-automation>/experiments/original/verified-ironkv/ironsht/src/lib.d
+cargo run --release -- -d ./tmp <abs-path-to-tunable-automation>/experiments/original/verified-ironkv/ironsht/src/lib.d
 ```
 
-Here, the `lib.d` file is generated by running Verus on the project with the `--emit=dep-info` flag. See more details in the `run.sh` script.
+The `lib.d` file is generated by Verus when invoked with
+`--emit=dep-info` (see `experiments/run.sh`). Expect this single run
+to take many hours; full minimization of the four projects took
+multiple days on our hardware.
 
-Since Anvil and VerifiedStorage needs their own `deps_hack` folder, we provide separate VerusMinimizer for them.
+### Table 2 — Number of Minimized Asserts
 
-## Table 2 Number of Minimized Asserts
-
-The VerusMinimizer can also count the number of asserts
-
-```
-cd verus/minimizer/source/tools/minimize 
-cargo run --release -- -n <path-to-tunable-automation>/experiments/original/verified-ironkv/ironsht/src/lib.d
-```
-
-## Figure 3 Verification Time Ratio
-
-The time logs can be replicated by `experiments/run.sh`. It will generate a `<project-name>.json` file in `experiments/original`, `experiments/minimized`, and `experiments/braodcast-from-main`.
-
-Then go to `json-time-cmp/` and run `generate-grphs.sh`. Figure 3 should be the same as `json-time-cmp/plot_all.png`
-
-To get the omitted runtime ratios in Splinter and Anvil, described in the captions of Figure 3, you can run:
+The same VerusMinimizer binary counts asserts when invoked with `-n`:
 
 ```
+cd verus/minimizer/source/tools/minimize
+cargo run --release -- -n <abs-path-to-tunable-automation>/experiments/original/verified-ironkv/ironsht/src/lib.d
+```
+
+This finishes in seconds per project; repeat for each of the four
+benchmark `lib.d` (or `anvil.d`) files under `experiments/original`,
+`experiments/minimized`, and `experiments/broadcast-from-main`.
+
+### Figure 3 — Verification Time Ratio
+
+Re-run path (≈30–90 min depending on hardware):
+
+```
+cd experiments
+./run.sh
+cd ../json-time-cmp
+./generate-graphs.sh
+```
+
+`run.sh` builds Verus and runs each of the four projects in their
+`original`, `minimized`, and `broadcast-from-main` configurations,
+producing one JSON file per (project, configuration) pair:
+`experiments/{original,minimized,broadcast-from-main}/{ironkv,splinter,anvil,capybara}.json`.
+`generate-graphs.sh` then writes `json-time-cmp/plot_all.png`, which
+matches Figure 3.
+
+For the omitted runtime ratios mentioned in the Figure 3 caption
+(Splinter and Anvil), run:
+
+```
+cd json-time-cmp
 python plot.py ../experiments/broadcast-from-main/splinter.json ../experiments/original/splinter.json
 python plot.py ../experiments/broadcast-from-main/anvil.json ../experiments/original/anvil.json
 ```
 
-The largest ratios will be printed in the terminal, for example:
+The largest ratios are printed to the terminal, e.g.:
+
 ```
 Highest ratio of runtime_map1 to runtime_map2: 12.417095883226493
 Function: kubernetes_cluster::proof::objects_in_store::anvil::kubernetes_cluster::spec::cluster::Cluster::lemma_always_each_builtin_object_in_etcd_is_well_formed
@@ -80,17 +165,16 @@ Function: kubernetes_cluster::proof::objects_in_store::anvil::kubernetes_cluster
 Ratio: 12.417095883226493
 ```
 
-## Figure 4 Sampled Verification Failure Time
+### Figure 4 — Sampled Verification Failure Time
+
 
 ```
 cd failure-sample
 ./run.sh
-./generate-graph.sh # This will generate `broadcast.png` corresponding to Figure 4
-cd -
+./generate-graph.sh    # writes broadcast.png (= Figure 4)
 ```
 
-We also already include the logs from `./run.sh`, which are the under the following folders:
-
+We also already include the logs from ./run.sh, which are the under the following folders:
 ```
 ./failure-sample/ironkv/
 ./failure-sample/splinter/
@@ -98,9 +182,9 @@ We also already include the logs from `./run.sh`, which are the under the follow
 ./failure-sample/capybara/
 ```
 
-So you can directly run `./generate-graph.sh` in `failure-sample/` to generate Figure 4.
+So you can directly run ./generate-graph.sh in failure-sample/ to generate Figure 4.
 
-## Figure 5 IronKV All Triggers
+### Figure 5 — IronKV All Triggers
 
 ```
 cd ./experiments/all-triggers/
@@ -111,22 +195,18 @@ cd ../failure-sample
 python ./plot-all-scatter.py . all_triggers all_triggers
 ```
 
-Then `json-time-cmp/plot.png` corresponds to upper half Figure 5, and `failure-sample/all_triggers.png` corresponds to the lower half of Figure 5.
+`json-time-cmp/plot.png` corresponds to the upper half of Figure 5;
+`failure-sample/all_triggers.png` corresponds to the lower half.
 
-Similarly, we also include the logs from `./run.sh`, which are in:
-```
-./experiments/all-triggers/ironkv_at_min.json
-./failure-sample/ironkv_at/
-```
+Verify-from-logs path: the cached outputs
+`experiments/all-triggers/ironkv_at_min.json` and
+`failure-sample/ironkv_at/` ship with the artifact, so the two `plot`
+commands above can be run directly without `./run.sh`.
 
-## Appendix
-
-### Table 3 Instability Analysis with Mariposa
-
-To replicate Table 3, run:
+### Appendix — Table 3, Instability Analysis with Mariposa
 
 ```
-cd experiment
+cd experiments
 ./mariposa.sh
 ```
 
