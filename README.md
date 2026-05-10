@@ -75,6 +75,9 @@ following on the host before running any script:
 - `ninja` (build system used by Mariposa / Z3 builds). Install with
   `apt install ninja-build` (Linux) or `brew install ninja` (macOS).
 - `cargo` (provided by `rustup`).
+- Python plotting libraries: `pip install matplotlib numpy`. Mariposa's
+  own Python dependencies are installed automatically by
+  `experiments/mariposa.sh` into `mariposa/myenv`.
 
 ## Reproducing the Paper Results
 
@@ -127,8 +130,6 @@ benchmark `lib.d` (or `anvil.d`) files under `experiments/original`,
 `experiments/minimized`, and `experiments/broadcast-from-main`.
 
 ### Figure 3 — Verification Time Ratio
-
-Re-run path (≈30–90 min depending on hardware):
 
 ```
 cd experiments
